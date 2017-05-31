@@ -24,10 +24,10 @@ module SHA1_core_tb(
 
     );
 reg clk,rst;
-reg [511:0]blk;
+//reg [511:0]blk;
 wire done;
 wire [159:0]digest;
-SHA1_core S1(clk,rst,blk,done,digest);
+SHA1_core S1(clk,rst,done,digest);
 initial begin
     clk = 0;
     #5 rst = 0;

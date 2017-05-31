@@ -24,7 +24,7 @@ module SHA1_core(
       input clk,
       input rst,
       //input start,
-      input [511:0]block_in,
+      //input [511:0]block_in,
       output done,
       output [159:0]digest_out
     );
@@ -38,7 +38,7 @@ reg [31:0]wt[63:0];
 reg [31:0]temp[79:0];
 reg [6:0]w_rounds;
 reg [6:0]f_rounds;
-reg [159:0]digest_out;
+wire [159:0]digest_out;
 //reg [1:0]sha1_state;
 reg [3:0] curr_state, next_state;
 reg [3:0] flag;
@@ -53,11 +53,12 @@ parameter SHA1_F3_ROUNDS = 7;
 parameter SHA1_FINAL = 8;
 parameter SHA1_DIGEST = 9;
 
-
+initial 
+    flag = 0;
 always@(posedge clk or negedge rst) begin
      if(rst == 0) begin
         curr_state <= SHA1_RESET;
-        flag <= 0;
+        //flag <= 0;
      end else begin
         curr_state <= next_state;
      end
@@ -777,8 +778,8 @@ always@(curr_state) begin
         hash[4] = h[4] + e[80];
         flag = 9;
     end else if(curr_state == SHA1_DIGEST) begin
-        digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+        //digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
     end else begin end
-
 end
+assign digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
 endmodule
