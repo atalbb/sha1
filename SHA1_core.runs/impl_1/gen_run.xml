@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1496252902">
+  <File Type="PWROPT-DRC" Name="SHA1_core_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SHA1_core_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SHA1_core_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="SHA1_core_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="SHA1_core.tcl"/>
+  <File Type="OPT-HWDEF" Name="SHA1_core.hwdef"/>
+  <File Type="RDI-RDI" Name="SHA1_core.vdi"/>
+  <File Type="OPT-DCP" Name="SHA1_core_opt.dcp"/>
+  <File Type="OPT-DRC" Name="SHA1_core_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="SHA1_core_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="SHA1_core_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="SHA1_core_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SHA1_core_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SHA1_core_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SHA1_core_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SHA1_core_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SHA1_core_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SHA1_core_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SHA1_core_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SHA1_core_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="SHA1_core_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SHA1_core_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SHA1_core_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SHA1_core_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SHA1_core_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="SHA1_core_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SHA1_core_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SHA1_core_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SHA1_core_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SHA1_core_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SHA1_core_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="SHA1_core.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="SHA1_core_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="SHA1_core.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SHA1_core_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="SHA1_core.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SHA1_core_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="SHA1_core.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SHA1_core_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SHA1_core_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="SHA1_core_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SHA1_core_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SHA1_core_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SHA1_core_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SHA1_core_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SHA1_core_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SHA1_core_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SHA1_core_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SHA1_core_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SHA1_core_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SHA1_core_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SHA1_core_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SHA1_core_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="SHA1_core.bit"/>
+  <File Type="BITSTR-RBT" Name="SHA1_core.rbt"/>
+  <File Type="BITSTR-NKY" Name="SHA1_core.nky"/>
+  <File Type="BITSTR-BMM" Name="SHA1_core_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SHA1_core.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="SHA1_core.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SHA1_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SHA1_core"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

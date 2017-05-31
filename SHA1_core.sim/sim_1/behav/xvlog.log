@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHA1_core
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/SHA1_core_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHA1_core_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

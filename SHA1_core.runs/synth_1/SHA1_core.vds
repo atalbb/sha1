@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed May 31 13:47:59 2017
+# Process ID: 9636
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1
+# Command line: vivado.exe -log SHA1_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA1_core.tcl
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/SHA1_core.vds
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SHA1_core.tcl -notrace
+Command: synth_design -top SHA1_core -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10572 
+WARNING: [Synth 8-2292] literal value truncated to fit in 32 bits [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 341.215 ; gain = 131.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
+	Parameter SHA1_RESET bound to: 0 - type: integer 
+	Parameter SHA1_INIT bound to: 1 - type: integer 
+	Parameter SHA1_W_ROUNDS bound to: 2 - type: integer 
+	Parameter SHA1_ABCDE_INIT bound to: 3 - type: integer 
+	Parameter SHA1_F0_ROUNDS bound to: 4 - type: integer 
+	Parameter SHA1_F1_ROUNDS bound to: 5 - type: integer 
+	Parameter SHA1_F2_ROUNDS bound to: 6 - type: integer 
+	Parameter SHA1_F3_ROUNDS bound to: 7 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'a' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-567] referenced signal 'b' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-567] referenced signal 'c' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-567] referenced signal 'd' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-567] referenced signal 'e' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-567] referenced signal 'temp' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+WARNING: [Synth 8-3848] Net done in module/entity SHA1_core does not have driver. [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:28]
+WARNING: [Synth 8-3848] Net digest_out in module/entity SHA1_core does not have driver. [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:29]
+INFO: [Synth 8-256] done synthesizing module 'SHA1_core' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
+WARNING: [Synth 8-3330] design SHA1_core has an empty top module
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port done
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[159]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[158]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[157]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[156]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[155]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[154]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[153]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[152]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[151]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[150]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[149]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[148]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[147]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[146]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[145]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[144]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[143]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[142]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[141]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[140]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[139]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[138]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[137]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[136]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[135]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[134]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[133]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[132]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[131]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[130]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[129]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[128]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[127]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[126]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[125]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[124]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[123]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[122]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[121]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[120]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[119]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[118]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[117]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[116]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[115]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[114]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[113]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[112]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[111]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[110]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[109]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[108]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[107]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[106]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[105]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[104]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[103]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[102]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[101]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[100]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[99]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[98]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[97]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[96]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[95]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[94]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[93]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[92]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[91]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[90]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[89]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[88]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[87]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[86]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[85]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[84]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[83]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[82]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[81]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[80]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[79]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[78]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[77]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[76]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[75]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[74]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[73]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[72]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[71]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[70]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[69]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[68]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[67]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[66]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[65]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[64]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[63]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[62]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[61]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 360.836 ; gain = 151.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 360.836 ; gain = 151.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 360.836 ; gain = 151.145
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 360.969 ; gain = 151.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design SHA1_core has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 483.184 ; gain = 273.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 483.184 ; gain = 273.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |   161|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   161|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1361 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 484.059 ; gain = 228.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.059 ; gain = 274.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 564.957 ; gain = 316.035
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/SHA1_core.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 564.957 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 13:48:16 2017...
