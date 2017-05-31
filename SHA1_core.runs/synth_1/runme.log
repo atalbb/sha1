@@ -14,10 +14,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13752 
-WARNING: [Synth 8-2292] literal value truncated to fit in 32 bits [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
+INFO: Helper process launched with PID 6448 
+WARNING: [Synth 8-2611] redeclaration of ansi port digest_out is not allowed [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:41]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 341.891 ; gain = 132.629
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 341.688 ; gain = 131.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
 	Parameter SHA1_RESET bound to: 0 - type: integer 
@@ -28,146 +28,255 @@ INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoPro
 	Parameter SHA1_F1_ROUNDS bound to: 5 - type: integer 
 	Parameter SHA1_F2_ROUNDS bound to: 6 - type: integer 
 	Parameter SHA1_F3_ROUNDS bound to: 7 - type: integer 
-WARNING: [Synth 8-567] referenced signal 'wt' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'a' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'b' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'c' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'd' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'e' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
-WARNING: [Synth 8-567] referenced signal 'temp' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:73]
+	Parameter SHA1_FINAL bound to: 8 - type: integer 
+	Parameter SHA1_DIGEST bound to: 9 - type: integer 
 WARNING: [Synth 8-3848] Net done in module/entity SHA1_core does not have driver. [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:28]
-WARNING: [Synth 8-3848] Net digest_out in module/entity SHA1_core does not have driver. [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:29]
 INFO: [Synth 8-256] done synthesizing module 'SHA1_core' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
-WARNING: [Synth 8-3330] design SHA1_core has an empty top module
 WARNING: [Synth 8-3331] design SHA1_core has unconnected port done
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[159]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[158]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[157]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[156]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[155]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[154]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[153]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[152]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[151]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[150]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[149]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[148]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[147]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[146]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[145]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[144]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[143]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[142]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[141]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[140]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[139]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[138]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[137]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[136]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[135]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[134]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[133]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[132]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[131]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[130]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[129]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[128]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[127]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[126]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[125]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[124]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[123]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[122]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[121]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[120]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[119]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[118]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[117]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[116]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[115]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[114]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[113]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[112]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[111]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[110]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[109]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[108]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[107]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[106]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[105]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[104]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[103]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[102]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[101]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[100]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[99]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[98]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[97]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[96]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[95]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[94]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[93]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[92]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[91]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[90]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[89]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[88]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[87]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[86]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[85]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[84]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[83]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[82]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[81]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[80]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[79]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[78]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[77]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[76]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[75]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[74]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[73]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[72]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[71]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[70]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[69]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[68]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[67]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[66]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[65]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[64]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[63]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[62]
-WARNING: [Synth 8-3331] design SHA1_core has unconnected port digest_out[61]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[511]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[510]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[509]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[508]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[507]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[506]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[505]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[504]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[503]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[502]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[501]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[500]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[499]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[498]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[497]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[496]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[495]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[494]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[493]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[492]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[491]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[490]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[489]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[488]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[487]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[486]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[485]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[484]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[483]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[482]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[481]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[480]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[479]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[478]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[477]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[476]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[475]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[474]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[473]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[472]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[471]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[470]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[469]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[468]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[467]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[466]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[465]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[464]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[463]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[462]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[461]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[460]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[459]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[458]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[457]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[456]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[455]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[454]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[453]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[452]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[451]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[450]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[449]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[448]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[447]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[446]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[445]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[444]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[443]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[442]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[441]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[440]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[439]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[438]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[437]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[436]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[435]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[434]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[433]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[432]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[431]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[430]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[429]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[428]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[427]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[426]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[425]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[424]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[423]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[422]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[421]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[420]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[419]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[418]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[417]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[416]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[415]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[414]
+WARNING: [Synth 8-3331] design SHA1_core has unconnected port block_in[413]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 363.480 ; gain = 154.219
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 386.305 ; gain = 176.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 363.480 ; gain = 154.219
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 386.305 ; gain = 176.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 363.480 ; gain = 154.219
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 386.305 ; gain = 176.176
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5544] ROM "k" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hash" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'digest_out_reg' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:767]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:760]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:760]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:760]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:760]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:264]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:263]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:262]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:261]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:262]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:264]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:263]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:265]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:261]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[16]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[18]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[17]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[19]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[22]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[21]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[25]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[28]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[27]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[29]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[30]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[32]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[31]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[33]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[35]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[34]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[36]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[37]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[39]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[38]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[41]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[42]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[45]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[44]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[46]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[49]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[48]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[53]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[52]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[54]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[57]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[56]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[58]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[61]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[63]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[62]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[64]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[66]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[67]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[69]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[68]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[72]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[71]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[74]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[73]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[76]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[77]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[78]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[79]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:89]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 372.000 ; gain = 162.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 427.426 ; gain = 217.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SHA1_core__GB0 |           1|     34608|
+|2     |SHA1_core__GB1 |           1|      7952|
+|3     |SHA1_core__GB2 |           1|     13538|
++------+---------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 80    
+	   2 Input     32 Bit       Adders := 4     
++---XORs : 
+	   4 Input     32 Bit         XORs := 55    
+	   2 Input     32 Bit         XORs := 9     
+	   3 Input     32 Bit         XORs := 40    
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -175,6 +284,26 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module SHA1_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 80    
+	   2 Input     32 Bit       Adders := 4     
++---XORs : 
+	   4 Input     32 Bit         XORs := 55    
+	   2 Input     32 Bit         XORs := 9     
+	   3 Input     32 Bit         XORs := 40    
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -191,34 +320,485 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3330] design SHA1_core has an empty top module
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[159] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[158] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[157] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[156] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[155] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[154] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[153] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[152] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[151] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[150] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[149] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[148] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[147] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[146] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[145] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[144] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[143] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[142] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[141] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[140] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[139] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[138] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[137] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[136] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[135] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[134] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[133] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[132] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[131] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[130] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[129] driven by constant 0
+WARNING: [Synth 8-3917] design SHA1_core has port digest_out[128] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][22]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][24]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][27]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][29]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][17]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][19]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][0]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][2]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][4]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][5]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][7]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][9]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][10]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][12]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][14]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][17]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][19]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][22]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][24]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][27]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][29]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][12]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][14]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][0]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][2]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][7]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][9]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][15]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][20]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][25]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][30]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][3]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][8]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][13]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][18]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][23]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][28]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][1]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][6]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][11]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][16]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][21]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][26]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][31]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][4]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][5]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[2][10]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][15]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][20]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][25]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][30]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][3]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][8]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][13]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][18]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][23]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][28]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][1]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][6]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][11]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][16]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][21]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][26]' (LDC) to 'i_0/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][31]' (LDC) to 'i_0/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][0]' (LDC) to 'i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][1]' (LDC) to 'i_0/k_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][2]' (LDC) to 'i_0/k_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][3]' (LDC) to 'i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][4]' (LDC) to 'i_0/k_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][5]' (LDC) to 'i_0/k_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][6]' (LDC) to 'i_0/k_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][7]' (LDC) to 'i_0/k_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][8]' (LDC) to 'i_0/k_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][9]' (LDC) to 'i_0/k_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][10]' (LDC) to 'i_0/k_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][11]' (LDC) to 'i_0/k_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][12]' (LDC) to 'i_0/k_reg[1][17]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][13]' (LDC) to 'i_0/k_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][14]' (LDC) to 'i_0/k_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][15]' (LDC) to 'i_0/k_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][16]' (LDC) to 'i_0/k_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][17]' (LDC) to 'i_0/k_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][18]' (LDC) to 'i_0/k_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][19]' (LDC) to 'i_0/k_reg[1][20]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][20]' (LDC) to 'i_0/k_reg[1][22]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][21]' (LDC) to 'i_0/k_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][22]' (LDC) to 'i_0/k_reg[1][23]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][23]' (LDC) to 'i_0/k_reg[1][25]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][24]' (LDC) to 'i_0/k_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][25]' (LDC) to 'i_0/k_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][26]' (LDC) to 'i_0/k_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][27]' (LDC) to 'i_0/k_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][28]' (LDC) to 'i_0/k_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'i_0/k_reg[1][29]' (LDC) to 'i_0/k_reg[1][30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[1][31] )
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[4][0]' (LDC) to 'i_2/h_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[2][0]' (LDC) to 'i_2/h_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[1][0]' (LDC) to 'i_2/h_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[3][0]' (LDC) to 'i_2/h_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[4][1]' (LDC) to 'i_2/h_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'i_2/h_reg[2][1]' (LDC) to 'i_2/h_reg[3][1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[17][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[14][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\next_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\next_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\next_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[18][26] )
+WARNING: [Synth 8-264] enable of latch \d_reg[80][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \d_reg[80][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \c_reg[80][17]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[19][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a_reg[0][26] )
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_2/flag_reg[3]__0/Q' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_2/flag_reg[2]__0/Q' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_2/flag_reg[1]__0/Q' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'i_2/flag_reg[0]__0/Q' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:60]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[22][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[20][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[79][23] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 481.801 ; gain = 272.539
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SHA1_core__GB0 |           1|     17472|
+|2     |SHA1_core__GB2 |           1|       384|
++------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 481.801 ; gain = 272.539
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SHA1_core__GB0 |           1|     17472|
+|2     |SHA1_core__GB2 |           1|       384|
++------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][31]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][30]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][29]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][28]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][27]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][26]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][25]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][24]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][23]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][22]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][21]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][20]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][19]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][18]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][17]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][16]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][15]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][14]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][13]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][12]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][11]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][10]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][9]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][8]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][7]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][6]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][5]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][4]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][3]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][2]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][1]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (a_reg[80][0]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][31]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][30]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][29]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][28]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][27]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][26]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][25]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][24]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][23]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][22]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][21]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][20]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][19]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][18]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][17]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][16]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][15]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][14]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][13]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][12]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][11]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][10]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][9]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][8]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][7]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][6]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][5]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][4]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][3]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][2]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][1]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (b_reg[80][0]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][31]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][30]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][29]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][28]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][27]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][26]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][25]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][24]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][23]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][22]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][21]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][20]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][19]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][18]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][17]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][16]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][15]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][14]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][13]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][12]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][11]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][10]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][9]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][8]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][7]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][6]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][5]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][4]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][3]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][2]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][1]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (c_reg[80][0]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (d_reg[80][31]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (d_reg[80][30]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (d_reg[80][29]) is unused and will be removed from module SHA1_core.
+WARNING: [Synth 8-3332] Sequential element (d_reg[80][28]) is unused and will be removed from module SHA1_core.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +822,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -255,7 +835,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,25 +847,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -301,7 +881,8 @@ Report Cell Usage:
 +------+------+------+
 |      |Cell  |Count |
 +------+------+------+
-|1     |OBUFT |   161|
+|1     |OBUF  |   160|
+|2     |OBUFT |     1|
 +------+------+------+
 
 Report Instance Areas: 
@@ -311,11 +892,11 @@ Report Instance Areas:
 |1     |top      |       |   161|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 483.711 ; gain = 274.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1362 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 483.711 ; gain = 227.293
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 483.711 ; gain = 274.449
+Synthesis finished with 0 errors, 12 critical warnings and 12290 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 640.910 ; gain = 384.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 640.910 ; gain = 430.781
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -323,9 +904,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-11 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+218 Infos, 426 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 564.691 ; gain = 315.383
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 640.910 ; gain = 391.633
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/SHA1_core.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 564.691 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed May 31 17:43:52 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 640.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 18:28:53 2017...
