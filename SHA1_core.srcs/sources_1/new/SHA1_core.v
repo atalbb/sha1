@@ -73,11 +73,18 @@ always@(*) begin
         next_state = SHA1_ABCDE_INIT;
     else if(flag == 4)
         next_state = SHA1_F0_ROUNDS;
+    else if(flag == 5)
+            next_state = SHA1_F1_ROUNDS;
+    else if(flag == 6)
+            next_state = SHA1_F2_ROUNDS;
+    else if(flag == 7)
+            next_state = SHA1_F3_ROUNDS;
     else if(flag == 8)
         next_state = SHA1_FINAL;
     else if(flag == 9)
         next_state = SHA1_DIGEST;
-    end
+    else begin end 
+    end 
 always@(curr_state) begin
     if(curr_state == SHA1_RESET) begin
         w_rounds = 16;
@@ -386,6 +393,8 @@ always@(curr_state) begin
         c[20] = {b[19][1:0],b[19][31:2]}; // b[t]<<30
         b[20] = a[19];
         a[20] = temp[19];
+        flag = 5;
+    end else if(curr_state == SHA1_F1_ROUNDS) begin
         //F(1) starts
         temp[20] = {a[20][26:0],a[20][31:27]} + (b[20] ^ c[20] ^ d[20]) + e[20] + w[20] + k[1] ;
         e[21] = d[20];
@@ -512,7 +521,9 @@ always@(curr_state) begin
         d[40] = c[39];   
         c[40] = {b[39][1:0],b[39][31:2]}; // b[t]<<30
         b[40] = a[39];
-        a[40] = temp[39];                             
+        a[40] = temp[39];
+        flag = 6; 
+    end else if(curr_state == SHA1_F2_ROUNDS) begin                            
         //F(2) starts
         temp[40] = {a[40][26:0],a[40][31:27]} + ((b[40]&c[40])|(b[40]&d[40])|(c[40]&d[40])) + e[40] + w[40] + k[2] ;
         e[41] = d[40];
@@ -634,6 +645,8 @@ always@(curr_state) begin
         c[60] = {b[59][1:0],b[59][31:2]}; // b[t]<<30
         b[60] = a[59];
         a[60] = temp[59];
+        flag = 7;    
+    end else if(curr_state == SHA1_F3_ROUNDS) begin
         //F(3) starts
         temp[60] = {a[60][26:0],a[60][31:27]} + (b[60]^c[60]^d[60]) + e[60] + w[60] + k[3] ;
         e[61] = d[60];
@@ -764,8 +777,8 @@ always@(curr_state) begin
         hash[4] = h[4] + e[80];
         flag = 9;
     end else if(curr_state == SHA1_DIGEST) begin
-        digest_out = {hash[0],hash[1],hash[2],hash[3]};
-    end
+        digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+    end else begin end
 
 end
 endmodule
