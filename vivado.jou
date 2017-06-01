@@ -85,3 +85,31 @@ launch_simulation
 reset_run synth_1
 launch_runs synth_1
 wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source W0_15_tb.tcl
+close_sim
+close_sim
+close_design
+launch_simulation
+source W0_15_tb.tcl
+close_sim

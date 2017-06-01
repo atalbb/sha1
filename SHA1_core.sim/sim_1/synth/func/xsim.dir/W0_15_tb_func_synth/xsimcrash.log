@@ -1,14 +1,12 @@
-Unable to capture context for thread 15884 in process 9356, can not generate back trace
-Unable to capture context for thread 15140 in process 9356, can not generate back trace
-Unable to capture context for thread 12628 in process 9356, can not generate back trace
 Exception at PC 0x00007FF830319E08
-Unable to capture context for thread 15884 in process 9356, can not generate back trace
-Unable to capture context for thread 15140 in process 9356, can not generate back trace
-Unable to capture context for thread 12628 in process 9356, can not generate back trace
+Unable to capture context for thread 3344 in process 916, can not generate back trace
+Unable to capture context for thread 3912 in process 916, can not generate back trace
+Unable to capture context for thread 10788 in process 916, can not generate back trace
+Exception at PC 0x00007FF830319E08
+Unable to capture context for thread 10788 in process 916, can not generate back trace
 Exception at PC 0x00007FFFB757BB93
 Printing stacktrace...
 
-Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08

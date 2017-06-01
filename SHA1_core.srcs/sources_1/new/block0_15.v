@@ -20,7 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module W0_15(output wire [31:0]w0,
+module W0_15(input wire [511:0]w,
+             output wire [31:0]w0,
              output wire [31:0]w1,
              output wire [31:0]w2,
              output wire [31:0]w3,
@@ -37,21 +38,37 @@ module W0_15(output wire [31:0]w0,
              output wire [31:0]w14,
              output wire [31:0]w15   
 );
-assign w0 = 32'h61626380;
-assign w1 = 32'h0;
-assign w2 = 32'h0;
-assign w3 = 32'h0;
-assign w4 = 32'h0;
-assign w5 = 32'h0;
-assign w6 = 32'h0;
-assign w7 = 32'h0;
-assign w8 = 32'h0;
-assign w9 = 32'h0;
-assign w10 = 32'h0;
-assign w11 = 32'h0;
-assign w12 = 32'h0;
-assign w13 = 32'h0;
-assign w14 = 32'h0;
-assign w15 = 32'h18;
+//assign w0 = 32'h61626380;
+//assign w1 = 32'h0;
+//assign w2 = 32'h0;
+//assign w3 = 32'h0;
+//assign w4 = 32'h0;
+//assign w5 = 32'h0;
+//assign w6 = 32'h0;
+//assign w7 = 32'h0;
+//assign w8 = 32'h0;
+//assign w9 = 32'h0;
+//assign w10 = 32'h0;
+//assign w11 = 32'h0;
+//assign w12 = 32'h0;
+//assign w13 = 32'h0;
+//assign w14 = 32'h0;
+//assign w15 = 32'h18;
 
+assign w0 = w[511:480];
+assign w1 = w[479:448];
+assign w2 = w[447:416];
+assign w3 = w[415:384];
+assign w4 = w[383:352];
+assign w5 = w[351:320];
+assign w6 = w[319:288];
+assign w7 = w[287:256];
+assign w8 = w[255:224];
+assign w9 = w[223:192];
+assign w10 = w[191:160];
+assign w11 = w[159:128];
+assign w12 = w[127:96];
+assign w13 = w[95:64];
+assign w14 = w[63:32];
+assign w15 = w[31:0];
 endmodule
