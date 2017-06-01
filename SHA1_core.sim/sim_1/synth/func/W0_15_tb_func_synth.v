@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Thu Jun 01 16:08:36 2017
+// Date        : Thu Jun 01 16:26:25 2017
 // Host        : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/synth/func/W0_15_tb_func_synth.v

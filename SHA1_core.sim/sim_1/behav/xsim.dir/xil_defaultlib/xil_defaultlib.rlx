@@ -3,7 +3,8 @@
 Oct 10 2016
 19:46:48
 C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
-C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v,1496347476,verilog,,,,W0_15_tb,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v,1496348518,verilog,,,,W0_15_tb,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Final_hash.v,1496348255,verilog,,,,Final_hash,,,,,,,,
 C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v,1496336569,verilog,,,,Round0_19,,,,,,,,
 C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Round20_39.v,1496344411,verilog,,,,Round20_39,,,,,,,,
 C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Round40_59.v,1496345689,verilog,,,,Round40_59,,,,,,,,

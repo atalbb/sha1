@@ -25,11 +25,12 @@ module W0_15_tb(
     );
 
 wire [31:0]w[79:0];
-wire [31:0]h[4:0];
+wire [31:0]ph[4:0];
+wire [31:0]fh[4:0];
 wire [31:0]a,b,c,d,e;
 wire [31:0]ao[79:0],bo[79:0],co[79:0],do[79:0],eo[79:0];
-init_H01234 H(h[0],h[1],h[2],h[3],h[4]);
-init_ABCDE  A1(h[0],h[1],h[2],h[3],h[4],a,b,c,d,e);
+init_H01234 H(ph[0],ph[1],ph[2],ph[3],ph[4]);
+init_ABCDE  A1(ph[0],ph[1],ph[2],ph[3],ph[4],a,b,c,d,e);
 W0_15 W(w[0],w[1],w[2],w[3],w[4],w[5],w[6],w[7],w[8],w[9],w[10],w[11],w[12],w[13],w[14],w[15]);
 // wt calculations starts
 W16_79 W16(w[13],w[8],w[2],w[0],w[16]);
@@ -180,5 +181,6 @@ Round60_79 R76(ao[75],bo[75],co[75],do[75],eo[75],w[76],ao[76],bo[76],co[76],do[
 Round60_79 R77(ao[76],bo[76],co[76],do[76],eo[76],w[77],ao[77],bo[77],co[77],do[77],eo[77]);
 Round60_79 R78(ao[77],bo[77],co[77],do[77],eo[77],w[78],ao[78],bo[78],co[78],do[78],eo[78]);
 Round60_79 R79(ao[78],bo[78],co[78],do[78],eo[78],w[79],ao[79],bo[79],co[79],do[79],eo[79]);
-
+// Final Hash
+Final_hash F1(ph[0],ph[1],ph[2],ph[3],ph[4],ao[79],bo[79],co[79],do[79],eo[79],fh[0],fh[1],fh[2],fh[3],fh[4]);
 endmodule
