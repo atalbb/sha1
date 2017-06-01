@@ -2,11 +2,11 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Wed May 31 19:59:19 2017
-# Process ID: 14592
+# Start of session at: Thu Jun 01 10:31:44 2017
+# Process ID: 748
 # Current directory: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1
-# Command line: vivado.exe -log block0_15.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block0_15.tcl
-# Log file: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/block0_15.vds
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/top.vds
 # Journal file: C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source block0_15.tcl -notrace
+source top.tcl -notrace

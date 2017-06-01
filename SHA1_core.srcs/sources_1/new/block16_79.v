@@ -20,14 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module block16_79(input wire[3:0]block_in1,
-                  input wire[3:0]block_in2,
-                  input wire[3:0]block_in3,
-                  input wire[3:0]block_in4,
-                  output wire[3:0]block_out  
+module W16_79(input wire[31:0]block_in1,
+                  input wire[31:0]block_in2,
+                  input wire[31:0]block_in3,
+                  input wire[31:0]block_in4,
+                  output wire[31:0]block_out  
     );
 wire [31:0]block_temp;
 assign block_temp = block_in1 ^ block_in2 ^ block_in3 ^ block_in4;
-assign block_out =  {block_temp[30:0],block_temp[31]};   
- //w[16] = {wt[0][30:0],wt[0][31]}; //wt << 1
+assign block_out =  {block_temp[30:0],block_temp[31]};   // block_temp << 1
 endmodule
