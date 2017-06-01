@@ -24,7 +24,7 @@ module msg_input(output wire[511:0]msg,
                  output wire[9:0]msg_len
     );
 wire [511:0]temp;
-assign temp = "abc";
-assign msg = temp << (512-24);// 24 because "abc" has 24 bits
-assign msg_len = 24;
+assign temp = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+assign msg = temp << (512-416);// 24 because "abc" has 24 
+assign msg_len = 416;//change this according to input bits for now
 endmodule
