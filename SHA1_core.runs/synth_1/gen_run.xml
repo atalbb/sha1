@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1496271529">
-  <File Type="RDS-PROPCONSTRS" Name="SHA1_core_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="SHA1_core.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SHA1_core_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="SHA1_core.vds"/>
   <File Type="RDS-UTIL" Name="SHA1_core_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SHA1_core_utilization_synth.pb"/>
