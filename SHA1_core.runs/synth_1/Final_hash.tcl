@@ -16,14 +16,14 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
 set_property ip_output_repo c:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/top.v
+read_verilog -library xil_defaultlib C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Final_hash.v
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top top -part xc7a100tcsg324-1
+synth_design -top Final_hash -part xc7a100tcsg324-1
 
 
-write_checkpoint -force -noxdef top.dcp
+write_checkpoint -force -noxdef Final_hash.dcp
 
-catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
+catch { report_utilization -file Final_hash_utilization_synth.rpt -pb Final_hash_utilization_synth.pb }

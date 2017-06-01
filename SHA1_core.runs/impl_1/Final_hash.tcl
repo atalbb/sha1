@@ -57,9 +57,9 @@ set rc [catch {
   set_property parent.project_path C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.xpr [current_project]
   set_property ip_output_repo C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/top.dcp
-  link_design -top top -part xc7a100tcsg324-1
-  write_hwdef -file top.hwdef
+  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.runs/synth_1/Final_hash.dcp
+  link_design -top Final_hash -part xc7a100tcsg324-1
+  write_hwdef -file Final_hash.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -75,8 +75,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force top_opt.dcp
-  report_drc -file top_drc_opted.rpt
+  write_checkpoint -force Final_hash_opt.dcp
+  report_drc -file Final_hash_drc_opted.rpt
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -93,10 +93,10 @@ set rc [catch {
   create_msg_db place_design.pb
   implement_debug_core 
   place_design 
-  write_checkpoint -force top_placed.dcp
-  report_io -file top_io_placed.rpt
-  report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
-  report_control_sets -verbose -file top_control_sets_placed.rpt
+  write_checkpoint -force Final_hash_placed.dcp
+  report_io -file Final_hash_io_placed.rpt
+  report_utilization -file Final_hash_utilization_placed.rpt -pb Final_hash_utilization_placed.pb
+  report_control_sets -verbose -file Final_hash_control_sets_placed.rpt
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -112,17 +112,17 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force top_routed.dcp
-  report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
-  report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
-  report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
-  report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
-  report_route_status -file top_route_status.rpt -pb top_route_status.pb
-  report_clock_utilization -file top_clock_utilization_routed.rpt
+  write_checkpoint -force Final_hash_routed.dcp
+  report_drc -file Final_hash_drc_routed.rpt -pb Final_hash_drc_routed.pb -rpx Final_hash_drc_routed.rpx
+  report_methodology -file Final_hash_methodology_drc_routed.rpt -rpx Final_hash_methodology_drc_routed.rpx
+  report_timing_summary -warn_on_violation -max_paths 10 -file Final_hash_timing_summary_routed.rpt -rpx Final_hash_timing_summary_routed.rpx
+  report_power -file Final_hash_power_routed.rpt -pb Final_hash_power_summary_routed.pb -rpx Final_hash_power_routed.rpx
+  report_route_status -file Final_hash_route_status.rpt -pb Final_hash_route_status.pb
+  report_clock_utilization -file Final_hash_clock_utilization_routed.rpt
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force top_routed_error.dcp
+  write_checkpoint -force Final_hash_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {

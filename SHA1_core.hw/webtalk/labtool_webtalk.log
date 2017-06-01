@@ -5,4 +5,5 @@
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue May 30 14:52:22 2017...
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Jun 01 19:20:15 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 19:20:15 2017...
