@@ -23,10 +23,10 @@
 module W0_15_tb(
 
     );
-wire [511:0]msg,msgPad1;
+wire [511:0]msg,msgPad;
 wire [9:0]msg_len,msgPad1_len;
 msg_input MSG1(msg,msg_len);
-pad1 P1(msg,msg_len,msgPad1,msgPad1_len);
+pad P1(msg,msg_len,msgPad);
 
 
 
