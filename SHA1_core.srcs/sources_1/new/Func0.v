@@ -32,11 +32,7 @@ module Round0_19(input wire [31:0]ain,
              output wire [31:0]dout,   
              output wire [31:0]eout
     );
-//wire [31:0]temp;
 parameter k = 32'h5a827999;
-//{a[0][26:0],a[0][31:27]} + ((b[0] & c[0]) | ((~b[0]) & d[0])) + e[0] + w[0] + k[0] ;
-//{b[1][1:0],b[1][31:2]}; 
-//assign temp = {ain[26:0],ain[31:27]} + ((bin & cin) | ((~bin) & din)) + ein + w + k;
 assign eout = din;
 assign dout = cin;
 assign cout = {bin[1:0],bin[31:2]};

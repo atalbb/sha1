@@ -19,3 +19,81 @@ add_files C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/ne
 reset_run synth_1
 launch_runs synth_1
 wait_on_run synth_1
+close [ open C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v w ]
+add_files C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close [ open C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v w ]
+add_files C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source W0_15_tb.tcl
+close_sim
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source W0_15_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source W0_15_tb.tcl
+close_sim
+close_sim
+close_design
