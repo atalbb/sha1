@@ -1284,3 +1284,626 @@ close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 close_design
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block16_79.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W16_79
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+ERROR: [VRFC 10-91] a0 is not declared [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:42]
+ERROR: [VRFC 10-1040] module W0_15_tb ignored due to previous errors [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block16_79.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W16_79
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+ERROR: [VRFC 10-91] a0 is not declared [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:42]
+ERROR: [VRFC 10-1040] module W0_15_tb ignored due to previous errors [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+ERROR: [VRFC 10-91] a0 is not declared [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:42]
+ERROR: [VRFC 10-1040] module W0_15_tb ignored due to previous errors [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:14:33 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:14:33 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1680.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.785 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+ERROR: [VRFC 10-91] ai is not declared [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:32]
+ERROR: [VRFC 10-1040] module W0_15_tb ignored due to previous errors [C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:16:44 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:16:44 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1680.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:20:34 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:20:34 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:29:39 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:29:39 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1680.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:33:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:33:46 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1680.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.785 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:36:10 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:36:10 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.785 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'W0_15_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+"xvlog -m64 --relax -prj W0_15_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_H01234.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_H01234
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/init_ABCDE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_ABCDE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/Func0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round0_19
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block16_79.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W16_79
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sources_1/new/block0_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.srcs/sim_1/new/block0_15_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module W0_15_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto dd07ee5cfe8046548a813284afb3a1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot W0_15_tb_behav xil_defaultlib.W0_15_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.init_H01234
+Compiling module xil_defaultlib.init_ABCDE
+Compiling module xil_defaultlib.W0_15
+Compiling module xil_defaultlib.W16_79
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.W0_15_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot W0_15_tb_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav/xsim.dir/W0_15_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jun 01 13:37:40 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 01 13:37:40 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "W0_15_tb_behav -key {Behavioral:sim_1:Functional:W0_15_tb} -tclbatch {W0_15_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source W0_15_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'W0_15_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.785 ; gain = 0.000

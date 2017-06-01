@@ -97,3 +97,29 @@ source W0_15_tb.tcl
 close_sim
 close_sim
 close_design
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+update_compile_order -fileset sim_1
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
+launch_simulation
+source W0_15_tb.tcl
+close_sim
