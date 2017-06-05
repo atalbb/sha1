@@ -7,17 +7,23 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.msg_input
-Compiling module xil_defaultlib.pad
-Compiling module xil_defaultlib.W0_15
-Compiling module xil_defaultlib.init_H01234
-Compiling module xil_defaultlib.init_ABCDE
-Compiling module xil_defaultlib.W16_79
-Compiling module xil_defaultlib.Round0_19
-Compiling module xil_defaultlib.Round20_39
-Compiling module xil_defaultlib.Round40_59
-Compiling module xil_defaultlib.Round60_79
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
 Compiling module xil_defaultlib.Final_hash
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.Round0_19_0
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.IBUF
+Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.W0_15_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot W0_15_tb_func_synth

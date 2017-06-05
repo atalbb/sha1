@@ -38,22 +38,6 @@ module W0_15(input wire [511:0]w,
              output wire [31:0]w14,
              output wire [31:0]w15   
 );
-//assign w0 = 32'h61626380;
-//assign w1 = 32'h0;
-//assign w2 = 32'h0;
-//assign w3 = 32'h0;
-//assign w4 = 32'h0;
-//assign w5 = 32'h0;
-//assign w6 = 32'h0;
-//assign w7 = 32'h0;
-//assign w8 = 32'h0;
-//assign w9 = 32'h0;
-//assign w10 = 32'h0;
-//assign w11 = 32'h0;
-//assign w12 = 32'h0;
-//assign w13 = 32'h0;
-//assign w14 = 32'h0;
-//assign w15 = 32'h18;
 
 assign w0 = w[511:480];
 assign w1 = w[479:448];

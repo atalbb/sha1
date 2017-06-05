@@ -1,11 +1,12 @@
-Unable to capture context for thread 6996 in process 12416, can not generate back trace
-Unable to capture context for thread 6280 in process 12416, can not generate back trace
-Unable to capture context for thread 6464 in process 12416, can not generate back trace
-Exception at PC 0x00007FFFB757BB93
+Unable to capture context for thread 13916 in process 4788, can not generate back trace
+Unable to capture context for thread 11356 in process 4788, can not generate back trace
+Unable to capture context for thread 236 in process 4788, can not generate back trace
+Exception at PC 0x00007FFFBF7FBB93
 Printing stacktrace...
 
-Unable to capture context for thread 6996 in process 12416, can not generate back trace
-Unable to capture context for thread 6464 in process 12416, can not generate back trace
+Unable to capture context for thread 13916 in process 4788, can not generate back trace
+Unable to capture context for thread 11356 in process 4788, can not generate back trace
+Unable to capture context for thread 236 in process 4788, can not generate back trace
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
@@ -25,18 +26,18 @@ Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
 Exception at PC 0x00007FF830319E08
-[0]  [0x00007FFFB757BB93]
-[1]  [0x00007FFFB757BB93]
-[2]  [0x00007FFFB757B4A1]
-[3]  [0x00007FFFB757B3EF]
-[4]  [0x00007FFFB75619FE]
-[5]  [0x00007FFFB7560ED1]
-[6]  [0x00007FFFB7560D76]
-[7]  [0x00007FFFB75079F6]
-[8]  [0x00007FFFB74F7AFB]
-[9]  [0x00007FFFB761E90A]
-[10]  [0x00007FFFB7639F87]
-[11]  [0x00007FFFB763A05F]
+[0]  [0x00007FFFBF7FBB93]
+[1]  [0x00007FFFBF7FBB93]
+[2]  [0x00007FFFBF7FB4A1]
+[3]  [0x00007FFFBF7FB3EF]
+[4]  [0x00007FFFBF7E19FE]
+[5]  [0x00007FFFBF7E0ED1]
+[6]  [0x00007FFFBF7E0D76]
+[7]  [0x00007FFFBF7879F6]
+[8]  [0x00007FFFBF777AFB]
+[9]  [0x00007FFFBF89E90A]
+[10]  [0x00007FFFBF8B9F87]
+[11]  [0x00007FFFBF8BA05F]
 [12] (BaseThreadInitThunk+0x14) [0x00007FF8333E2774]
 [13] (RtlUserThreadStart+0x21) [0x00007FF8338E0D61]
 Done
