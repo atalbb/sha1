@@ -1,7 +1,7 @@
-Running: xsim.dir/my_bram_tb_func_synth/xsimk.exe -simmode gui -wdb my_bram_tb_func_synth.wdb -simrunnum 0 -socket 50305
+Running: xsim.dir/my_bram_tb_func_synth/xsimk.exe -simmode gui -wdb my_bram_tb_func_synth.wdb -simrunnum 0 -socket 51683
 Design successfully loaded
-Design Loading Memory Usage: 8472 KB (Peak: 8472 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading Memory Usage: 110956 KB (Peak: 110956 KB)
+Design Loading CPU Usage: 467 ms
 Simulation completed
-Simulation Memory Usage: 9236 KB (Peak: 9236 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 655052 KB (Peak: 655052 KB)
+Simulation CPU Usage: 93577 ms

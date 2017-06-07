@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Jun 06 18:10:08 2017
-# Process ID: 14756
+# Start of session at: Wed Jun 07 18:23:00 2017
+# Process ID: 8948
 # Current directory: C:/College/Thesis/VivadoProjects/SHA1/SHA1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/College/Thesis/VivadoProjects/SHA1/SHA1.runs/synth_1/top.vds
@@ -15,42 +15,66 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6512 
+INFO: Helper process launched with PID 3192 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 331.500 ; gain = 121.301
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 331.492 ; gain = 122.023
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v:76]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v:25]
 INFO: [Synth 8-638] synthesizing module 'my_bram' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/my_bram.v:23]
 INFO: [Synth 8-256] done synthesizing module 'my_bram' (1#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/my_bram.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v:76]
+INFO: [Synth 8-638] synthesizing module 'W16_79' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/W16_19.v:23]
+INFO: [Synth 8-256] done synthesizing module 'W16_79' (2#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/W16_19.v:23]
+INFO: [Synth 8-638] synthesizing module 'Round0_19' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R0_19.v:23]
+	Parameter k bound to: 1518500249 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Round0_19' (3#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R0_19.v:23]
+INFO: [Synth 8-638] synthesizing module 'Round20_39' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R20_39.v:23]
+	Parameter k bound to: 1859775393 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Round20_39' (4#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R20_39.v:23]
+INFO: [Synth 8-638] synthesizing module 'Round40_59' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R40_59.v:23]
+	Parameter k bound to: -1894007588 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Round40_59' (5#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R40_59.v:23]
+INFO: [Synth 8-638] synthesizing module 'Round60_79' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R60_79.v:23]
+	Parameter k bound to: -899497514 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Round60_79' (6#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R60_79.v:23]
+INFO: [Synth 8-638] synthesizing module 'Final_hash' [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/Final_hash.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Final_hash' (7#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/Final_hash.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v:25]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.797 ; gain = 158.598
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.840 ; gain = 159.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.797 ; gain = 158.598
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.840 ; gain = 159.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.797 ; gain = 158.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 368.840 ; gain = 159.371
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 370.313 ; gain = 160.113
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 377.293 ; gain = 167.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB0      |           1|     25427|
+|2     |top__GB1      |           1|     24897|
++------+--------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   5 Input     32 Bit       Adders := 80    
++---XORs : 
+	   3 Input     32 Bit         XORs := 40    
+	   4 Input     32 Bit         XORs := 64    
 +---Registers : 
 	                4 Bit    Registers := 21    
 +---RAMs : 
@@ -62,6 +86,786 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module Final_hash 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+Module Round60_79__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round60_79 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round40_59__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module W16_79__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__16 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__17 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__18 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__19 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__20 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__21 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__22 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__23 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__24 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__25 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__26 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__27 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__28 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__29 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__30 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__31 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__32 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__33 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__34 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__35 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__36 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__37 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__38 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__39 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__40 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__41 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__42 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__43 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__44 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__45 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__46 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module Round0_19__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round0_19 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round20_39__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round20_39 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Round40_59__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module Round40_59 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+Module W16_79__47 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__48 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__49 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__50 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__51 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__52 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__53 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__54 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__55 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__56 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__57 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__58 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__59 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__60 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__61 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__62 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79__63 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module W16_79 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+Module my_bram__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module my_bram__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
 Module my_bram 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -84,33 +888,156 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_1/i_0/H4/read_addr_reg[0]' (FDE) to 'i_1/i_0/H4/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_0/H4/read_addr_reg[1]' (FDE) to 'i_1/i_0/H4/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\H4/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\H4/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_1/H3/read_addr_reg[0]' (FDE) to 'i_1/i_1/H3/read_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\H3/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_1/H3/read_addr_reg[2]' (FDE) to 'i_1/i_1/H3/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\H3/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_2/H2/read_addr_reg[0]' (FDE) to 'i_1/i_2/H2/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\H2/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_2/H2/read_addr_reg[2]' (FDE) to 'i_1/i_2/H2/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\H2/read_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\H1/read_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_3/H1/read_addr_reg[1]' (FDE) to 'i_1/i_3/H1/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_3/H1/read_addr_reg[2]' (FDE) to 'i_1/i_3/H1/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\H1/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_4/H0/read_addr_reg[0]' (FDE) to 'i_1/i_4/H0/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_4/H0/read_addr_reg[1]' (FDE) to 'i_1/i_4/H0/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_4/H0/read_addr_reg[2]' (FDE) to 'i_1/i_4/H0/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\H0/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_5/W15/read_addr_reg[0]' (FDE) to 'i_1/i_5/W15/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_5/W15/read_addr_reg[1]' (FDE) to 'i_1/i_5/W15/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_5/W15/read_addr_reg[2]' (FDE) to 'i_1/i_5/W15/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_5/\W15/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_13/W7/read_addr_reg[0]' (FDE) to 'i_1/i_13/W7/read_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_13/W7/read_addr_reg[1]' (FDE) to 'i_1/i_13/W7/read_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_13/\W7/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\W7/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_10/W10/read_addr_reg[0]' (FDE) to 'i_1/i_10/W10/read_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_10/W10/read_addr_reg[1]' (FDE) to 'i_1/i_10/W10/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_10/\W10/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_10/\W10/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_7/W13/read_addr_reg[0]' (FDE) to 'i_1/i_7/W13/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_7/\W13/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_7/W13/read_addr_reg[2]' (FDE) to 'i_1/i_7/W13/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_7/\W13/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_20/W0/read_addr_reg[0]' (FDE) to 'i_1/i_20/W0/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_20/W0/read_addr_reg[1]' (FDE) to 'i_1/i_20/W0/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_20/W0/read_addr_reg[2]' (FDE) to 'i_1/i_20/W0/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\W0/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_18/W2/read_addr_reg[0]' (FDE) to 'i_1/i_18/W2/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_18/\W2/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_18/W2/read_addr_reg[2]' (FDE) to 'i_1/i_18/W2/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_18/\W2/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_15/W5/read_addr_reg[0]' (FDE) to 'i_1/i_15/W5/read_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_15/W5/read_addr_reg[1]' (FDE) to 'i_1/i_15/W5/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_15/\W5/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\W5/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_12/W8/read_addr_reg[0]' (FDE) to 'i_1/i_12/W8/read_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_12/W8/read_addr_reg[1]' (FDE) to 'i_1/i_12/W8/read_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_12/\W8/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_12/\W8/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_9/W11/read_addr_reg[0]' (FDE) to 'i_1/i_9/W11/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_9/W11/read_addr_reg[1]' (FDE) to 'i_1/i_9/W11/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\W11/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_9/\W11/read_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_6/\W14/read_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_6/W14/read_addr_reg[1]' (FDE) to 'i_1/i_6/W14/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_6/W14/read_addr_reg[2]' (FDE) to 'i_1/i_6/W14/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_6/\W14/read_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_19/\W1/read_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_19/W1/read_addr_reg[1]' (FDE) to 'i_1/i_19/W1/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_19/W1/read_addr_reg[2]' (FDE) to 'i_1/i_19/W1/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_19/\W1/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_17/W3/read_addr_reg[0]' (FDE) to 'i_1/i_17/W3/read_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_17/\W3/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_17/W3/read_addr_reg[2]' (FDE) to 'i_1/i_17/W3/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_17/\W3/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_11/W9/read_addr_reg[0]' (FDE) to 'i_1/i_11/W9/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_11/W9/read_addr_reg[1]' (FDE) to 'i_1/i_11/W9/read_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\W9/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_11/\W9/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_16/W4/read_addr_reg[0]' (FDE) to 'i_1/i_16/W4/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_16/W4/read_addr_reg[1]' (FDE) to 'i_1/i_16/W4/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_16/\W4/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_16/\W4/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_14/W6/read_addr_reg[0]' (FDE) to 'i_1/i_14/W6/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/i_14/W6/read_addr_reg[1]' (FDE) to 'i_1/i_14/W6/read_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_14/\W6/read_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\W6/read_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_8/W12/read_addr_reg[0]' (FDE) to 'i_1/i_8/W12/read_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_8/\W12/read_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_1/i_8/W12/read_addr_reg[2]' (FDE) to 'i_1/i_8/W12/read_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_8/\W12/read_addr_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 473.082 ; gain = 262.883
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 805.879 ; gain = 596.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|top         | H4/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | H3/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | H2/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | H1/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | H0/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W15/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W14/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W13/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W12/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W11/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W10/RAM_reg | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W9/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W8/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W7/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W6/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W5/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W4/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W3/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W2/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W1/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
+|top         | W0/RAM_reg  | Implied   | 16 x 32              | RAM32M x 6   | 
++------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB0      |           1|     29446|
+|2     |top__GB1      |           1|     36243|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 473.082 ; gain = 262.883
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 805.879 ; gain = 596.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB0      |           1|     29446|
+|2     |top__GB1      |           1|     36243|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -134,7 +1061,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -147,7 +1074,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,25 +1086,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:03 ; elapsed = 00:04:17 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:04 ; elapsed = 00:04:18 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:04 ; elapsed = 00:04:18 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -190,33 +1117,68 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+-+-----+------+
-| |Cell |Count |
-+-+-----+------+
-+-+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   680|
+|3     |LUT2   |   260|
+|4     |LUT3   |  2161|
+|5     |LUT4   |  3815|
+|6     |LUT5   |  3025|
+|7     |LUT6   |  6155|
+|8     |RAM32M |   106|
+|9     |IBUF   |     3|
+|10    |OBUF   |   160|
++------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     0|
-+------+---------+-------+------+
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           | 16366|
+|2     |  F1     |Final_hash |   675|
+|3     |  H0     |my_bram    |   188|
+|4     |  H1     |my_bram_0  |    92|
+|5     |  H2     |my_bram_1  |   198|
+|6     |  H3     |my_bram_2  |    86|
+|7     |  H4     |my_bram_3  |   134|
+|8     |  W0     |my_bram_4  |   613|
+|9     |  W1     |my_bram_5  |  6843|
+|10    |  W10    |my_bram_6  |   464|
+|11    |  W11    |my_bram_7  |   462|
+|12    |  W12    |my_bram_8  |   457|
+|13    |  W13    |my_bram_9  |   436|
+|14    |  W14    |my_bram_10 |   466|
+|15    |  W15    |my_bram_11 |   487|
+|16    |  W2     |my_bram_12 |   433|
+|17    |  W3     |my_bram_13 |   512|
+|18    |  W4     |my_bram_14 |   362|
+|19    |  W5     |my_bram_15 |   532|
+|20    |  W6     |my_bram_16 |   485|
+|21    |  W7     |my_bram_17 |   499|
+|22    |  W8     |my_bram_18 |   473|
+|23    |  W9     |my_bram_19 |   465|
++------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.977 ; gain = 265.777
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:04 ; elapsed = 00:04:18 . Memory (MB): peak = 1115.613 ; gain = 906.145
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 475.977 ; gain = 219.281
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 475.977 ; gain = 265.777
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:59 ; elapsed = 00:04:11 . Memory (MB): peak = 1115.613 ; gain = 859.059
+Synthesis Optimization Complete : Time (s): cpu = 00:04:04 ; elapsed = 00:04:18 . Memory (MB): peak = 1115.613 ; gain = 906.145
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 789 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 106 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 106 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+117 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 572.965 ; gain = 323.543
+synth_design: Time (s): cpu = 00:04:07 ; elapsed = 00:04:19 . Memory (MB): peak = 1119.109 ; gain = 869.336
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1/SHA1.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 572.965 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 06 18:10:27 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1119.109 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 07 18:27:31 2017...

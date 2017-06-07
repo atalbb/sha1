@@ -49,12 +49,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/College/Thesis/VivadoProjects/SHA1/SHA1.runs/impl_1/top.dcp
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/College/Thesis/VivadoProjects/SHA1/SHA1.cache/wt [current_project]
   set_property parent.project_path C:/College/Thesis/VivadoProjects/SHA1/SHA1.xpr [current_project]
   set_property ip_output_repo C:/College/Thesis/VivadoProjects/SHA1/SHA1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1/SHA1.runs/synth_1/top.dcp
+  link_design -top top -part xc7a100tcsg324-1
   write_hwdef -file top.hwdef
   close_msg_db -file init_design.pb
 } RESULT]

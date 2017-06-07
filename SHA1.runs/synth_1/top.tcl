@@ -17,6 +17,12 @@ set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
 set_property ip_output_repo c:/College/Thesis/VivadoProjects/SHA1/SHA1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/Final_hash.v
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R60_79.v
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R40_59.v
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R20_39.v
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/R0_19.v
+  C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/W16_19.v
   C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/my_bram.v
   C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v
 }

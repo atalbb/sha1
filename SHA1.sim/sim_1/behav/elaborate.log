@@ -5,11 +5,15 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v" Line 76. Module top doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/top.v" Line 76. Module top doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.my_bram
+Compiling module xil_defaultlib.W16_79
+Compiling module xil_defaultlib.Round0_19
+Compiling module xil_defaultlib.Round20_39
+Compiling module xil_defaultlib.Round40_59
+Compiling module xil_defaultlib.Round60_79
+Compiling module xil_defaultlib.Final_hash
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.my_bram_tb
 Compiling module xil_defaultlib.glbl

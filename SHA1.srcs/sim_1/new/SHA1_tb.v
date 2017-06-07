@@ -24,7 +24,8 @@ module my_bram_tb(
 
     );
 reg clk,we,en;
-top T1(clk,we,en);
+wire [159:0]digest;
+top T1(clk,we,en,digest);
 initial begin
     clk = 0;
     we = 0;

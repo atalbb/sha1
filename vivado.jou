@@ -110,3 +110,11 @@ launch_simulation -mode post-synthesis -type functional
 source my_bram_tb.tcl
 close_sim
 close_sim
+remove_files  {C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/H0_4.v C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/Ram_Latch.v C:/College/Thesis/VivadoProjects/SHA1/SHA1.srcs/sources_1/new/W0_15.v}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1
+wait_on_run impl_1
+close_design
