@@ -22,6 +22,7 @@
 
 module SHA1( input clk,
               input rst,
+              input [31:0]initial_hash,
               input [31:0]msg_in,
               input [3:0]msg_in_len,// in words(32-bits)
               output [31:0]msg_out
@@ -31,7 +32,8 @@ parameter reset = 4'b001;
 parameter read_32bit_msgs = 4'b010;
 parameter append_w0_15 = 4'b011;
 parameter append_w16_79 = 4'b100;
-parameter f0_19 = 4'b101;
+parameter r0_19 = 4'b101;
+parameter r20_39 = 4'b110;
 
 reg [4:0]cur_state,nxt_state;
 reg [4:0]state_done;
@@ -39,11 +41,14 @@ reg [31:0]msg_out;
 reg [31:0]h[4:0];
 reg [31:0]w[79:0];
 reg [31:0]wt[63:0];
-reg [31:0]k;
-reg [31:0]RAM[15:0];
-reg [4:0]RAM_index;
+reg [31:0]k[4:0];
+reg [31:0]msg_RAM[15:0];
+reg [4:0]msg_RAM_index;
+//reg [31:0]initial_hash_RAM[4:0];
+reg [2:0]h_index;
 reg [511:0]temp1,temp2;
-
+reg [31:0]temp[79:0];
+reg [31:0]a[80:0],b[80:0],c[80:0],d[80:0],e[80:0];
 initial 
     state_done = idle;
 
@@ -52,8 +57,10 @@ always@(posedge clk or negedge rst) begin
         cur_state <= reset;
     else begin
         cur_state <= nxt_state;
-        if(RAM_index <= msg_in_len)
-            RAM_index <= RAM_index + 1;
+        if(msg_RAM_index <= msg_in_len)
+            msg_RAM_index <= msg_RAM_index + 1;
+        if(h_index <= 5)
+            h_index <= h_index + 1;
     end
 end
 
@@ -65,13 +72,18 @@ always@(*)begin
     else if(state_done == append_w0_15)
         nxt_state = append_w16_79;
     else if(state_done == append_w16_79)
-        nxt_state = f0_19;
+        nxt_state = r0_19;
+    else if(state_done == r0_19)
+        nxt_state = r20_39;
     else begin end
 end
 
 always@(*)begin
     if(cur_state == reset) begin
-        k = 0;
+        k[0] = 32'h5a827999;
+        k[1] = 32'h6ed9eba1;
+        k[2] = 32'h8f1bbcdc;
+        k[3] = 32'hca62c1d6; 
         h[0] = 0; h[1] = 0; h[2] = 0; h[3] = 0;h[4] = 0;
         w[0] = 0;w[1] = 0;w[2] = 0;w[3] = 0;w[4] = 0;w[5] = 0;w[6] = 0;w[7] = 0;w[8] = 0;w[9] = 0;
         w[10] = 0;w[11] = 0;w[12] = 0;w[13] = 0;w[14] = 0;w[15] = 0;w[16] = 0;w[17] = 0;w[18] = 0;w[19] = 0;
@@ -81,19 +93,29 @@ always@(*)begin
         w[50] = 0;w[51] = 0;w[52] = 0;w[53] = 0;w[54] = 0;w[55] = 0;w[56] = 0;w[57] = 0;w[58] = 0;w[59] = 0;
         w[60] = 0;w[61] = 0;w[62] = 0;w[63] = 0;w[64] = 0;w[65] = 0;w[66] = 0;w[67] = 0;w[68] = 0;w[69] = 0;
         w[70] = 0;w[71] = 0;w[72] = 0;w[73] = 0;w[74] = 0;w[75] = 0;w[76] = 0;w[77] = 0;w[78] = 0;w[79] = 0;
-        RAM[0] = 0;RAM[1] = 0;RAM[2] = 0;RAM[3] = 0;RAM[4] = 0;RAM[5] = 0;RAM[6] = 0;
-        RAM[7] = 0;RAM[8] = 0;RAM[9] = 0;RAM[10] = 0;RAM[11] = 0;RAM[12] = 0;RAM[13] = 0;
-        RAM[14] = 0;RAM[15] = 0;
-        RAM_index = 0;
+        msg_RAM[0] = 0;msg_RAM[1] = 0;msg_RAM[2] = 0;msg_RAM[3] = 0;msg_RAM[4] = 0;msg_RAM[5] = 0;msg_RAM[6] = 0;
+        msg_RAM[7] = 0;msg_RAM[8] = 0;msg_RAM[9] = 0;msg_RAM[10] = 0;msg_RAM[11] = 0;msg_RAM[12] = 0;msg_RAM[13] = 0;
+        msg_RAM[14] = 0;msg_RAM[15] = 0;
+        msg_RAM_index = 0;
+        h[0] = 0; h[1] = 0; h[2] = 0; h[3] = 0; h[4] = 0;
+        h_index = 0;
         state_done = reset;
     end else if(cur_state == read_32bit_msgs) begin
-        if(RAM_index <= msg_in_len )
-            RAM[RAM_index-1] = msg_in;
+        if(h_index <= 5)
+            h[h_index-1] = initial_hash;
+        if(msg_RAM_index <= msg_in_len )
+            msg_RAM[msg_RAM_index-1] = msg_in;
         else
             state_done = read_32bit_msgs;
+            
     end else if(cur_state == append_w0_15) begin
-//        // Assuming Big_endian
-        temp1 = {RAM[0],RAM[1],RAM[2],RAM[3],RAM[4],RAM[5],RAM[6],RAM[7],RAM[8],RAM[9],RAM[10],RAM[11],RAM[12],RAM[13],RAM[14],RAM[15]};
+        a[0] = h[0];
+        b[0] = h[1];
+        c[0] = h[2];
+        d[0] = h[3];
+        e[0] = h[4];
+        // Assuming Big_endian
+        temp1 = {msg_RAM[0],msg_RAM[1],msg_RAM[2],msg_RAM[3],msg_RAM[4],msg_RAM[5],msg_RAM[6],msg_RAM[7],msg_RAM[8],msg_RAM[9],msg_RAM[10],msg_RAM[11],msg_RAM[12],msg_RAM[13],msg_RAM[14],msg_RAM[15]};
         temp2 = temp1|(1<<(511-(msg_in_len*32)))|(msg_in_len*32);
         w[0] = temp2[511:480];
         w[1] = temp2[479:448];
@@ -111,6 +133,7 @@ always@(*)begin
         w[13] = temp2[95:64];
         w[14] = temp2[63:32];
         w[15] = temp2[31:0];
+        //h[0] = 
         state_done = append_w0_15;
     end else if(cur_state == append_w16_79) begin
         wt[0] = w[13]^w[8]^w[2]^w[0];
@@ -242,6 +265,129 @@ always@(*)begin
         wt[63] = w[76]^w[71]^w[65]^w[63];
         w[79] = {wt[63][30:0],wt[63][31]};//wt << 1
         state_done = append_w16_79;   
+    end else if(cur_state == r0_19) begin
+        //F(0) starts
+        temp[0] = {a[0][26:0],a[0][31:27]} + ((b[0] & c[0]) | ((~b[0]) & d[0])) + e[0] + w[0] + k[0] ;
+        e[1] = d[0];
+        d[1] = c[0];   
+        c[1] = {b[0][1:0],b[0][31:2]}; // b[t]<<30
+        b[1] = a[0];
+        a[1] = temp[0];
+        temp[1] = {a[1][26:0],a[1][31:27]} + ((b[1] & c[1]) | ((~b[1]) & d[1])) + e[1] + w[1] + k[0] ;
+        e[2] = d[1];
+        d[2] = c[1];   
+        c[2] = {b[1][1:0],b[1][31:2]}; // b[t]<<30
+        b[2] = a[1];
+        a[2] = temp[1];
+        temp[2] = {a[2][26:0],a[2][31:27]} + ((b[2] & c[2]) | ((~b[2]) & d[2])) + e[2] + w[2] + k[0] ;
+        e[3] = d[2];
+        d[3] = c[2];   
+        c[3] = {b[2][1:0],b[2][31:2]}; // b[t]<<30
+        b[3] = a[2];
+        a[3] = temp[2];
+        temp[3] = {a[3][26:0],a[3][31:27]} + ((b[3] & c[3]) | ((~b[3]) & d[3])) + e[3] + w[3] + k[0] ;
+        e[4] = d[3];
+        d[4] = c[3];   
+        c[4] = {b[3][1:0],b[3][31:2]}; // b[t]<<30
+        b[4] = a[3];
+        a[4] = temp[3];
+        temp[4] = {a[4][26:0],a[4][31:27]} + ((b[4] & c[4]) | ((~b[4]) & d[4])) + e[4] + w[4] + k[0] ;
+        e[5] = d[4];
+        d[5] = c[4];   
+        c[5] = {b[4][1:0],b[4][31:2]}; // b[t]<<30
+        b[5] = a[4];
+        a[5] = temp[4];
+        temp[5] = {a[5][26:0],a[5][31:27]} + ((b[5] & c[5]) | ((~b[5]) & d[5])) + e[5] + w[5] + k[0] ;
+        e[6] = d[5];
+        d[6] = c[5];   
+        c[6] = {b[5][1:0],b[5][31:2]}; // b[t]<<30
+        b[6] = a[5];
+        a[6] = temp[5];
+        temp[6] = {a[6][26:0],a[6][31:27]} + ((b[6] & c[6]) | ((~b[6]) & d[6])) + e[6] + w[6] + k[0] ;
+        e[7] = d[6];
+        d[7] = c[6];   
+        c[7] = {b[6][1:0],b[6][31:2]}; // b[t]<<30
+        b[7] = a[6];
+        a[7] = temp[6];
+        temp[7] = {a[7][26:0],a[7][31:27]} + ((b[7] & c[7]) | ((~b[7]) & d[7])) + e[7] + w[7] + k[0] ;
+        e[8] = d[7];
+        d[8] = c[7];   
+        c[8] = {b[7][1:0],b[7][31:2]}; // b[t]<<30
+        b[8] = a[7];
+        a[8] = temp[7];       
+        temp[8] = {a[8][26:0],a[8][31:27]} + ((b[8] & c[8]) | ((~b[8]) & d[8])) + e[8] + w[8] + k[0] ;
+        e[9] = d[8];
+        d[9] = c[8];   
+        c[9] = {b[8][1:0],b[8][31:2]}; // b[t]<<30
+        b[9] = a[8];
+        a[9] = temp[8];       
+        temp[9] = {a[9][26:0],a[9][31:27]} + ((b[9] & c[9]) | ((~b[9]) & d[9])) + e[9] + w[9] + k[0] ;
+        e[10] = d[9];
+        d[10] = c[9];   
+        c[10] = {b[9][1:0],b[9][31:2]}; // b[t]<<30
+        b[10] = a[9];
+        a[10] = temp[9];
+        temp[10] = {a[10][26:0],a[10][31:27]} + ((b[10] & c[10]) | ((~b[10]) & d[10])) + e[10] + w[10] + k[0] ;
+        e[11] = d[10];
+        d[11] = c[10];   
+        c[11] = {b[10][1:0],b[10][31:2]}; // b[t]<<30
+        b[11] = a[10];
+        a[11] = temp[10];
+        temp[11] = {a[11][26:0],a[11][31:27]} + ((b[11] & c[11]) | ((~b[11]) & d[11])) + e[11] + w[11] + k[0] ;
+        e[12] = d[11];
+        d[12] = c[11];   
+        c[12] = {b[11][1:0],b[11][31:2]}; // b[t]<<30
+        b[12] = a[11];
+        a[12] = temp[11];
+        temp[12] = {a[12][26:0],a[12][31:27]} + ((b[12] & c[12]) | ((~b[12]) & d[12])) + e[12] + w[12] + k[0] ;
+        e[13] = d[12];
+        d[13] = c[12];   
+        c[13] = {b[12][1:0],b[12][31:2]}; // b[t]<<30
+        b[13] = a[12];
+        a[13] = temp[12];
+        temp[13] = {a[13][26:0],a[13][31:27]} + ((b[13] & c[13]) | ((~b[13]) & d[13])) + e[13] + w[13] + k[0] ;
+        e[14] = d[13];
+        d[14] = c[13];   
+        c[14] = {b[13][1:0],b[13][31:2]}; // b[t]<<30
+        b[14] = a[13];
+        a[14] = temp[13];
+        temp[14] = {a[14][26:0],a[14][31:27]} + ((b[14] & c[14]) | ((~b[14]) & d[14])) + e[14] + w[14] + k[0] ;
+        e[15] = d[14];
+        d[15] = c[14];   
+        c[15] = {b[14][1:0],b[14][31:2]}; // b[t]<<30
+        b[15] = a[14];
+        a[15] = temp[14];
+        temp[15] = {a[15][26:0],a[15][31:27]} + ((b[15] & c[15]) | ((~b[15]) & d[15])) + e[15] + w[15] + k[0] ;
+        e[16] = d[15];
+        d[16] = c[15];   
+        c[16] = {b[15][1:0],b[15][31:2]}; // b[t]<<30
+        b[16] = a[15];
+        a[16] = temp[15];
+        temp[16] = {a[16][26:0],a[16][31:27]} + ((b[16] & c[16]) | ((~b[16]) & d[16])) + e[16] + w[16] + k[0] ;
+        e[17] = d[16];
+        d[17] = c[16];   
+        c[17] = {b[16][1:0],b[16][31:2]}; // b[t]<<30
+        b[17] = a[16];
+        a[17] = temp[16];
+        temp[17] = {a[17][26:0],a[17][31:27]} + ((b[17] & c[17]) | ((~b[17]) & d[17])) + e[17] + w[17] + k[0] ;
+        e[18] = d[17];
+        d[18] = c[17];   
+        c[18] = {b[17][1:0],b[17][31:2]}; // b[t]<<30
+        b[18] = a[17];
+        a[18] = temp[17];
+        temp[18] = {a[18][26:0],a[18][31:27]} + ((b[18] & c[18]) | ((~b[18]) & d[18])) + e[18] + w[18] + k[0] ;
+        e[19] = d[18];
+        d[19] = c[18];   
+        c[19] = {b[18][1:0],b[18][31:2]}; // b[t]<<30
+        b[19] = a[18];
+        a[19] = temp[18];       
+        temp[19] = {a[19][26:0],a[19][31:27]} + ((b[19] & c[19]) | ((~b[19]) & d[19])) + e[19] + w[19] + k[0] ;
+        e[20] = d[19];
+        d[20] = c[19];   
+        c[20] = {b[19][1:0],b[19][31:2]}; // b[t]<<30
+        b[20] = a[19];
+        a[20] = temp[19];
+        state_done = r0_19;
     end
 end
 endmodule

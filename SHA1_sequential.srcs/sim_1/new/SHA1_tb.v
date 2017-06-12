@@ -25,9 +25,10 @@ module SHA1_tb(
     );
 reg clk,rst;
 reg [31:0]msgIn;
+reg [31:0]hashIn;
 wire [31:0] msgOut;
 
-SHA1 S1(clk,rst,msgIn,13,msgOut);
+SHA1 S1(clk,rst,hashIn,msgIn,13,msgOut);
 
 initial begin
         clk = 0;
@@ -36,10 +37,15 @@ initial begin
     #5  rst = 1;
 /* Assuming Big Endian*/
     #10 msgIn = ("abcd");
+        hashIn = 32'h67452301;
     #10 msgIn = ("efgh");
+        hashIn = 32'hefcdab89;
     #10 msgIn = ("ijkl");
+        hashIn = 32'h98badcfe;
     #10 msgIn = ("mnop");
+        hashIn = 32'h10325476;
     #10 msgIn = ("qrst");
+        hashIn = 32'hc3d2e1f0;    
     #10 msgIn = ("uvwx");
     #10 msgIn = ("yzAB");
     #10 msgIn = ("CDEF");

@@ -1,10 +1,12 @@
-Unable to capture context for thread 12216 in process 12100, can not generate back trace
-Unable to capture context for thread 11648 in process 12100, can not generate back trace
+Unable to capture context for thread 1224 in process 11856, can not generate back trace
+Unable to capture context for thread 11760 in process 11856, can not generate back trace
+Unable to capture context for thread 5352 in process 11856, can not generate back trace
+Exception at PC 0x00007FFAA9869E08
+Unable to capture context for thread 11760 in process 11856, can not generate back trace
+Unable to capture context for thread 5352 in process 11856, can not generate back trace
 Exception at PC 0x00007FFA2E16BB93
 Printing stacktrace...
 
-Unable to capture context for thread 11648 in process 12100, can not generate back trace
-Exception at PC 0x00007FFAA9869E08
 Exception at PC 0x00007FFAA9869E08
 Exception at PC 0x00007FFAA9869E08
 Exception at PC 0x00007FFAA9869E08
