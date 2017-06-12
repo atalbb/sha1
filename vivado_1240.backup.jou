@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jun 12 16:45:46 2017
+# Process ID: 1240
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_sequential
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6084 C:\College\Thesis\VivadoProjects\SHA1_sequential\SHA1_sequential.xpr
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_sequential/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_sequential\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.xpr
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source SHA1_tb.tcl
+close_sim
+close_sim
