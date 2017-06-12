@@ -34,8 +34,8 @@ initial begin
         rst = 1;
     #10 rst = 0;
     #5  rst = 1;
-/* Assuming Big Endian */
-    #5 msgIn = ("abcd");
+/* Assuming Big Endian*/
+    #10 msgIn = ("abcd");
     #10 msgIn = ("efgh");
     #10 msgIn = ("ijkl");
     #10 msgIn = ("mnop");

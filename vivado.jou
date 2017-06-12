@@ -110,3 +110,18 @@ close_sim
 reset_run synth_1
 launch_runs synth_1
 wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
