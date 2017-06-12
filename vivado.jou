@@ -2,10 +2,10 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Mon Jun 12 17:03:07 2017
-# Process ID: 2416
+# Start of session at: Mon Jun 12 18:05:38 2017
+# Process ID: 6072
 # Current directory: C:/College/Thesis/VivadoProjects/SHA1_sequential
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2244 C:\College\Thesis\VivadoProjects\SHA1_sequential\SHA1_sequential.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7328 C:\College\Thesis\VivadoProjects\SHA1_sequential\SHA1_sequential.xpr
 # Log file: C:/College/Thesis/VivadoProjects/SHA1_sequential/vivado.log
 # Journal file: C:/College/Thesis/VivadoProjects/SHA1_sequential\vivado.jou
 #-----------------------------------------------------------
@@ -14,6 +14,24 @@ open_project C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.xp
 reset_run synth_1
 launch_runs synth_1
 wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
 reset_run synth_1
 launch_runs synth_1
 wait_on_run synth_1
@@ -44,3 +62,51 @@ close_sim
 launch_simulation
 source SHA1_tb.tcl
 close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1

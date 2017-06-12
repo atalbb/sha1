@@ -27,15 +27,29 @@ reg clk,rst;
 reg [31:0]msgIn;
 wire [31:0] msgOut;
 
-SHA1 S1(clk,rst,msgIn,3,msgOut);
+SHA1 S1(clk,rst,msgIn,13,msgOut);
 
 initial begin
         clk = 0;
-        rst = 0;
-    #10 rst = 1;
-    #5  rst = 0;
-    msgIn = ("abc")<<8;
-    #10 $stop;
+        rst = 1;
+    #10 rst = 0;
+    #5  rst = 1;
+/* Assuming Big Endian */
+    #5 msgIn = ("abcd");
+    #10 msgIn = ("efgh");
+    #10 msgIn = ("ijkl");
+    #10 msgIn = ("mnop");
+    #10 msgIn = ("qrst");
+    #10 msgIn = ("uvwx");
+    #10 msgIn = ("yzAB");
+    #10 msgIn = ("CDEF");
+    #10 msgIn = ("GHIJ");
+    #10 msgIn = ("KLMN");
+    #10 msgIn = ("OPQR");
+    #10 msgIn = ("STUV");
+    #10 msgIn = ("WXYZ");
+    
+    #100 $stop;
 end
 
 always
