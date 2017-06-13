@@ -86,7 +86,7 @@ always@(*) begin
         next_state = SHA1_DIGEST;
     else begin end 
     end 
-always@(curr_state) begin
+always@(*) begin
     if(curr_state == SHA1_RESET) begin
         w_rounds = 16;
         f_rounds = 0;

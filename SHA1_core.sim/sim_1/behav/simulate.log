@@ -1,2 +1,3 @@
 Vivado Simulator 2016.3
 Time resolution is 1 ps
+$finish called at time : 115 ns : File "C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sim_1/new/SHA1_core_tb.v" Line 35

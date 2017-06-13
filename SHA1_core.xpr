@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.xpr">
+<Project Version="7" Minor="17" Path="C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="dd07ee5cfe8046548a813284afb3a1c9"/>
@@ -29,7 +29,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys4"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="77"/>
+    <Option Name="WTXSimLaunchSim" Val="89"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -87,8 +87,8 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
   </FileSets>

@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Wed May 31 19:01:59 2017
+// Date        : Tue Jun 13 16:19:28 2017
 // Host        : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
-//               C:/College/Thesis/VivadoProjects/SHA1_core/SHA1_core.sim/sim_1/synth/func/SHA1_core_tb_func_synth.v
+//               C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.sim/sim_1/synth/func/SHA1_core_tb_func_synth.v
 // Design      : SHA1_core
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,12 +20,10 @@
 module SHA1_core
    (clk,
     rst,
-    block_in,
     done,
     digest_out);
   input clk;
   input rst;
-  input [511:0]block_in;
   output done;
   output [159:0]digest_out;
 
