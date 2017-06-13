@@ -24,18 +24,27 @@ module SHA1_core_tb(
 
     );
 reg clk,rst;
-//reg [511:0]blk;
-wire done;
+reg i_hash_in_start;
+reg [31:0]i_hash_in;
+wire [159:0]i_hash_out;
+wire i_hash_out_done;
+wire digest_done;
 wire [159:0]digest;
-//wire [5:0]cnt;
-wire out_ok;
-wire [31:0]hash_out;
-SHA1_core S1(clk,rst,done,digest);
-SHA1_out O1(clk,rst,done,digest,out_ok,hash_out);
+wire f_hash_done;
+wire [31:0]f_hash_out;
+Initial_Hash_In I1(clk,rst,i_hash_in_start,i_hash_in,i_hash_out_done,i_hash_out);
+SHA1_core S1(clk,rst,i_hash_out_done,i_hash_out,digest_done,digest);
+SHA1_out O1(clk,rst,digest_done,digest,f_hash_done,f_hash_out);
 initial begin
     clk = 0;
     #5 rst = 0;
     #10 rst = 1;
+    #10 i_hash_in_start = 1;
+        i_hash_in = 32'h67452301;
+    #10 i_hash_in = 32'hefcdab89;
+    #10 i_hash_in = 32'h98badcfe;
+    #10 i_hash_in = 32'h10325476;
+    #10 i_hash_in = 32'hc3d2e1f0;    
     #6000 $finish;
 end
 always begin

@@ -23,9 +23,10 @@
 module SHA1_core(
       input clk,
       input rst,
-      //input start,
+      input initial_hash_start,
       //input [511:0]block_in,
-      output done,
+      input [159:0]initial_hash,
+      output digest_done,
       output [159:0]digest_out
     );
 //reg start;
@@ -39,7 +40,7 @@ reg [31:0]temp[79:0];
 reg [6:0]w_rounds;
 reg [6:0]f_rounds;
 reg [159:0]digest_out;
-reg done;
+reg digest_done;
 //reg [1:0]sha1_state;
 reg [3:0] curr_state, next_state;
 reg [3:0] flag;
@@ -91,10 +92,10 @@ always@(*) begin
     if(curr_state == SHA1_RESET) begin
         w_rounds = 16;
         f_rounds = 0;
-        k[0] = 0;
-        k[1] = 0;
-        k[2] = 0;
-        k[3] = 0;
+//        k[0] = 0;
+//        k[1] = 0;
+//        k[2] = 0;
+//        k[3] = 0;
         h[0] = 0;
         h[1] = 0;
         h[2] = 0;
@@ -114,11 +115,14 @@ always@(*) begin
         k[1] = 32'h6ed9eba1;
         k[2] = 32'h8f1bbcdc;
         k[3] = 32'hca62c1d6;    
-        h[0] = 32'h67452301;
-        h[1] = 32'hefcdab89;
-        h[2] = 32'h98badcfe;
-        h[3] = 32'h10325476;
-        h[4] = 32'hc3d2e1f0;
+        if(initial_hash_start)begin
+            h[4] = initial_hash[31:0];
+            h[3] = initial_hash[63:32];
+            h[2] = initial_hash[95:64];
+            h[1] = initial_hash[127:96];
+            h[0] = initial_hash[159:128];
+            flag = 2;   
+        end
         w[0] = 32'h61626380;
         w[1] = 32'h0;
         w[2] = 32'h0;
@@ -135,7 +139,7 @@ always@(*) begin
         w[13] = 32'h0;
         w[14] = 32'h0;
         w[15] = 32'h18;  
-        flag = 2;   
+//        flag = 2;   
     end else if(curr_state == SHA1_W_ROUNDS) begin
         wt[0] = w[13]^w[8]^w[2]^w[0];
         w[16] = {wt[0][30:0],wt[0][31]}; //wt << 1
@@ -780,7 +784,7 @@ always@(*) begin
         flag = 9;
     end else if(curr_state == SHA1_DIGEST) begin
         digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
-        done = 1;
+        digest_done = 1;
     end else begin end
 end
 //assign digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
