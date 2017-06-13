@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jun 12 21:11:18 2017
+# Process ID: 7292
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func
+# Command line: wbtcv.exe -mode batch -source C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func/xsim.dir/SHA1_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func/webtalk.log
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func/xsim.dir/SHA1_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/synth/func/xsim.dir/SHA1_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jun 12 21:11:20 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 12 21:11:20 2017...

@@ -1,10 +1,12 @@
-Unable to capture context for thread 10312 in process 260, can not generate back trace
-Unable to capture context for thread 5480 in process 260, can not generate back trace
-Unable to capture context for thread 11020 in process 260, can not generate back trace
+Unable to capture context for thread 2684 in process 12440, can not generate back trace
+Unable to capture context for thread 5628 in process 12440, can not generate back trace
+Unable to capture context for thread 7456 in process 12440, can not generate back trace
 Exception at PC 0x00007FFA2E16BB93
+Unable to capture context for thread 2684 in process 12440, can not generate back trace
 Printing stacktrace...
 
-Unable to capture context for thread 11020 in process 260, can not generate back trace
+Unable to capture context for thread 5628 in process 12440, can not generate back trace
+Unable to capture context for thread 7456 in process 12440, can not generate back trace
 Exception at PC 0x00007FFAA9869E08
 Exception at PC 0x00007FFAA9869E08
 Exception at PC 0x00007FFAA9869E08

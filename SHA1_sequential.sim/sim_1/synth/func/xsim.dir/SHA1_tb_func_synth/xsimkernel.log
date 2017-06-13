@@ -1,7 +1,7 @@
-Running: xsim.dir/SHA1_tb_func_synth/xsimk.exe -simmode gui -wdb SHA1_tb_func_synth.wdb -simrunnum 0 -socket 62154
+Running: xsim.dir/SHA1_tb_func_synth/xsimk.exe -simmode gui -wdb SHA1_tb_func_synth.wdb -simrunnum 0 -socket 63099
 Design successfully loaded
-Design Loading Memory Usage: 9276 KB (Peak: 9276 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 147172 KB (Peak: 147172 KB)
+Design Loading CPU Usage: 703 ms
 Simulation completed
-Simulation Memory Usage: 18036 KB (Peak: 18036 KB)
-Simulation CPU Usage: 205593 ms
+Simulation Memory Usage: 158052 KB (Peak: 158052 KB)
+Simulation CPU Usage: 3124 ms

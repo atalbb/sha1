@@ -55,7 +55,7 @@ initial begin
     #10 msgIn = ("STUV");
     #10 msgIn = ("WXYZ");
     
-    #100 $stop;
+    #150 $stop;
 end
 
 always

@@ -47,7 +47,8 @@ reg [31:0]wt[63:0];
 reg [31:0]k[4:0];
 reg [31:0]msg_RAM[15:0];
 reg [4:0]msg_RAM_index;
-//reg [31:0]initial_hash_RAM[4:0];
+reg [31:0]hash[4:0];
+reg [2:0]hash_index;
 reg [2:0]h_index;
 reg [511:0]temp1,temp2;
 reg [31:0]temp[79:0];
@@ -64,6 +65,9 @@ always@(posedge clk or negedge rst) begin
             msg_RAM_index <= msg_RAM_index + 1;
         if(h_index <= 5)
             h_index <= h_index + 1;
+        if(state_done == r60_79)
+            if(hash_index <= 5)
+                hash_index <= hash_index + 1;    
     end
 end
 
@@ -84,16 +88,21 @@ always@(*)begin
         nxt_state = r60_79;
     else if(state_done == r60_79)
         nxt_state = hash_out;
+    else if(state_done == hash_out)
+        nxt_state = idle; 
     else begin end
 end
 
 always@(*)begin
-    if(cur_state == reset) begin
+    if(cur_state == idle)begin
+    
+    end else if(cur_state == reset) begin
         k[0] = 32'h5a827999;
         k[1] = 32'h6ed9eba1;
         k[2] = 32'h8f1bbcdc;
         k[3] = 32'hca62c1d6; 
         h[0] = 0; h[1] = 0; h[2] = 0; h[3] = 0;h[4] = 0;
+        hash_index = 0;
         w[0] = 0;w[1] = 0;w[2] = 0;w[3] = 0;w[4] = 0;w[5] = 0;w[6] = 0;w[7] = 0;w[8] = 0;w[9] = 0;
         w[10] = 0;w[11] = 0;w[12] = 0;w[13] = 0;w[14] = 0;w[15] = 0;w[16] = 0;w[17] = 0;w[18] = 0;w[19] = 0;
         w[20] = 0;w[21] = 0;w[22] = 0;w[23] = 0;w[24] = 0;w[25] = 0;w[26] = 0;w[27] = 0;w[28] = 0;w[29] = 0;
@@ -770,8 +779,18 @@ always@(*)begin
          d[80] = c[79];   
          c[80] = {b[79][1:0],b[79][31:2]}; // b[t]<<30
          b[80] = a[79];
-         a[80] = temp[79];      
+         a[80] = temp[79];
+         hash[0] = h[0] + a[80];
+         hash[1] = h[1] + b[80];
+         hash[2] = h[2] + c[80];
+         hash[3] = h[3] + d[80];
+         hash[4] = h[4] + e[80];      
          state_done = r60_79;
-    end
+    end else if(cur_state == hash_out) begin
+        if(hash_index <=5 )
+            msg_out = hash[hash_index-1];
+        else 
+            state_done = hash_out;
+    end else begin end
 end
 endmodule

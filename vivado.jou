@@ -217,3 +217,34 @@ launch_runs synth_1
 wait_on_run synth_1
 launch_simulation
 source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+close_sim
+launch_simulation
+source SHA1_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source SHA1_tb.tcl
+close_sim
+close_sim

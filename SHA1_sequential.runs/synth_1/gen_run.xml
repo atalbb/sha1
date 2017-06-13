@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497312579">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1497313786">
   <File Type="RDS-PROPCONSTRS" Name="SHA1_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="SHA1.tcl"/>
   <File Type="RDS-RDS" Name="SHA1.vds"/>
