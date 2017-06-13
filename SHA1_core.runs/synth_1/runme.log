@@ -14,11 +14,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13548 
+INFO: Helper process launched with PID 7148 
 WARNING: [Synth 8-2611] redeclaration of ansi port digest_out is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:41]
 WARNING: [Synth 8-2611] redeclaration of ansi port done is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:42]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 340.945 ; gain = 131.590
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 340.949 ; gain = 130.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
 	Parameter SHA1_RESET bound to: 0 - type: integer 
@@ -33,17 +33,17 @@ INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoPro
 	Parameter SHA1_DIGEST bound to: 9 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SHA1_core' (1#1) [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 385.738 ; gain = 176.383
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 385.750 ; gain = 175.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 385.738 ; gain = 176.383
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 385.750 ; gain = 175.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 385.738 ; gain = 176.383
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 385.750 ; gain = 175.609
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:71]
@@ -148,7 +148,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'w_reg[39]' [C:/College/Thes
 WARNING: [Synth 8-327] inferring latch for variable 'b_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:271]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 427.195 ; gain = 217.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 417.926 ; gain = 207.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -422,7 +422,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[54
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[53][29] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,7 +438,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -453,7 +453,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -477,7 +477,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -490,7 +490,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -502,25 +502,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -558,14 +558,14 @@ Report Instance Areas:
 |1     |top      |       | 11289|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 738.773 ; gain = 483.113
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 738.773 ; gain = 529.418
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 738.152 ; gain = 482.375
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 738.152 ; gain = 528.012
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2329 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'SHA1_core' is not ideal for floorplanning, since the cellview 'SHA1_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -577,7 +577,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 215 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 738.773 ; gain = 490.207
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 738.152 ; gain = 489.813
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.runs/synth_1/SHA1_core.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 738.773 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 17:51:46 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 738.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 18:03:04 2017...

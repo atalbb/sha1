@@ -37,14 +37,15 @@ always@(posedge clk or negedge rst) begin
             count <= 0;
          end else begin
           if(start)
-              count <= count + 1;
+              if(count < 6)
+                count <= count + 1;
          end
              
 end
 always@(count) begin
     if(count == 1) begin
-            done = 1;
-            hash_out = digest_in[31:0];
+        done = 1;
+        hash_out = digest_in[31:0];
     end
     else if(count == 2)
         hash_out = digest_in[63:32];
@@ -54,6 +55,10 @@ always@(count) begin
         hash_out = digest_in[127:96];
     else if(count == 5)
         hash_out = digest_in[159:128];
+    else if (count == 6) begin
+        done = 0;
+        hash_out = 0; 
+    end
     else begin end
 
 end

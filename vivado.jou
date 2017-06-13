@@ -79,3 +79,13 @@ refresh_design
 launch_simulation
 source SHA1_core_tb.tcl
 launch_simulation -mode post-synthesis -type functional
+source SHA1_core_tb.tcl
+close_sim
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source SHA1_core_tb.tcl
+launch_simulation -mode post-synthesis -type functional
