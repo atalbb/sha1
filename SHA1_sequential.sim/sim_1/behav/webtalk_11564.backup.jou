@@ -2,8 +2,8 @@
 # Webtalk v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Mon Jun 12 19:54:22 2017
-# Process ID: 7832
+# Start of session at: Mon Jun 12 20:12:22 2017
+# Process ID: 11564
 # Current directory: C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/behav/xsim.dir/SHA1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/College/Thesis/VivadoProjects/SHA1_sequential/SHA1_sequential.sim/sim_1/behav/webtalk.log
