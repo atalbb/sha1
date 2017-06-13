@@ -38,7 +38,8 @@ reg [31:0]wt[63:0];
 reg [31:0]temp[79:0];
 reg [6:0]w_rounds;
 reg [6:0]f_rounds;
-wire [159:0]digest_out;
+reg [159:0]digest_out;
+reg done;
 //reg [1:0]sha1_state;
 reg [3:0] curr_state, next_state;
 reg [3:0] flag;
@@ -778,8 +779,9 @@ always@(*) begin
         hash[4] = h[4] + e[80];
         flag = 9;
     end else if(curr_state == SHA1_DIGEST) begin
-        //digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+        digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+        done = 1;
     end else begin end
 end
-assign digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+//assign digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
 endmodule

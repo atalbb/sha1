@@ -27,7 +27,11 @@ reg clk,rst;
 //reg [511:0]blk;
 wire done;
 wire [159:0]digest;
+//wire [5:0]cnt;
+wire out_ok;
+wire [31:0]hash_out;
 SHA1_core S1(clk,rst,done,digest);
+SHA1_out O1(clk,rst,done,digest,out_ok,hash_out);
 initial begin
     clk = 0;
     #5 rst = 0;

@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Tue Jun 13 16:26:31 2017
+// Date        : Tue Jun 13 17:02:39 2017
 // Host        : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.sim/sim_1/synth/timing/SHA1_core_tb_time_synth.v
