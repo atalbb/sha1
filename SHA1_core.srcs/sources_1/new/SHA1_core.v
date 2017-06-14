@@ -24,10 +24,12 @@ module SHA1_core(
       input clk,
       input rst,
       input initial_hash_start,
-      //input [511:0]block_in,
       input [159:0]initial_hash,
-      output digest_done,
-      output [159:0]digest_out
+      input msg_in_start,
+      input [9:0]msg_len,
+      input [511:0]msg,
+      output reg digest_done,
+      output reg [159:0]digest_out
     );
 //reg start;
 reg [31:0]a[80:0],b[80:0],c[80:0],d[80:0],e[80:0];
@@ -37,11 +39,7 @@ reg [31:0]k[3:0];
 reg [31:0]w[79:0];
 reg [31:0]wt[63:0];
 reg [31:0]temp[79:0];
-reg [6:0]w_rounds;
-reg [6:0]f_rounds;
-reg [159:0]digest_out;
-reg digest_done;
-//reg [1:0]sha1_state;
+reg [511:0]temp1;
 reg [3:0] curr_state, next_state;
 reg [3:0] flag;
 parameter SHA1_RESET = 0;
@@ -90,12 +88,6 @@ always@(*) begin
     end 
 always@(*) begin
     if(curr_state == SHA1_RESET) begin
-        w_rounds = 16;
-        f_rounds = 0;
-//        k[0] = 0;
-//        k[1] = 0;
-//        k[2] = 0;
-//        k[3] = 0;
         h[0] = 0;
         h[1] = 0;
         h[2] = 0;
@@ -121,25 +113,27 @@ always@(*) begin
             h[2] = initial_hash[95:64];
             h[1] = initial_hash[127:96];
             h[0] = initial_hash[159:128];
-            flag = 2;   
         end
-        w[0] = 32'h61626380;
-        w[1] = 32'h0;
-        w[2] = 32'h0;
-        w[3] = 32'h0;
-        w[4] = 32'h0;
-        w[5] = 32'h0;
-        w[6] = 32'h0;
-        w[7] = 32'h0;
-        w[8] = 32'h0;
-        w[9] = 32'h0;
-        w[10] = 32'h0;
-        w[11] = 32'h0;
-        w[12] = 32'h0;
-        w[13] = 32'h0;
-        w[14] = 32'h0;
-        w[15] = 32'h18;  
-//        flag = 2;   
+        if(msg_in_start)begin
+            temp1 = msg|(1<<(511-msg_len))|msg_len;
+            w[0] = temp1[511:480];
+            w[1] = temp1[479:448];
+            w[2] = temp1[447:416];
+            w[3] = temp1[415:384];
+            w[4] = temp1[383:352];
+            w[5] = temp1[351:320];
+            w[6] = temp1[319:288];
+            w[7] = temp1[287:256];
+            w[8] = temp1[255:224];
+            w[9] = temp1[223:192];
+            w[10] = temp1[191:160];
+            w[11] = temp1[159:128];
+            w[12] = temp1[127:96];
+            w[13] = temp1[95:64];
+            w[14] = temp1[63:32];
+            w[15] = temp1[31:0];
+            flag = 2;
+        end
     end else if(curr_state == SHA1_W_ROUNDS) begin
         wt[0] = w[13]^w[8]^w[2]^w[0];
         w[16] = {wt[0][30:0],wt[0][31]}; //wt << 1

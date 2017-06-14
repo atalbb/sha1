@@ -24,11 +24,11 @@ module SHA1_out(input clk,
                 input rst,
                 input start,
                 input [159:0]digest_in,
-                output done,
-                output [31:0]hash_out
+                output reg done,
+                output reg [31:0]hash_out
     );
-reg done;
-reg [31:0]hash_out;
+//reg done;
+//reg [31:0]hash_out;
 reg [2:0]count;
 always@(posedge clk or negedge rst) begin
          if(rst == 0) begin

@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Jun 13 19:01:54 2017
-# Process ID: 12144
+# Start of session at: Wed Jun 14 11:12:05 2017
+# Process ID: 11944
 # Current directory: C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.runs/synth_1
 # Command line: vivado.exe -log SHA1_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA1_core.tcl
 # Log file: C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.runs/synth_1/SHA1_core.vds
@@ -15,11 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11816 
-WARNING: [Synth 8-2611] redeclaration of ansi port digest_out is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:42]
-WARNING: [Synth 8-2611] redeclaration of ansi port digest_done is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:43]
+INFO: Helper process launched with PID 7272 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 341.773 ; gain = 132.301
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 331.262 ; gain = 120.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
 	Parameter SHA1_RESET bound to: 0 - type: integer 
@@ -34,131 +32,130 @@ INFO: [Synth 8-638] synthesizing module 'SHA1_core' [C:/College/Thesis/VivadoPro
 	Parameter SHA1_DIGEST bound to: 9 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SHA1_core' (1#1) [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 386.508 ; gain = 177.035
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 387.355 ; gain = 177.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 386.508 ; gain = 177.035
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 387.355 ; gain = 177.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 386.508 ; gain = 177.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 387.355 ; gain = 177.090
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:72]
-WARNING: [Synth 8-327] inferring latch for variable 'digest_out_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:786]
-WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:112]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[4]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:779]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:779]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:779]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:779]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:779]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:278]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[4]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:277]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:276]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:275]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:274]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:99]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:275]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:274]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:277]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:276]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:278]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:114]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[62]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[61]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[63]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[65]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[64]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[66]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[68]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[67]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[69]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[70]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[72]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[71]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[73]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[75]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[74]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[76]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[77]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[78]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[79]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:275]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:277]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:276]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:278]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:114]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:274]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[42]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[41]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[44]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[46]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[45]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[48]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[49]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[52]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[54]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[53]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[56]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[58]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[57]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:277]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:275]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:276]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:278]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:114]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:274]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[22]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[21]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[25]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[27]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[28]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[29]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[31]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[30]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[32]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[33]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[35]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[34]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[36]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[38]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[37]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[39]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:275]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'digest_out_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:780]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[4]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:773]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:773]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:773]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:773]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:773]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:272]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[4]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:271]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:270]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:269]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[80]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:268]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:270]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:271]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:269]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:272]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[60]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:268]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[61]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[63]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[62]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[64]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[66]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[65]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[67]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[69]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[68]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[70]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[72]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[71]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[73]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[75]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[74]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[76]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[77]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[78]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[79]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:270]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:268]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:269]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:271]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[41]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:272]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[40]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[42]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[45]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[44]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[46]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[49]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[48]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[53]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[52]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[54]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[57]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[56]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[58]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[12]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[6]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[4]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[9]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[3]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[11]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[8]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[5]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[2]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[13]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[10]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[7]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:268]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:269]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:270]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:271]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:272]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[20]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[1]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[22]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[21]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[25]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[28]' [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_core.v:96]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 429.164 ; gain = 219.691
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 432.863 ; gain = 222.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SHA1_core__GB0 |           1|     28985|
-|2     |SHA1_core__GB1 |           1|     16432|
-|3     |SHA1_core__GB2 |           1|     11472|
+|1     |SHA1_core__GB0 |           1|     29208|
+|2     |SHA1_core__GB1 |           1|     30175|
 +------+---------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -166,12 +163,11 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 6     
 	   5 Input     32 Bit       Adders := 80    
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
-	   4 Input     32 Bit         XORs := 55    
-	   2 Input     32 Bit         XORs := 9     
+	   4 Input     32 Bit         XORs := 64    
 +---Registers : 
 	                4 Bit    Registers := 1     
 +---Muxes : 
@@ -190,12 +186,11 @@ Hierarchical RTL Component report
 Module SHA1_core 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 6     
 	   5 Input     32 Bit       Adders := 80    
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
-	   4 Input     32 Bit         XORs := 55    
-	   2 Input     32 Bit         XORs := 9     
+	   4 Input     32 Bit         XORs := 64    
 +---Registers : 
 	                4 Bit    Registers := 1     
 +---Muxes : 
@@ -284,38 +279,38 @@ INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][16]' (LD) to 'i_0/k_reg[3][2
 INFO: [Synth 8-3886] merging instance 'i_0/k_reg[3][21]' (LD) to 'i_0/k_reg[3][31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[3][26] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\k_reg[3][31] )
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][22]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][24]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][27]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][29]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][17]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][19]' (LD) to 'i_1/k_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][0]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][1]' (LD) to 'i_1/k_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][2]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][7]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][9]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][12]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][14]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][20]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][25]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][30]' (LD) to 'i_1/k_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][3]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][8]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][13]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][18]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][23]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][28]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][1]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][6]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][11]' (LD) to 'i_1/k_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][16]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][21]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][26]' (LD) to 'i_1/k_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][31]' (LD) to 'i_1/k_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][4]' (LD) to 'i_1/k_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][5]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][6]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][7]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][8]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][9]' (LD) to 'i_1/k_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][10]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][11]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][12]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][13]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][14]' (LD) to 'i_1/k_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][15]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][16]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][17]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][18]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][19]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][20]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][21]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][22]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][23]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][24]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][25]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][26]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][27]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][28]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][29]' (LD) to 'i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][30]' (LD) to 'i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'i_1/k_reg[0][31]' (LD) to 'i_1/k_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[1][27]' (LD) to 'i_1/k_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[1][29]' (LD) to 'i_1/k_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_1/k_reg[1][22]' (LD) to 'i_1/k_reg[1][0]'
@@ -325,136 +320,37 @@ INFO: [Synth 8-3886] merging instance 'i_1/k_reg[1][2]' (LD) to 'i_1/k_reg[1][1]
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\k_reg[1][26] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[1][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[17][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[14][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[16][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[35][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[59][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[58][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[57][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[56][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[55][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[54][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\w_reg[54][3] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 866.586 ; gain = 657.113
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:37 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SHA1_core__GB0 |           1|     24644|
-|2     |SHA1_core__GB1 |           1|     19519|
-|3     |SHA1_core__GB2 |           1|      8086|
+|1     |SHA1_core__GB0 |           1|     33079|
+|2     |SHA1_core__GB1 |           1|     46497|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 866.586 ; gain = 657.113
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:38 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SHA1_core__GB0 |           1|     24644|
-|2     |SHA1_core__GB1 |           1|     19519|
-|3     |SHA1_core__GB2 |           1|      8086|
+|1     |SHA1_core__GB0 |           1|     33079|
+|2     |SHA1_core__GB1 |           1|     46497|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:45 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -478,7 +374,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:48 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -491,7 +387,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:48 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -503,25 +399,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:48 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:48 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -537,18 +433,18 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     9|
+|1     |BUFG   |    11|
 |2     |CARRY4 |  1320|
-|3     |LUT1   |   667|
-|4     |LUT2   |  1630|
-|5     |LUT3   |  2222|
-|6     |LUT4   |    16|
-|7     |LUT5   |  2523|
-|8     |LUT6   |  2480|
+|3     |LUT1   |     1|
+|4     |LUT2   |  3632|
+|5     |LUT3   |   974|
+|6     |LUT4   |  3040|
+|7     |LUT5   |  3022|
+|8     |LUT6   |  6657|
 |9     |FDCE   |     4|
 |10    |LD     |  1128|
-|11    |LDC    |   175|
-|12    |IBUF   |   163|
+|11    |LDC    |  2720|
+|12    |IBUF   |   686|
 |13    |OBUF   |   161|
 +------+-------+------+
 
@@ -556,29 +452,29 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       | 12498|
+|1     |top      |       | 23356|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 932.965 ; gain = 676.340
-Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 723.492
+Synthesis finished with 0 errors, 0 critical warnings and 122 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1251.512 ; gain = 995.027
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1251.512 ; gain = 1041.246
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2786 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 5854 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'SHA1_core' is not ideal for floorplanning, since the cellview 'SHA1_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1303 instances were transformed.
+  A total of 3848 instances were transformed.
   LD => LDCE: 1128 instances
-  LDC => LDCE: 175 instances
+  LDC => LDCE: 2720 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-215 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+118 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:38 . Memory (MB): peak = 932.965 ; gain = 683.336
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:52 . Memory (MB): peak = 1251.512 ; gain = 1002.012
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.runs/synth_1/SHA1_core.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 932.965 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 19:03:41 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1251.512 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 11:14:07 2017...

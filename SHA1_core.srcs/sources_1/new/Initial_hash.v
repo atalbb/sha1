@@ -24,11 +24,11 @@ module Initial_Hash_In(input clk,
                     input rst,
                     input start,
                     input [31:0]initial_hash_in,
-                    output done,
-                    output [159:0]initial_hash_out
+                    output reg done,
+                    output reg [159:0]initial_hash_out
     );
-reg done;
-reg [159:0]initial_hash_out;
+//reg done;
+//reg [159:0]initial_hash_out;
 reg [2:0]count;
 
 always@(posedge clk or negedge rst) begin

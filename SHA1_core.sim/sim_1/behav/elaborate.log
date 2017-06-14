@@ -8,6 +8,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Initial_Hash_In
+Compiling module xil_defaultlib.Msg_In
 Compiling module xil_defaultlib.SHA1_core
 Compiling module xil_defaultlib.SHA1_out
 Compiling module xil_defaultlib.SHA1_core_tb

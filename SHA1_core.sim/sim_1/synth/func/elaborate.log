@@ -8,21 +8,22 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Initial_Hash_In
+Compiling module xil_defaultlib.Msg_In
 Compiling module unisims_ver.BUFG
 Compiling module unisims_ver.LUT4
 Compiling module unisims_ver.latchsre_ldce
 Compiling module unisims_ver.LDCE
 Compiling module unisims_ver.CARRY4
-Compiling module unisims_ver.x_lut1_mux2
-Compiling module unisims_ver.LUT1
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module unisims_ver.LUT5
-Compiling module unisims_ver.LUT6
 Compiling module unisims_ver.x_lut3_mux4
 Compiling module unisims_ver.x_lut3_mux4_reduced_0
 Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
 Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
 Compiling module unisims_ver.ffsrce_fdce
 Compiling module unisims_ver.FDCE
 Compiling module unisims_ver.OBUF

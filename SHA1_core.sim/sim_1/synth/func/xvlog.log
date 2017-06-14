@@ -3,11 +3,9 @@ INFO: [VRFC 10-311] analyzing module SHA1_core
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_out.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SHA1_out
-WARNING: [VRFC 10-1315] redeclaration of ansi port done is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_out.v:30]
-WARNING: [VRFC 10-1315] redeclaration of ansi port hash_out is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/SHA1_out.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/Msg_In.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Msg_In
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/Initial_hash.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Initial_Hash_In
-WARNING: [VRFC 10-1315] redeclaration of ansi port done is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/Initial_hash.v:30]
-WARNING: [VRFC 10-1315] redeclaration of ansi port initial_hash_out is not allowed [C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sources_1/new/Initial_hash.v:31]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/sha1_core/SHA1_core.srcs/sim_1/new/SHA1_core_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SHA1_core_tb
