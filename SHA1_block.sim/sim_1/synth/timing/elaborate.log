@@ -27,6 +27,10 @@ Compiling module simprims_ver.sffsrce_fdre
 Compiling module simprims_ver.FDRE
 Compiling module xil_defaultlib.HashIn
 Compiling module xil_defaultlib.MsgIn
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.SHA1Core
 Compiling module simprims_ver.IBUF
 Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.OBUF

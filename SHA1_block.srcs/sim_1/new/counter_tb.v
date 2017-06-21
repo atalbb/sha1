@@ -25,20 +25,26 @@ module counter_tb(
     );
 reg clk,rst,HashCounterEn,MsgCounterEn;
 reg [31:0]hashIn,msgIn;
-wire hashInDone,msgInDone;
-wire [159:0]hashInDo;
-wire [511:0]MsgInDo;
-top T1(clk,rst,HashCounterEn,hashIn,hashInDone,hashInDo,MsgCounterEn,msgIn,msgInDone,MsgInDo);
+reg [9:0]MsgLenBits;
+wire DONE;
+wire [159:0]OUT;
+//wire hashInDone,msgInDone;
+//wire [159:0]hashInDo;
+//wire [511:0]MsgInDo;
+//top T1(clk,rst,HashCounterEn,hashIn,hashInDone,hashInDo,MsgCounterEn,msgIn,msgInDone,MsgInDo);
+top T1(clk,rst,HashCounterEn,hashIn,MsgCounterEn,MsgLenBits,msgIn,DONE,OUT);
 
-//counter C1(clk,rst,counterEn,count);
-//HashIn H1(clk,rst,counterEn,count,hashIn,hashInDone,hashInDo);
 initial begin
     clk  = 0;
     rst = 1;
     HashCounterEn = 0;
     MsgCounterEn = 0;
+    hashIn = 0;
+    msgIn = 0;
+    MsgLenBits = 0;
     #60 rst = 0;
     #60 rst = 1;
+        MsgLenBits = 24;
         HashCounterEn =1;
         hashIn = 32'h67452301;
     #10 hashIn = 32'hefcdab89;
@@ -62,7 +68,7 @@ initial begin
     #10 msgIn = 0;
     #10 msgIn = 0;
     #10 msgIn = 0;
-    #40 $finish;   
+    #400 $finish;   
 end
 always
     #5 clk = ~clk;

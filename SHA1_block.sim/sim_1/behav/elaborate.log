@@ -10,6 +10,7 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.counter
 Compiling module xil_defaultlib.HashIn
 Compiling module xil_defaultlib.MsgIn
+Compiling module xil_defaultlib.SHA1Core
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.counter_tb
 Compiling module xil_defaultlib.glbl
