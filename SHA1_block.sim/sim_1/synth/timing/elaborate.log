@@ -22,9 +22,11 @@ Compiling module simprims_ver.LUT5
 Compiling module simprims_ver.ffsrce_fdce
 Compiling module simprims_ver.FDCE
 Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.counter_0
 Compiling module simprims_ver.sffsrce_fdre
 Compiling module simprims_ver.FDRE
 Compiling module xil_defaultlib.HashIn
+Compiling module xil_defaultlib.MsgIn
 Compiling module simprims_ver.IBUF
 Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.OBUF

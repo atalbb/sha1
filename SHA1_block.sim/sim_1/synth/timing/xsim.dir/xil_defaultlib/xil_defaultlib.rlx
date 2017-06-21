@@ -2,5 +2,5 @@
 2016.3
 Oct 10 2016
 19:46:48
-C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.v,1498051286,verilog,,,,HashIn;counter;glbl;top,,,,,,,,
-C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v,1498051138,verilog,,,,counter_tb,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.v,1498053932,verilog,,,,HashIn;MsgIn;counter;counter_0;glbl;top,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v,1498053747,verilog,,,,counter_tb,,,,,,,,

@@ -22,13 +22,20 @@
 
 module top(input clk,
             input rst,
-            input cEnable,
+            input chEnable,
             input [31:0]hashIn,
             output hashInDone,
-            output [159:0]hashInDo
+            output [159:0]hashInDo,
+            input cmEnable,
+            input [31:0]msgIn,
+            output msgInDone,
+            output [511:0]msgInDo
 
     );
-wire [4:0]count;
-counter C1(clk,rst,cEnable,count);
-HashIn H1(clk,rst,cEnable,count,hashIn,hashInDone,hashInDo);
+wire [4:0]hashCount;
+wire [4:0]msgCount;
+counter C1(clk,rst,chEnable,hashCount);
+counter C2(clk,rst,cmEnable,msgCount);
+HashIn H1(clk,rst,chEnable,hashCount,hashIn,hashInDone,hashInDo);
+MsgIn M1(clk,rst,cmEnable,msgCount,msgIn,msgInDone,msgInDo);
 endmodule
