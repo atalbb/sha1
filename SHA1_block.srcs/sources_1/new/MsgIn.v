@@ -31,8 +31,12 @@ module MsgIn(input clk,
                
 reg [31:0] RAM [15:0]; // 32bit RAM x 16 slots= 512 bit(64 Byte) RAM
 reg [4:0] read_addr;
-always @(posedge clk)begin
-   if (en)begin
+always @(posedge clk or negedge rst)begin
+   if(!rst) begin
+        done <= 0;
+        do <= 0;
+   end
+   else if (en)begin
        RAM[addr] <= di;
        read_addr <= addr;
        done <=  0;

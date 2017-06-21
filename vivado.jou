@@ -128,3 +128,31 @@ launch_runs synth_1
 wait_on_run synth_1
 refresh_design
 launch_simulation -mode post-synthesis -type timing
+source counter_tb.tcl
+close_sim
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source counter_tb.tcl
+close_sim
+launch_simulation
+source counter_tb.tcl
+close_sim
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source counter_tb.tcl
+close_design
+launch_simulation -mode post-synthesis -type timing
+source counter_tb.tcl
+close_sim
+close_sim
