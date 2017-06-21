@@ -23,7 +23,7 @@
 module counter(input clk,
                 input rst,
                  input en,
-                 output reg [9:0]out
+                 output reg [4:0]out
     );
 always @(posedge clk or negedge rst)
  if (!rst) begin
