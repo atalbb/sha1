@@ -1,0 +1,27 @@
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 3aadec31b4bc4a6b9575b40fb5bc3d17 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_time_synth.sdf", for root module "tb/T".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_time_synth.sdf", for root module "tb/T".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0110000111...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_generi...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_3_4...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_3_4
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_time_synth
