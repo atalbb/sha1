@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Wed Jun 21 11:05:49 2017
+| Date         : Wed Jun 28 11:01:08 2017
 | Host         : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+-------+-------+-----------+-------+
 |        Site Type        |  Used | Fixed | Available | Util% |
 +-------------------------+-------+-------+-----------+-------+
-| Slice LUTs*             | 13675 |     0 |     63400 | 21.57 |
-|   LUT as Logic          | 13675 |     0 |     63400 | 21.57 |
+| Slice LUTs*             | 11946 |     0 |     63400 | 18.84 |
+|   LUT as Logic          | 11946 |     0 |     63400 | 18.84 |
 |   LUT as Memory         |     0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  5208 |     0 |    126800 |  4.11 |
-|   Register as Flip Flop |  1360 |     0 |    126800 |  1.07 |
-|   Register as Latch     |  3848 |     0 |    126800 |  3.03 |
+| Slice Registers         |  5246 |     0 |    126800 |  4.14 |
+|   Register as Flip Flop |  1365 |     0 |    126800 |  1.08 |
+|   Register as Latch     |  3881 |     0 |    126800 |  3.06 |
 | F7 Muxes                |     0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |     0 |     0 |     15850 |  0.00 |
 +-------------------------+-------+-------+-----------+-------+
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 4536  |          Yes |           - |        Reset |
+| 4574  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 672   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -87,23 +87,23 @@ Table of Contents
 4. IO and GT Specific
 ---------------------
 
-+-----------------------------+------+-------+-----------+--------+
-|          Site Type          | Used | Fixed | Available |  Util% |
-+-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |  239 |     0 |       210 | 113.81 |
-| Bonded IPADs                |    0 |     0 |         2 |   0.00 |
-| PHY_CONTROL                 |    0 |     0 |         6 |   0.00 |
-| PHASER_REF                  |    0 |     0 |         6 |   0.00 |
-| OUT_FIFO                    |    0 |     0 |        24 |   0.00 |
-| IN_FIFO                     |    0 |     0 |        24 |   0.00 |
-| IDELAYCTRL                  |    0 |     0 |         6 |   0.00 |
-| IBUFDS                      |    0 |     0 |       202 |   0.00 |
-| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        24 |   0.00 |
-| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        24 |   0.00 |
-| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       300 |   0.00 |
-| ILOGIC                      |    0 |     0 |       210 |   0.00 |
-| OLOGIC                      |    0 |     0 |       210 |   0.00 |
-+-----------------------------+------+-------+-----------+--------+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |  111 |     0 |       210 | 52.86 |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         6 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        24 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        24 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
+| IBUFDS                      |    0 |     0 |       202 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        24 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        24 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       300 |  0.00 |
+| ILOGIC                      |    0 |     0 |       210 |  0.00 |
+| OLOGIC                      |    0 |     0 |       210 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
 
 
 5. Clocking
@@ -112,7 +112,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |   10 |     0 |        32 | 31.25 |
+| BUFGCTRL   |   12 |     0 |        32 | 37.50 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
@@ -146,19 +146,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 6747 |                 LUT |
-| LDCE     | 3848 |        Flop & Latch |
-| LUT2     | 3611 |                 LUT |
-| LUT4     | 3108 |                 LUT |
-| LUT5     | 2978 |                 LUT |
+| LUT6     | 4778 |                 LUT |
+| LDCE     | 3881 |        Flop & Latch |
+| LUT4     | 3482 |                 LUT |
+| LUT5     | 3441 |                 LUT |
+| LUT2     | 2997 |                 LUT |
 | CARRY4   | 1320 |          CarryLogic |
-| LUT3     |  984 |                 LUT |
-| FDCE     |  688 |        Flop & Latch |
+| FDCE     |  693 |        Flop & Latch |
 | FDRE     |  672 |        Flop & Latch |
-| OBUF     |  161 |                  IO |
+| LUT1     |  563 |                 LUT |
+| LUT3     |  358 |                 LUT |
 | IBUF     |   78 |                  IO |
-| BUFG     |   10 |               Clock |
-| LUT1     |    8 |                 LUT |
+| OBUF     |   33 |                  IO |
+| BUFG     |   12 |               Clock |
 +----------+------+---------------------+
 
 

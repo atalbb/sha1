@@ -27,7 +27,7 @@ reg clk,rst,HashCounterEn,MsgCounterEn;
 reg [31:0]hashIn,msgIn;
 reg [9:0]MsgLenBits;
 wire DONE;
-wire [159:0]OUT;
+wire [31:0]OUT;
 //wire hashInDone,msgInDone;
 //wire [159:0]hashInDo;
 //wire [511:0]MsgInDo;
@@ -42,8 +42,8 @@ initial begin
     hashIn = 0;
     msgIn = 0;
     MsgLenBits = 0;
-    #60 rst = 0;
-    #60 rst = 1;
+    #100 rst = 0;
+    #100 rst = 1;
         MsgLenBits = 24;
         HashCounterEn =1;
         hashIn = 32'h67452301;
@@ -68,7 +68,7 @@ initial begin
     #10 msgIn = 0;
     #10 msgIn = 0;
     #10 msgIn = 0;
-    #400 $finish;   
+    #5000 $finish;   
 end
 always
     #5 clk = ~clk;

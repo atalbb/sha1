@@ -1,0 +1,2172 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 13696
+
+Current time: 	6/21/17 1:35:28 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	Atalville
+User home directory: C:/Users/Atalville
+User working directory: C:/College/Thesis/VivadoProjects/SHA1_block
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	213 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 525 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56719kb) [00:00:04]
+// [Engine Memory]: 384 MB (+251578kb) [00:00:04]
+// Opening Vivado Project: C:\College\Thesis\VivadoProjects\SHA1_block\SHA1_block.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+4509kb) [00:00:07]
+// [Engine Memory]: 480 MB (+79878kb) [00:00:07]
+// [GUI Memory]: 72 MB (+5833kb) [00:00:07]
+// [Engine Memory]: 525 MB (+22024kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 527 MB. GUI used memory: 31 MB. Current time: 6/21/17 1:35:28 PM EDT
+// Project name: SHA1_block; location: C:/College/Thesis/VivadoProjects/SHA1_block; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 13:35:33 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+// [Engine Memory]: 559 MB (+8785kb) [00:00:14]
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 274 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// [Engine Memory]: 695 MB (+112940kb) [00:04:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 744 MB. GUI used memory: 33 MB. Current time: 6/21/17 1:40:19 PM EDT
+// [Engine Memory]: 833 MB (+108520kb) [00:05:02]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 840 MB. GUI used memory: 33 MB. Current time: 6/21/17 1:40:25 PM EDT
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2016.3/data/./parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// [Engine Memory]: 908 MB (+34670kb) [00:05:06]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1168.535 ; gain = 326.500 
+// Device view-level: 0.0
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// [GUI Memory]: 77 MB (+783kb) [00:05:14]
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// [Engine Memory]: 960 MB (+6223kb) [00:05:19]
+// Tcl Message: Starting simulation data flow analysis 
+// HMemoryUtils.trashcanNow. Engine heap size: 989 MB. GUI used memory: 59 MB. Current time: 6/21/17 1:40:44 PM EDT
+// [Engine Memory]: 1,137 MB (+135523kb) [00:05:26]
+// RouteApi::initDelayMediator elapsed time: 19.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,330 MB (+142930kb) [00:05:30]
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling module unisims_ver.latchsre_ldce Compiling module unisims_ver.LDCE Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: run_program: Time (s): cpu = 00:00:15 ; elapsed = 00:00:49 . Memory (MB): peak = 1553.602 ; gain = 381.082 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '49' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [GUI Memory]: 82 MB (+1957kb) [00:06:07]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 62 MB. Current time: 6/21/17 1:41:28 PM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 62 MB. Current time: 6/21/17 1:41:35 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1631.035 ; gain = 68.281 xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1631.035 ; gain = 77.434 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:51 ; elapsed = 00:01:25 . Memory (MB): peak = 1631.035 ; gain = 789.000 
+// 'd' command handler elapsed time: 85 seconds
+// Elapsed time: 85 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 63 MB. Current time: 6/21/17 1:42:11 PM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 379, 184); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 63 MB. Current time: 6/21/17 1:42:15 PM EDT
+// Elapsed time: 25 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+// [GUI Memory]: 87 MB (+624kb) [00:07:28]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: DESIGN_CLOSE
+// [GUI Memory]: 96 MB (+4473kb) [00:07:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 59 MB. Current time: 6/21/17 1:42:53 PM EDT
+// Engine heap size: 1,392 MB. GUI used memory: 59 MB. Current time: 6/21/17 1:42:53 PM EDT
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_tb.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+// PAPropertyPanels.initPanels (SHA1Core.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, SHA1Core.v]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, SHA1Core.v]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 131, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 131, 298, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 131, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("SHA1Core.v", 180, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("SHA1Core.v", 211, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 211, 314, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 211, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "HashOut"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Tcl Message: close [ open C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sources_1/new/HashOut.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sources_1/new/HashOut.v 
+// [GUI Memory]: 102 MB (+1550kb) [00:09:31]
+// I:q (cd:JFrame): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // W:r (m:JViewport, I:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 150 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib]", 2); // y:i (D:JPanel, cd:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g:JideTabbedPane (JPanel:JComponent, cd:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g:JideTabbedPane (JPanel:JComponent, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, Verilog]", 7); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib]", 2); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 8); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, HashOut.v]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, HashOut.v]", 9, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 107, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectCodeEditor("HashOut.v", 148, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, MsgIn.v]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, MsgIn.v]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, HashIn.v]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, HashIn.v]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashIn.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 47 seconds
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 412, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 51, 344); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor("HashOut.v", 458, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 84, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectCodeEditor("HashOut.v", 122, 43); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 53 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 117, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 117, 143, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 117, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 184, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("SHA1Core.v", 164, 52); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 164, 52, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 164, 52); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 21, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 108 MB (+810kb) [00:17:27]
+selectCodeEditor("HashOut.v", 105, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 46, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 22, 239); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("HashOut.v", 77, 78); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 77, 78, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 168, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 168, 241, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 122, 258); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 122, 258, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("HashOut.v", 122, 258); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 72 seconds
+selectCodeEditor("HashOut.v", 45, 311); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 56, 334); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectCodeEditor("HashOut.v", 157, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("HashOut.v", 98, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 98, 110, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 208, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("HashOut.v", 114, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 114 MB (+144kb) [00:24:33]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 558 seconds
+selectCodeEditor("HashOut.v", 11, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 11, 201, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("HashOut.v", 250, 94); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 236, 61); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 236, 61, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 158, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectCodeEditor("HashOut.v", 218, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 218, 227, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("HashOut.v", 32, 266); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 32, 266, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("HashOut.v", 112, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 112, 196, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 182, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 63, 106); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 270, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 146, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 157, 114); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("HashOut.v", 234, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 242, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+selectCodeEditor("HashOut.v", 68, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 68, 246, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 259, 260); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 273, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 66 seconds
+selectCodeEditor("HashOut.v", 211, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 177, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 243, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 213, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 174, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 238, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 186, 226); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 235, 239); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 222, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 227, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, top.v]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, top.v]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("top.v", 160, 333); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 120 MB (+818kb) [00:37:19]
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 46 MB. Current time: 6/21/17 2:12:57 PM EDT
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 237, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 149, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top.v", 233, 106); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 184, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 184, 76, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 171, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top.v", 165, 74); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 165, 74, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 296 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 47, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top.v", 624, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 56, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 620, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectCodeEditor("top.v", 508, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 508, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 159, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 205, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 214, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 214, 287, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top.v", 214, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 579, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 579, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 230, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 190, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 190, 216, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 328, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 41, 318); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 150, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 150, 146, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 191, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 191, 198, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 299, 311); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 299, 311, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 206, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("top.v", 209, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 209, 76, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 379, 318); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top.v", 379, 318, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:21:15 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 13 seconds
+selectCodeEditor("counter_tb.v", 57, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1631.035 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 318, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 159, 56); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 159, 56, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("HashOut.v", 311, 134); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 64 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 76, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 76, 79, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("HashOut.v", 140, 58); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 97 seconds
+selectCodeEditor("HashOut.v", 80, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 88 seconds
+selectCodeEditor("HashOut.v", 64, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:28:14 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1631.035 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("counter_tb.v", 556, 34); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 51 MB. Current time: 6/21/17 2:31:14 PM EDT
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "S1 ; SHA1Core ; Verilog Module", 6, "SHA1Core", 1, false); // d:ab (JViewport:JComponent, cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1, "T1", 0, true); // d:ab (JViewport:JComponent, cd:JFrame) - Node
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 18 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectCodeEditor("HashOut.v", 32, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 427, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 36, 63); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("HashOut.v", 324, 267); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:33:10 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 12 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (p:JPanel, cd:JFrame)
+// TclEventType: RUN_FAILED
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("HashOut.v", 9, 71); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:34:06 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_FAILED
+// ah:y (cd:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Failed"); // ah:y (cd:JFrame)
+selectCodeEditor("HashOut.v", 246, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 246, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 246, 113, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 91, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 91, 246, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:34:55 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 48 MB. Current time: 6/21/17 2:35:32 PM EDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 79 MB. Current time: 6/21/17 2:35:39 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1644.871 ; gain = 13.836 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 75 MB. Current time: 6/21/17 2:36:28 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1644.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 5", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 382, 200); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 75 MB. Current time: 6/21/17 2:36:37 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 154, 202); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 74 MB. Current time: 6/21/17 2:36:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 74 MB. Current time: 6/21/17 2:36:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 74 MB. Current time: 6/21/17 2:36:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 74 MB. Current time: 6/21/17 2:36:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 94 MB. Current time: 6/21/17 2:36:55 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1644.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 187 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 6", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 154, 202); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 154, 202); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 154, 221); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 77 MB. Current time: 6/21/17 2:40:11 PM EDT
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashIn.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashIn.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("HashOut.v", 474, 70); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 39, 200); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("HashOut.v", 445, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 128 MB (+1431kb) [01:07:52]
+// Elapsed time: 18 seconds
+selectCodeEditor("HashOut.v", 80, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 80, 42, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("HashOut.v", 80, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 50 seconds
+selectCodeEditor("HashOut.v", 249, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 61 seconds
+selectCodeEditor("HashOut.v", 171, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 171, 129, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 161, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:45:09 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 71 MB. Current time: 6/21/17 2:45:41 PM EDT
+// Engine heap size: 1,392 MB. GUI used memory: 71 MB. Current time: 6/21/17 2:45:41 PM EDT
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 48 MB. Current time: 6/21/17 2:45:42 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1644.871 ; gain = 0.000 
+dismissDialog("Reloading"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 76 MB. Current time: 6/21/17 2:46:01 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1644.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 7", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "start ; 1 ; Logic", 2, "start", 0, false); // l:ab (JViewport:JComponent, cd:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "start ; 1 ; Logic", 2, "start", 0, false, false, false, false, true, false); // l:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem((HResource) null, "Add to Wave Window"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: add_wave {{/counter_tb/T1/HO1/start}}  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Save", "Save"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+dismissFileChooser();
+// 'd' command handler elapsed time: 8 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 162, 236); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// 'd' command handler elapsed time: 3 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_No", "No"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 78 MB. Current time: 6/21/17 2:47:17 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1647.500 ; gain = 2.629 
+// 'd' command handler elapsed time: 15 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 8", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1, "T1", 0, true); // d:ab (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 97 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 114, 142); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashIn.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("HashOut.v", 222, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 239, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_tb.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 46, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 46, 146, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("SHA1Core.v", 46, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 75, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("SHA1Core.v", 54, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "SHA1Core.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 45, 284); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 340, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 101, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 101, 42, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 166, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 166, 194, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 94, 11); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 94, 11, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 208, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 208, 206, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 221, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 221, 244, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 222, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 222, 279, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 216, 318); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 216, 318, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 239, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 205, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 205, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 205, 211); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 42 seconds
+selectCodeEditor("HashOut.v", 202, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 22 seconds
+selectCodeEditor("HashOut.v", 132, 46); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 139, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 139, 41, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("HashOut.v", 139, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 139, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 139, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 128, 58); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 115, 40); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 115, 40, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 194, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 194, 213, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 270, 284); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 32 seconds
+selectCodeEditor("HashOut.v", 157, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 306, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("HashOut.v", 504, 204); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 201, 138); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 206, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("HashOut.v", 170, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("HashOut.v", 247, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 274, 211); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("HashOut.v", 300, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("HashOut.v", 306, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 292, 99); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectCodeEditor("HashOut.v", 301, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 281, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("HashOut.v", 202, 107); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 202, 107, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 211, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 374, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 374, 96); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("HashOut.v", 58, 109); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectCodeEditor("HashOut.v", 58, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 135 MB (+853kb) [01:22:42]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 14:58:02 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 98 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1647.500 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("HashOut.v", 29, 398); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// c:q (cd:JFrame): Save Simulation Sources: addNotify
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, c:q)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Save Simulation Sources"); // c:q (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Wed Jun 21 15:01:28 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// [GUI Memory]: 142 MB (+59kb) [01:30:10]
+// [GUI Memory]: 149 MB (+616kb) [01:37:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 81 MB. Current time: 6/21/17 4:20:39 PM EDT
+// Elapsed time: 4758 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav/xsim.dir/counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Jun 21 16:20:55 2017... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 68 MB. Current time: 6/21/17 4:20:58 PM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 780 ns : File "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" Line 71 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1655.906 ; gain = 0.000 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 67 MB. Current time: 6/21/17 4:51:01 PM EDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 63 MB. Current time: 6/21/17 5:21:02 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 62 MB. Current time: 6/21/17 5:51:02 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 63 MB. Current time: 6/21/17 6:21:02 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 62 MB. Current time: 6/21/17 6:51:03 PM EDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.

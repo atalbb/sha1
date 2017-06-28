@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Jun 27 15:52:34 2017
+# Process ID: 11148
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_block
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1648 C:\College\Thesis\VivadoProjects\SHA1_block\SHA1_block.xpr
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_block/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_block\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 839.566 ; gain = 176.719
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 27 18:32:31 2017...

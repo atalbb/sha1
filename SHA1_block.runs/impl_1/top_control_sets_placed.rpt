@@ -1,0 +1,129 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Wed Jun 28 11:05:36 2017
+| Host         : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    65 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1160 |          352 |
+| No           | No                    | Yes                    |               6 |            3 |
+| No           | Yes                   | No                     |            2721 |         1314 |
+| Yes          | No                    | No                     |             672 |          319 |
+| Yes          | No                    | Yes                    |             687 |          250 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------+---------------------------+------------------+----------------+
+|          Clock Signal          |     Enable Signal     |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------+---------------------------+------------------+----------------+
+|  S1/digest_done_reg_i_1_n_10   |                       | S1/w                      |                1 |              1 |
+|  clk_IBUF_BUFG                 |                       | HO1/count[3]_i_3_n_10     |                1 |              1 |
+|  S1/flag_reg[3]_i_2_n_10       |                       |                           |                1 |              4 |
+|  S1/next_state_reg[3]_i_1_n_10 |                       |                           |                1 |              4 |
+|  clk_IBUF_BUFG                 | HO1/count             | HO1/count[3]_i_3_n_10     |                2 |              4 |
+|  clk_IBUF_BUFG                 |                       | M1/done_reg_0             |                2 |              5 |
+|  clk_IBUF_BUFG                 | chEnable_IBUF         | M1/done_reg_0             |                2 |              5 |
+|  clk_IBUF_BUFG                 | cmEnable_IBUF         | M1/done_reg_0             |                2 |              6 |
+|  clk_IBUF_BUFG                 | C1/RAM_reg[0][31][0]  |                           |               11 |             32 |
+|  clk_IBUF_BUFG                 | C1/E[0]               |                           |               10 |             32 |
+|  clk_IBUF_BUFG                 | C1/RAM_reg[1][31][0]  |                           |               13 |             32 |
+|  clk_IBUF_BUFG                 | C1/RAM_reg[2][31][0]  |                           |               12 |             32 |
+|  clk_IBUF_BUFG                 | C1/RAM_reg[3][31][0]  |                           |               18 |             32 |
+|  clk_IBUF_BUFG                 | C2/E[0]               |                           |               14 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[11][31][0] |                           |               19 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[0][31][0]  |                           |               16 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[10][31][0] |                           |               14 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[12][31][0] |                           |               17 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[15][31][0] |                           |               15 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[13][31][0] |                           |               18 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[14][31][0] |                           |               15 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[1][31][0]  |                           |               16 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[2][31][0]  |                           |               15 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[4][31][0]  |                           |               16 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[5][31][0]  |                           |               20 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[6][31][0]  |                           |               15 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[7][31][0]  |                           |               17 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[8][31][0]  |                           |               14 |             32 |
+|  clk_IBUF_BUFG                 | C2/RAM_reg[9][31][0]  |                           |               14 |             32 |
+|  n_9_16789_BUFG                |                       |                           |               14 |             32 |
+|  clk_IBUF_BUFG                 | C1/do_reg[159][0]     | M1/do_reg[415]_0          |               22 |             48 |
+|  clk_IBUF_BUFG                 | C2/do_reg[511][0]     | M1/do_reg[415]_0          |               28 |             64 |
+|  clk_IBUF_BUFG                 | C2/do_reg[511][0]     | M1/done_reg_0             |               35 |             96 |
+|  clk_IBUF_BUFG                 | C1/do_reg[159][0]     | HI1/do[159]_i_2_n_10      |               36 |            112 |
+|  clk_IBUF_BUFG                 | C2/do_reg[511][0]     | M1/do[511]_i_2_n_10       |               50 |            112 |
+|  clk_IBUF_BUFG                 | C2/do_reg[511][0]     | M1/do[479]_i_1_n_10       |               35 |            112 |
+|  n_1_14454_BUFG                |                       | S1/w_reg[12][31]_i_2_n_10 |               58 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[61][31]_i_2_n_10 |               55 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[68][31]_i_2_n_10 |               56 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[69][31]_i_2_n_10 |               66 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[79][31]_i_2_n_10 |               63 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[50][31]_i_2_n_10 |               62 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[51][31]_i_2_n_10 |               73 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[56][31]_i_2_n_10 |               61 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[58][31]_i_2_n_10 |               68 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[60][31]_i_2_n_10 |               52 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[18][31]_i_2_n_10 |               57 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[26][31]_i_2_n_10 |               70 |            128 |
+|  clk_IBUF_BUFG                 | C2/do_reg[511][0]     | M1/do[447]_i_1_n_10       |               38 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[33][31]_i_2_n_10 |               61 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[35][31]_i_2_n_10 |               62 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[38][31]_i_2_n_10 |               71 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[44][31]_i_2_n_10 |               68 |            128 |
+|  n_1_14454_BUFG                |                       | S1/w_reg[6][31]_i_2_n_10  |               60 |            128 |
+|  n_1_14454_BUFG                |                       | S1/w_reg[7][31]_i_2_n_10  |               57 |            128 |
+|  n_1_14454_BUFG                |                       | S1/w_reg[5][31]_i_2_n_10  |               62 |            128 |
+|  n_0_14456_BUFG                |                       | S1/w_reg[28][31]_i_2_n_10 |               78 |            128 |
+|  e                             |                       | S1/w                      |               53 |            160 |
+|  n_3_14457_BUFG                |                       |                           |               46 |            160 |
+|  n_4_14455_BUFG                |                       |                           |               44 |            160 |
+|  n_5_14463_BUFG                |                       |                           |               40 |            160 |
+|  n_6_14465_BUFG                |                       |                           |               53 |            160 |
+|  n_7_16938_BUFG                |                       |                           |               66 |            160 |
+|  n_8_14459_BUFG                |                       |                           |               43 |            160 |
+|  n_2_14460_BUFG                |                       |                           |               44 |            160 |
++--------------------------------+-----------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                     3 |
+| 5      |                     2 |
+| 6      |                     1 |
+| 16+    |                    57 |
++--------+-----------------------+
+
+

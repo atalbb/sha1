@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Jun 27 18:43:24 2017
+# Process ID: 8648
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_block
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11828 C:\College\Thesis\VivadoProjects\SHA1_block\SHA1_block.xpr
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_block/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_block\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source counter_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run impl_1
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+source counter_tb.tcl
+launch_simulation
+source counter_tb.tcl
+add_wave {{/counter_tb/T1/S1/digest_done}} 
+save_wave_config {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg
+set_property xsim.view C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg
+source counter_tb.tcl
+close_sim
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg
+source counter_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg
+source counter_tb.tcl
+close_sim

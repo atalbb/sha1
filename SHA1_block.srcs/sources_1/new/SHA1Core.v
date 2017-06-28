@@ -31,7 +31,6 @@ module SHA1Core(
       output reg digest_done,
       output reg [159:0]digest_out
     );
-//reg start;
 reg [31:0]a[80:0],b[80:0],c[80:0],d[80:0],e[80:0];
 reg [31:0]h[4:0];
 reg [31:0]hash[4:0];
@@ -45,20 +44,21 @@ reg [3:0] flag;
 parameter SHA1_RESET = 0;
 parameter SHA1_INIT = 1;
 parameter SHA1_W_ROUNDS = 2;
-parameter SHA1_ABCDE_INIT = 3;
-parameter SHA1_F0_ROUNDS = 4;
-parameter SHA1_F1_ROUNDS = 5;
-parameter SHA1_F2_ROUNDS = 6;
-parameter SHA1_F3_ROUNDS = 7;
-parameter SHA1_FINAL = 8;
-parameter SHA1_DIGEST = 9;
+//parameter SHA1_ABCDE_INIT = 3;
+parameter SHA1_F0_ROUNDS = 3;
+parameter SHA1_F1_ROUNDS = 4;
+parameter SHA1_F2_ROUNDS = 5;
+parameter SHA1_F3_ROUNDS = 6;
+parameter SHA1_FINAL = 7;
+parameter SHA1_DIGEST = 8;
+parameter SHA1_DIGEST_DONE = 9;
 
-initial 
+initial //begin
     flag = 0;
 always@(posedge clk or negedge rst) begin
-     if(rst == 0) begin
+     if(!rst) begin
         curr_state <= SHA1_RESET;
-        //flag <= 0;
+        //digest_done <= 0;    
      end else begin
         curr_state <= next_state;
      end
@@ -71,20 +71,20 @@ always@(*) begin
     else if(flag == 2)
         next_state = SHA1_W_ROUNDS;
     else if(flag == 3)
-        next_state = SHA1_ABCDE_INIT;
-    else if(flag == 4)
         next_state = SHA1_F0_ROUNDS;
-    else if(flag == 5)
+    else if(flag == 4)
             next_state = SHA1_F1_ROUNDS;
-    else if(flag == 6)
+    else if(flag == 5)
             next_state = SHA1_F2_ROUNDS;
-    else if(flag == 7)
+    else if(flag == 6)
             next_state = SHA1_F3_ROUNDS;
-    else if(flag == 8)
+    else if(flag == 7)
         next_state = SHA1_FINAL;
-    else if(flag == 9)
+    else if(flag == 8)
         next_state = SHA1_DIGEST;
-    else begin end 
+    else if(flag == 9)
+        next_state = SHA1_DIGEST_DONE;
+    //else begin end 
     end 
 always@(*) begin
     if(curr_state == SHA1_RESET) begin
@@ -101,6 +101,7 @@ always@(*) begin
         w[50] = 0;w[51] = 0;w[52] = 0;w[53] = 0;w[54] = 0;w[55] = 0;w[56] = 0;w[57] = 0;w[58] = 0;w[59] = 0;
         w[60] = 0;w[61] = 0;w[62] = 0;w[63] = 0;w[64] = 0;w[65] = 0;w[66] = 0;w[67] = 0;w[68] = 0;w[69] = 0;
         w[70] = 0;w[71] = 0;w[72] = 0;w[73] = 0;w[74] = 0;w[75] = 0;w[76] = 0;w[77] = 0;w[78] = 0;w[79] = 0;
+        digest_done = 0;
         flag = 1;
     end else if(curr_state == SHA1_INIT) begin
         k[0] = 32'h5a827999;
@@ -270,13 +271,13 @@ always@(*) begin
         wt[63] = w[76]^w[71]^w[65]^w[63];
         w[79] = {wt[63][30:0],wt[63][31]};//wt << 1            
         flag = 3;
-    end else if(curr_state == SHA1_ABCDE_INIT) begin
+    //end else if(curr_state == SHA1_ABCDE_INIT) begin
 //        a[0] = h[0];
 //        b[0] = h[1];
 //        c[0] = h[2];
 //        d[0] = h[3];
 //        e[0] = h[4];
-        flag = 4;
+       // flag = 4;
     end else if(curr_state == SHA1_F0_ROUNDS) begin
         //F(0) starts
         temp[0] = {a[0][26:0],a[0][31:27]} + ((b[0] & c[0]) | ((~b[0]) & d[0])) + e[0] + w[0] + k[0] ;
@@ -399,7 +400,7 @@ always@(*) begin
         c[20] = {b[19][1:0],b[19][31:2]}; // b[t]<<30
         b[20] = a[19];
         a[20] = temp[19];
-        flag = 5;
+        flag = 4;
     end else if(curr_state == SHA1_F1_ROUNDS) begin
         //F(1) starts
         temp[20] = {a[20][26:0],a[20][31:27]} + (b[20] ^ c[20] ^ d[20]) + e[20] + w[20] + k[1] ;
@@ -528,7 +529,7 @@ always@(*) begin
         c[40] = {b[39][1:0],b[39][31:2]}; // b[t]<<30
         b[40] = a[39];
         a[40] = temp[39];
-        flag = 6; 
+        flag = 5; 
     end else if(curr_state == SHA1_F2_ROUNDS) begin                            
         //F(2) starts
         temp[40] = {a[40][26:0],a[40][31:27]} + ((b[40]&c[40])|(b[40]&d[40])|(c[40]&d[40])) + e[40] + w[40] + k[2] ;
@@ -651,7 +652,7 @@ always@(*) begin
         c[60] = {b[59][1:0],b[59][31:2]}; // b[t]<<30
         b[60] = a[59];
         a[60] = temp[59];
-        flag = 7;    
+        flag = 6;    
     end else if(curr_state == SHA1_F3_ROUNDS) begin
         //F(3) starts
         temp[60] = {a[60][26:0],a[60][31:27]} + (b[60]^c[60]^d[60]) + e[60] + w[60] + k[3] ;
@@ -774,18 +775,18 @@ always@(*) begin
         c[80] = {b[79][1:0],b[79][31:2]}; // b[t]<<30
         b[80] = a[79];
         a[80] = temp[79];      
-        flag = 8;
+        flag = 7;
     end else if(curr_state == SHA1_FINAL) begin
         hash[0] = h[0] + a[80];
         hash[1] = h[1] + b[80];
         hash[2] = h[2] + c[80];
         hash[3] = h[3] + d[80];
         hash[4] = h[4] + e[80];
-        flag = 9;
+        flag = 8;
     end else if(curr_state == SHA1_DIGEST) begin
         digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
+        flag = 9;
+    end else if(curr_state == SHA1_DIGEST_DONE) 
         digest_done = 1;
-    end else begin end
 end
-//assign digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
 endmodule

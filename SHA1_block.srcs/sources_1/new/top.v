@@ -31,18 +31,21 @@ module top(input clk,
             input [31:0]msgIn,
             //output msgInDone,
             //output [511:0]msgInDo
-            output digestDone,
-            output [159:0]digestDo
+            output hashOutDone,
+            //output [159:0]digestDo
+            output [31:0]hashOut
 
     );
 wire [4:0]hashCount;
 wire [4:0]msgCount;
-wire hashInDone,msgInDone;
+wire hashInDone,msgInDone,digestDone;
 wire [159:0]hashInDo;
 wire [511:0]msgInDo;
+wire [159:0]digestDo;
 counter C1(clk,rst,chEnable,hashCount);
 counter C2(clk,rst,cmEnable,msgCount);
-HashIn H1(clk,rst,chEnable,hashCount,hashIn,hashInDone,hashInDo);
+HashIn HI1(clk,rst,chEnable,hashCount,hashIn,hashInDone,hashInDo);
 MsgIn M1(clk,rst,cmEnable,msgCount,msgIn,msgInDone,msgInDo);
 SHA1Core S1(clk,rst,hashInDone,hashInDo,msgInDone,mLenBits,msgInDo,digestDone,digestDo);
+HashOut HO1(clk,rst,digestDone,digestDo,hashOutDone,hashOut);
 endmodule

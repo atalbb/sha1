@@ -1,0 +1,1840 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 16832
+
+Current time: 	6/28/17 9:57:45 AM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	Atalville
+User home directory: C:/Users/Atalville
+User working directory: C:/College/Thesis/VivadoProjects/SHA1_block
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 551 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 58 MB (+58393kb) [00:00:04]
+// [Engine Memory]: 386 MB (+252774kb) [00:00:04]
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\College\Thesis\VivadoProjects\SHA1_block\SHA1_block.xpr. Version: Vivado v2016.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+7832kb) [00:00:06]
+// [Engine Memory]: 490 MB (+89656kb) [00:00:06]
+// [Engine Memory]: 532 MB (+18277kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 553 MB. GUI used memory: 36 MB. Current time: 6/28/17 9:57:45 AM EDT
+// Project name: SHA1_block; location: C:/College/Thesis/VivadoProjects/SHA1_block; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), S1 - SHA1Core (SHA1Core.v)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), S1 - SHA1Core (SHA1Core.v)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [Engine Memory]: 561 MB (+1733kb) [00:00:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), M1 - MsgIn (MsgIn.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), M1 - MsgIn (MsgIn.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), HO1 - HashOut (HashOut.v)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), HO1 - HashOut (HashOut.v)]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// HMemoryUtils.trashcanNow. Engine heap size: 573 MB. GUI used memory: 36 MB. Current time: 6/28/17 9:58:40 AM EDT
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 09:58:41 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 255 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// [Engine Memory]: 624 MB (+36544kb) [00:05:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 35 MB. Current time: 6/28/17 10:03:05 AM EDT
+// [Engine Memory]: 791 MB (+142650kb) [00:05:31]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 845 MB (+15454kb) [00:05:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 845 MB. GUI used memory: 35 MB. Current time: 6/28/17 10:03:11 AM EDT
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 921 MB (+35000kb) [00:05:36]
+// Xgd.load filename: C:/Xilinx/Vivado/2016.3/data/./parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.5s
+// [GUI Memory]: 72 MB (+621kb) [00:05:37]
+// [GUI Memory]: 76 MB (+165kb) [00:05:37]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// [GUI Memory]: 80 MB (+166kb) [00:05:38]
+// Tcl Message: open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1188.434 ; gain = 335.453 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// [Engine Memory]: 974 MB (+7473kb) [00:05:40]
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,140 MB. GUI used memory: 61 MB. Current time: 6/28/17 10:03:30 AM EDT
+// RouteApi::initDelayMediator elapsed time: 17.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,346 MB (+338705kb) [00:05:56]
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:04:06 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:04:06 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:15 ; elapsed = 00:00:49 . Memory (MB): peak = 1556.137 ; gain = 366.750 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '49' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 85 MB (+579kb) [00:06:33]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,366 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:10 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:12 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:19 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:24 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1618.605 ; gain = 51.336 xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1618.605 ; gain = 62.469 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:49 ; elapsed = 00:01:24 . Memory (MB): peak = 1618.605 ; gain = 765.625 
+// 'd' command handler elapsed time: 83 seconds
+// Elapsed time: 84 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 305, 205); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:33 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:34 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:34 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:57 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 65 MB. Current time: 6/28/17 10:04:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:58 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:04:59 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:05:00 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 64 MB. Current time: 6/28/17 10:05:00 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 97 MB (+8063kb) [00:07:32]
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 102 MB (+731kb) [00:07:41]
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1618.605 ; gain = 0.000 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:05:22 AM EDT
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 328, 204); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 328, 204); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 328, 223); // l:a (JViewport:JComponent, cd:JFrame)Waveform: addNotify
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// [GUI Memory]: 109 MB (+1490kb) [00:08:01]
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot counter_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_behav -key {Behavioral:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1618.605 ; gain = 0.000 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,413 MB (+469kb) [00:08:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,413 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:05:59 AM EDT
+// Elapsed time: 19 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, DONE]", 7, false); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, DONE]", 7, false, false, false, false, true, false); // a:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "HO1 ; HashOut ; Verilog Module", 7, "HO1", 0, false); // d:ab (JViewport:JComponent, cd:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+collapseTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T1 ; top ; Verilog Module", 1); // d:ab (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:06:46 AM EDT
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_tb_behav.wcfg", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 22 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 278, 180); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:07:30 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:07:30 AM EDT
+// Elapsed time: 50 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// [GUI Memory]: 117 MB (+2459kb) [00:10:53]
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("HashOut.v", 61, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 29, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+selectCodeEditor("HashOut.v", 157, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 228, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 70 seconds
+selectCodeEditor("HashOut.v", 270, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:12:36 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 255 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 66 MB. Current time: 6/28/17 10:16:55 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 66 MB. Current time: 6/28/17 10:16:55 AM EDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 42 MB. Current time: 6/28/17 10:17:00 AM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.1s
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 10 seconds
+dismissDialog("Reloading"); // bt:g (cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling module xil_defaultlib.MsgIn 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:18:05 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:18:05 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:47 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '47' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:18:10 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:17 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:21 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1646.098 ; gain = 0.000 xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// 'd' command handler elapsed time: 66 seconds
+// Elapsed time: 66 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 298, 190); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:42 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 243, 180); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:49 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:18:49 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:19:08 AM EDT
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("HashOut.v", 401, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 349, 170); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("HashOut.v", 40, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 140, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 189, 299); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("HashOut.v", 128, 302); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:20:14 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 255 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 65 MB. Current time: 6/28/17 10:24:35 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 65 MB. Current time: 6/28/17 10:24:35 AM EDT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 44 MB. Current time: 6/28/17 10:24:42 AM EDT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps 
+// Tcl Message: Compiling module unisims_ver.CARRY4 
+// Tcl Message: Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:25:32 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:25:32 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:46 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '46' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 10:25:37 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:25:46 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1646.098 ; gain = 0.000 xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 1646.098 ; gain = 0.000 
+// 'd' command handler elapsed time: 74 seconds
+// Elapsed time: 72 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:25:52 AM EDT
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MsgIn.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SHA1Core.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MsgIn.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("HashOut.v", 208, 26); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 200, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 60 seconds
+selectCodeEditor("HashOut.v", 181, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:27:38 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 253 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 67 MB. Current time: 6/28/17 10:31:56 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:31:56 AM EDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 45 MB. Current time: 6/28/17 10:32:01 AM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.1s
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1654.953 ; gain = 8.855 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 10 seconds
+dismissDialog("Reloading"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling module xil_defaultlib.MsgIn 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:32:57 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:32:57 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:46 . Memory (MB): peak = 1654.953 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '46' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 91 MB. Current time: 6/28/17 10:33:02 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 10:33:10 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1654.953 ; gain = 0.000 xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.953 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1654.953 ; gain = 0.000 
+// 'd' command handler elapsed time: 65 seconds
+// Elapsed time: 65 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 10:33:19 AM EDT
+// Elapsed time: 11 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 293, 192); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 10:33:33 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 10:33:33 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:33:34 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.v" 
+// Tcl Message: INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.sdf" 
+// Tcl Message: write_sdf: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1655.297 ; gain = 0.105 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.v INFO: [SIM-utils-37] SDF generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.sdf INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing/counter_tb_time_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot counter_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Elapsed time: 323 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, e:bt)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:05:07 . Memory (MB): peak = 1655.297 ; gain = 0.000 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled INFO: [Vivado 12-4704] 'elaborate' step aborted 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:05:26 . Memory (MB): peak = 1655.297 ; gain = 0.344 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// 'd' command handler elapsed time: 325 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectCodeEditor("HashOut.v", 300, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:40:23 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 283 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:45:12 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 68 MB. Current time: 6/28/17 10:45:12 AM EDT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 46 MB. Current time: 6/28/17 10:45:18 AM EDT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1655.766 ; gain = 0.469 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling module unisims_ver.x_lut3_mux4 Compiling module unisims_ver.x_lut3_mux4_reduced_0 Compiling module unisims_ver.LUT3 Compiling module unisims_ver.LUT5 
+// Tcl Message: Compiling module unisims_ver.LUT6 Compiling module unisims_ver.x_lut2_mux4 Compiling module unisims_ver.LUT2 Compiling module unisims_ver.LUT4 Compiling module unisims_ver.x_lut1_mux2 Compiling module unisims_ver.LUT1 Compiling module unisims_ver.ffsrce_fdce Compiling module unisims_ver.FDCE Compiling module xil_defaultlib.counter Compiling module xil_defaultlib.counter_0 Compiling module unisims_ver.sffsrce_fdre Compiling module unisims_ver.FDRE Compiling module xil_defaultlib.HashIn Compiling module unisims_ver.latchsre_ldce Compiling module unisims_ver.LDCE Compiling module xil_defaultlib.HashOut Compiling module xil_defaultlib.MsgIn 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:46:09 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:46:09 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:46 . Memory (MB): peak = 1655.766 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '46' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:13 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:21 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:25 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1658.324 ; gain = 0.691 xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.324 ; gain = 2.559 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:01:13 . Memory (MB): peak = 1658.324 ; gain = 3.027 
+// 'd' command handler elapsed time: 75 seconds
+// Elapsed time: 73 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 17 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 305, 192); // l:a (JViewport:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:46 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:47 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:46:52 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("HashOut.v", 242, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "HashOut.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 30 seconds
+selectCodeEditor("HashOut.v", 21, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 90, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 123, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 123, 368, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("HashOut.v", 123, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:49:26 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// Elapsed time: 93 seconds
+selectCodeEditor("HashOut.v", 281, 209); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_tb_behav.wcfg", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 31 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 137 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:54:28 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 10:54:28 AM EDT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 47 MB. Current time: 6/28/17 10:54:34 AM EDT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.1s
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1664.430 ; gain = 0.000 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling module unisims_ver.LUT6 Compiling module unisims_ver.LUT4 Compiling module unisims_ver.x_lut2_mux4 Compiling module unisims_ver.LUT2 Compiling module unisims_ver.x_lut1_mux2 Compiling module unisims_ver.LUT1 Compiling module unisims_ver.x_lut3_mux4 Compiling module unisims_ver.x_lut3_mux4_reduced_0 Compiling module unisims_ver.LUT3 Compiling module unisims_ver.LUT5 Compiling module unisims_ver.ffsrce_fdce Compiling module unisims_ver.FDCE Compiling module xil_defaultlib.counter Compiling module xil_defaultlib.counter_0 Compiling module unisims_ver.sffsrce_fdre Compiling module unisims_ver.FDRE 
+// Tcl Message: Compiling module xil_defaultlib.HashIn Compiling module unisims_ver.latchsre_ldce Compiling module unisims_ver.LDCE Compiling module xil_defaultlib.HashOut Compiling module xil_defaultlib.MsgIn 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core 
+// Tcl Message: Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 10:55:24 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 10:55:24 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:46 . Memory (MB): peak = 1664.430 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '46' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 76 MB. Current time: 6/28/17 10:55:30 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:55:38 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1666.195 ; gain = 0.000 xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1666.195 ; gain = 1.766 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 1666.195 ; gain = 1.766 
+// 'd' command handler elapsed time: 74 seconds
+// Elapsed time: 72 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:55:45 AM EDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 300, 209); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:55:51 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 10:55:51 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HashOut.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("HashOut.v", 225, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("HashOut.v", 109, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Jun 28 10:56:59 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 275 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Synthesis Completed"); // ah:y (cd:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 69 MB. Current time: 6/28/17 11:01:39 AM EDT
+// Engine heap size: 1,423 MB. GUI used memory: 70 MB. Current time: 6/28/17 11:01:39 AM EDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 45 MB. Current time: 6/28/17 11:01:45 AM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1685.035 ; gain = 1.918 
+// Elapsed time: 11 seconds
+dismissDialog("Reloading"); // bt:g (cd:JFrame)
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // v:K (u:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" 
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v INFO: [USF-XSim-37] Inspecting design source files for 'counter_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: "xvlog -m64 --relax -prj counter_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/counter_tb_func_synth.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module HashIn INFO: [VRFC 10-311] analyzing module HashOut INFO: [VRFC 10-311] analyzing module MsgIn INFO: [VRFC 10-311] analyzing module SHA1Core 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-311] analyzing module counter_0 INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.srcs/sim_1/new/counter_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a3946afb034710743ac1408 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot counter_tb_func_synth xil_defaultlib.counter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Compiling module unisims_ver.CARRY4 Compiling module xil_defaultlib.SHA1Core Compiling module unisims_ver.IBUF Compiling module unisims_ver.BUFG Compiling module unisims_ver.OBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.counter_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot counter_tb_func_synth  ****** Webtalk v2016.3 (64-bit)   **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016   **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func/xsim.dir/counter_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 28 11:03:02 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jun 28 11:03:02 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 1685.035 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '55' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_tb_func_synth -key {Post-Synthesis:sim_1:Functional:counter_tb} -tclbatch {counter_tb.tcl} -view {C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/SHA1_block/counter_tb_behav.wcfg 
+// Tcl Message: source counter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 76 MB. Current time: 6/28/17 11:03:06 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 71 MB. Current time: 6/28/17 11:03:16 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 6/28/17 11:03:21 AM EDT
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1687.281 ; gain = 0.000 xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1687.281 ; gain = 2.246 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_tb_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:01:18 . Memory (MB): peak = 1687.281 ; gain = 2.246 
+// 'd' command handler elapsed time: 78 seconds
+// Elapsed time: 78 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Functional - sim_1 - counter_tb", "DesignTask.SIMULATION");
+// y:aO (cd:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // y:aO (cd:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Synthesized Design]", 18); // v:K (u:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 28 11:03:51 2017] Launched impl_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/SHA1_block/SHA1_block.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 124 MB (+1657kb) [01:07:33]
+// [GUI Memory]: 133 MB (+2140kb) [01:07:53]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// [GUI Memory]: 140 MB (+1081kb) [01:12:25]
+// [GUI Memory]: 149 MB (+1643kb) [01:12:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 72 MB. Current time: 6/28/17 11:33:25 AM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 2207 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Implementation Completed"); // ah:y (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab(PAResourceOtoP.ProjectSummaryPowerPanel_TABBED_PANE, PAResourceOtoP.ProjectSummaryPowerPanel_ON_CHIP, "On-Chip", 1); // d:g (c:C, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryPowerPanel_TABBED_PANE, PAResourceOtoP.ProjectSummaryPowerPanel_SUMMARY, "Summary", 0); // d:g (c:C, cd:JFrame)
+// Elapsed time: 16 seconds
+selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_OPEN_POWER_REPORT, "Implemented Power Report"); // h:k (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_REPORT_POWER
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# Current time: 6/28/17 11:41:20 AM EDT
+# Process ID: 16832
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+java.lang.NullPointerException (See C:/College/Thesis/VivadoProjects/SHA1_block/vivado_pid16832.debug)
+*/
+// Elapsed time: 35 seconds
+selectTab(PAResourceOtoP.ProjectSummaryTimingPanel_PROJECT_SUMMARY_TIMING_PANEL_TABBED, PAResourceOtoP.ProjectSummaryTimingPanel_HOLD, "Hold", 1); // d:g (c:JPanel, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryTimingPanel_PROJECT_SUMMARY_TIMING_PANEL_TABBED, PAResourceOtoP.ProjectSummaryTimingPanel_PULSE_WIDTH, "Pulse Width", 2); // d:g (c:JPanel, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryTimingPanel_PROJECT_SUMMARY_TIMING_PANEL_TABBED, PAResourceOtoP.ProjectSummaryTimingPanel_SETUP, "Setup", 0); // d:g (c:JPanel, cd:JFrame)
+selectButton(PAResourceOtoP.ProjectSummaryDRCPanel_OPEN_DRC_REPORT, "Implemented DRC Report"); // h:k (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_REPORT_DRC
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# Current time: 6/28/17 11:42:06 AM EDT
+# Process ID: 16832
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+java.lang.NullPointerException (See C:/College/Thesis/VivadoProjects/SHA1_block/vivado_pid16832.debug)
+*/
+// Elapsed time: 13 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b:g (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b:g (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b:g (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b:g (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b:g (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_CLICK_FOR_MORE_DETAILS, "Low"); // d:h (JPanel:JComponent, cd:JFrame)
+// Confidence Level Details: show
+// Elapsed time: 79 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, ResizableWindow:JWindow)
+// Confidence Level Details: hide

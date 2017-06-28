@@ -4,37 +4,3 @@ Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 316494be1a
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "counter_tb_time_synth.sdf", for root module "counter_tb/T1".
-INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "counter_tb_time_synth.sdf", for root module "counter_tb/T1".
-Time Resolution for simulation is 1ps
-Compiling module simprims_ver.x_lut3_mux4
-Compiling module simprims_ver.x_lut3_mux4_reduced_0
-Compiling module simprims_ver.LUT3
-Compiling module simprims_ver.LUT5
-Compiling module simprims_ver.LUT6
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
-Compiling module simprims_ver.LUT4
-Compiling module simprims_ver.x_lut1_mux2
-Compiling module simprims_ver.LUT1
-Compiling module simprims_ver.ffsrce_fdce
-Compiling module simprims_ver.FDCE
-Compiling module xil_defaultlib.counter
-Compiling module xil_defaultlib.counter_0
-Compiling module simprims_ver.sffsrce_fdre
-Compiling module simprims_ver.FDRE
-Compiling module xil_defaultlib.HashIn
-Compiling module xil_defaultlib.MsgIn
-Compiling module simprims_ver.latchsre_ldce
-Compiling module simprims_ver.LDCE
-Compiling module simprims_ver.CARRY4
-Compiling module xil_defaultlib.SHA1Core
-Compiling module simprims_ver.IBUF
-Compiling module simprims_ver.BUFG
-Compiling module simprims_ver.OBUF
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.counter_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot counter_tb_time_synth
