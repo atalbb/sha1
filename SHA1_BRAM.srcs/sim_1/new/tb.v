@@ -28,10 +28,17 @@ parameter FULL_CLK = 10;
 reg clk,enbh,enbm;
 reg [7:0]read_addr;
 reg rst;
-wire [31:0]outH,outM;
-
-
-top T(clk,rst,enbh,enbm,outH,outM);
+//wire [31:0]outH,outM;
+wire HashInDone;
+wire [159:0]HashInD0;
+//module top(input clk,
+//           input rst,
+//           input enHashIn,
+//           input enMsgIn,
+//           output done,
+//           output [159:0]do
+//           );
+top T(clk,rst,enbh,enbm,HashInDone,HashInD0);
 initial begin
     clk = 0;
     rst = 1;
@@ -46,7 +53,7 @@ initial begin
     #FULL_CLK read_addr = 2;
     #FULL_CLK read_addr = 3;
     #FULL_CLK read_addr = 4;
-    #FULL_CLK enbh = 0;
+    //#FULL_CLK enbh = 0;
     #FULL_CLK enbm = 1;
     #FULL_CLK read_addr = 0;
     #FULL_CLK read_addr = 1;
@@ -64,7 +71,7 @@ initial begin
     #FULL_CLK read_addr = 13;
     #FULL_CLK read_addr = 14;
     #FULL_CLK read_addr = 15;
-    #FULL_CLK enbm = 1;
+    //#FULL_CLK enbm = 1;
 
     
               

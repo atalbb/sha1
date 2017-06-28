@@ -26,6 +26,7 @@ add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sourc
 set_property used_in_implementation false [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp]
 read_verilog -library xil_defaultlib {
   C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v
+  C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v
   C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
