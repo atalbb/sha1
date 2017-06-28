@@ -23,13 +23,13 @@
 module HashIn(input clk,
               input rst, 
                input en,
-               input [4:0]addr, 
+               input [7:0]addr, 
                input [31:0]di,
                output reg done,
                output reg [159:0]do);
                
 reg [31:0] RAM [5:0]; // 32bit RAM x 16 slots= 512 bit(64 Byte) RAM
-reg [4:0] read_addr;
+reg [7:0] read_addr;
 always @(posedge clk or negedge rst)begin
   if(!rst) begin
     done <= 0;

@@ -1,6 +1,6 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2016.3\\bin
-call %xv_path%/xsim tb_func_synth -key {Post-Synthesis:sim_1:Functional:tb} -tclbatch tb.tcl -view C:/College/Thesis/VivadoProjects/SHA1_BRAM/tb_behav.wcfg -log simulate.log
+call %xv_path%/xsim tb_func_synth -key {Post-Synthesis:sim_1:Functional:tb} -tclbatch tb.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

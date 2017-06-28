@@ -29,16 +29,21 @@ reg clk,enbh,enbm;
 reg [7:0]read_addr;
 reg rst;
 //wire [31:0]outH,outM;
-wire HashInDone;
-wire [159:0]HashInD0;
+wire HashInDone,MsgInDone;
+wire [159:0]HashInDo;
+wire [511:0]MsgInDo;
+
+
 //module top(input clk,
 //           input rst,
 //           input enHashIn,
 //           input enMsgIn,
-//           output done,
-//           output [159:0]do
+//           output Hdone,
+//           output [159:0]Hdo,
+//           output Mdone,
+//           output [511:0]Mdo
 //           );
-top T(clk,rst,enbh,enbm,HashInDone,HashInD0);
+top T(clk,rst,enbh,enbm,HashInDone,HashInDo,MsgInDone,MsgInDo);
 initial begin
     clk = 0;
     rst = 1;
