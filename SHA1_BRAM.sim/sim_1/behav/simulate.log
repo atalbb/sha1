@@ -6,4 +6,4 @@ Block Memory Generator module tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_4_
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module tb.T.B1.inst.native_mem_module.blk_mem_gen_v8_3_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-$finish called at time : 630 ns : File "C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sim_1/new/tb.v" Line 84
+$finish called at time : 930 ns : File "C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sim_1/new/tb.v" Line 69

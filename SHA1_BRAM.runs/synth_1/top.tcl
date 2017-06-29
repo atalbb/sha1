@@ -25,6 +25,7 @@ set_property used_in_implementation false [get_files c:/College/Thesis/VivadoPro
 add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp
 set_property used_in_implementation false [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp]
 read_verilog -library xil_defaultlib {
+  C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v
   C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v
   C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v
   C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v

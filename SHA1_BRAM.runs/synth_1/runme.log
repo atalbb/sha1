@@ -14,17 +14,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4360 
+INFO: Helper process launched with PID 13340 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 332.625 ; gain = 122.500
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 332.965 ; gain = 123.285
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
 INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
 INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'HashIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
 WARNING: [Synth 8-5788] Register RAM_reg[5] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
 WARNING: [Synth 8-5788] Register RAM_reg[4] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
@@ -62,8 +62,18 @@ INFO: [Synth 8-638] synthesizing module 'SHA1Core' [C:/College/Thesis/VivadoProj
 	Parameter SHA1_DIGEST bound to: 8 - type: integer 
 	Parameter SHA1_DIGEST_DONE bound to: 9 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SHA1Core' (6#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'msg_len' does not match port width (10) of module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:75]
-INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:49]
+WARNING: [Synth 8-689] width (32) of port connection 'msg_len' does not match port width (10) of module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-638] synthesizing module 'HashOut' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter HASH_READ bound to: 1 - type: integer 
+	Parameter HASH_OUT0 bound to: 2 - type: integer 
+	Parameter HASH_OUT1 bound to: 3 - type: integer 
+	Parameter HASH_OUT2 bound to: 4 - type: integer 
+	Parameter HASH_OUT3 bound to: 5 - type: integer 
+	Parameter HASH_OUT4 bound to: 6 - type: integer 
+	Parameter HASH_OUT_DONE bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'HashOut' (7#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[31]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[30]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[29]
@@ -87,7 +97,7 @@ WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[12]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[11]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 393.664 ; gain = 183.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 394.047 ; gain = 184.367
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -97,40 +107,40 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 393.664 ; gain = 183.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 394.047 ; gain = 184.367
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'B0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:70]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'B1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:72]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'B0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:44]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'B1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:46]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-13156-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11904-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 707.160 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 708.020 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 709.637 ; gain = 499.512
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 710.391 ; gain = 500.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 709.637 ; gain = 499.512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 710.391 ; gain = 500.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 709.637 ; gain = 499.512
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 710.391 ; gain = 500.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
@@ -155,6 +165,7 @@ INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "digest_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'digest_done_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:104]
 WARNING: [Synth 8-327] inferring latch for variable 'digest_out_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:787]
 WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:70]
@@ -257,7 +268,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thes
 WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:96]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 709.637 ; gain = 499.512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 710.391 ; gain = 500.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -268,7 +279,7 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|      7584|
 |3     |SHA1Core__GB2 |           1|      8936|
 |4     |SHA1Core__GB3 |           1|     10701|
-|5     |top__GC0      |           1|      2401|
+|5     |top__GC0      |           1|      2704|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -278,6 +289,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 6     
 	   5 Input     32 Bit       Adders := 80    
 	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
 	   4 Input     32 Bit         XORs := 64    
@@ -286,13 +298,14 @@ Detailed RTL Component Info :
 	              160 Bit    Registers := 1     
 	               32 Bit    Registers := 21    
 	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
 	   8 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 36    
-	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+	   6 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 4     
@@ -353,6 +366,18 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 16    
+Module HashOut 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -368,11 +393,11 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "H1/RAM_reg[5]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "H1/RAM_reg[4]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "H1/RAM_reg[3]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "H1/RAM_reg[2]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "H1/RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI1/RAM_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI1/RAM_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI1/RAM_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI1/RAM_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HI1/RAM_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "M1/RAM_reg[16]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "M1/RAM_reg[15]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "M1/RAM_reg[14]" won't be mapped to RAM because it is too sparse
@@ -517,7 +542,7 @@ INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instan
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (SH1i_3/\k_reg[2][30] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (SH1i_3/\k_reg[2][31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:48 ; elapsed = 00:03:42 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:03:37 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -528,7 +553,7 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|      7248|
 |3     |SHA1Core__GB2 |           1|      8384|
 |4     |SHA1Core__GB3 |           1|      9658|
-|5     |top__GC0      |           1|      1535|
+|5     |top__GC0      |           1|      1887|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -537,10 +562,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:00 ; elapsed = 00:03:56 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:54 ; elapsed = 00:03:50 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:01 ; elapsed = 00:03:56 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Timing Optimization : Time (s): cpu = 00:02:54 ; elapsed = 00:03:51 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -551,13 +576,13 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|      7248|
 |3     |SHA1Core__GB2 |           1|      8384|
 |4     |SHA1Core__GB3 |           1|      9658|
-|5     |top__GC0      |           1|      1535|
+|5     |top__GC0      |           1|      1887|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:11 ; elapsed = 00:04:07 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Technology Mapping : Time (s): cpu = 00:03:03 ; elapsed = 00:04:00 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -581,7 +606,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:18 ; elapsed = 00:04:14 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished IO Insertion : Time (s): cpu = 00:03:09 ; elapsed = 00:04:06 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -594,7 +619,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:18 ; elapsed = 00:04:14 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:10 ; elapsed = 00:04:07 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -606,25 +631,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:19 ; elapsed = 00:04:15 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 00:04:08 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:23 ; elapsed = 00:04:19 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:14 ; elapsed = 00:04:11 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:26 ; elapsed = 00:04:22 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:16 ; elapsed = 00:04:13 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:26 ; elapsed = 00:04:22 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:16 ; elapsed = 00:04:14 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -644,55 +669,55 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |blk_mem_gen_1 |     1|
-|3     |BUFG          |    11|
+|3     |BUFG          |    12|
 |4     |CARRY4        |  1320|
-|5     |LUT1          |     3|
-|6     |LUT2          |  4190|
-|7     |LUT3          |     4|
-|8     |LUT4          |  2999|
+|5     |LUT1          |    10|
+|6     |LUT2          |  4192|
+|7     |LUT3          |     6|
+|8     |LUT4          |  3001|
 |9     |LUT5          |  2781|
-|10    |LUT6          | 14097|
-|11    |FDCE          |   694|
+|10    |LUT6          | 14162|
+|11    |FDCE          |   699|
 |12    |FDRE          |   672|
-|13    |LD            |  1128|
+|13    |LD            |  1160|
 |14    |LDC           |  2721|
 |15    |IBUF          |    14|
-|16    |OBUF          |   161|
+|16    |OBUF          |    33|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+---------+----------+------+
 |      |Instance |Module    |Cells |
 +------+---------+----------+------+
-|1     |top      |          | 30859|
+|1     |top      |          | 30847|
 |2     |  C0     |counter   |    25|
 |3     |  C1     |counter_0 |    39|
-|4     |  H1     |HashIn    |   321|
-|5     |  M1     |MsgIn     |  1538|
-|6     |  SH1    |SHA1Core  | 26369|
+|4     |  HI1    |HashIn    |   322|
+|5     |  HO1    |HashOut   |    47|
+|6     |  M1     |MsgIn     |  1542|
+|7     |  SH1    |SHA1Core  | 26432|
 +------+---------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:26 ; elapsed = 00:04:22 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:16 ; elapsed = 00:04:14 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 145 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:07 ; elapsed = 00:04:07 . Memory (MB): peak = 1827.176 ; gain = 1253.211
-Synthesis Optimization Complete : Time (s): cpu = 00:03:26 ; elapsed = 00:04:23 . Memory (MB): peak = 1827.176 ; gain = 1617.051
+Synthesis finished with 0 errors, 0 critical warnings and 146 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:57 ; elapsed = 00:03:58 . Memory (MB): peak = 1828.813 ; gain = 1253.438
+Synthesis Optimization Complete : Time (s): cpu = 00:03:17 ; elapsed = 00:04:14 . Memory (MB): peak = 1828.813 ; gain = 1619.133
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5183 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 5215 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'SHA1Core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3849 instances were transformed.
-  LD => LDCE: 1128 instances
+  A total of 3881 instances were transformed.
+  LD => LDCE: 1160 instances
   LDC => LDCE: 2721 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-180 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
+184 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:31 ; elapsed = 00:04:26 . Memory (MB): peak = 1827.176 ; gain = 1572.066
+synth_design: Time (s): cpu = 00:03:19 ; elapsed = 00:04:15 . Memory (MB): peak = 1828.813 ; gain = 1573.703
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1827.176 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1827.176 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 20:28:08 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1828.813 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 28 20:43:18 2017...

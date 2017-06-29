@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Jun 29 08:38:27 2017
+# Process ID: 1300
+# Current directory: C:/College/Thesis/VivadoProjects/SHA1_BRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7056 C:\College\Thesis\VivadoProjects\SHA1_BRAM\SHA1_BRAM.xpr
+# Log file: C:/College/Thesis/VivadoProjects/SHA1_BRAM/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/SHA1_BRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.xpr
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_simulation -mode post-synthesis -type functional
+launch_simulation -mode post-synthesis -type functional
+source tb.tcl
+launch_simulation
+source tb.tcl
+close_sim
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source tb.tcl
+close_sim
