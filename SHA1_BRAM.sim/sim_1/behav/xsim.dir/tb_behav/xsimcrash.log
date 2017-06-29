@@ -1,12 +1,8 @@
-Unable to capture context for thread 2116 in process 2160, can not generate back trace
-Unable to capture context for thread 8644 in process 2160, can not generate back trace
-Unable to capture context for thread 9064 in process 2160, can not generate back trace
+Unable to capture context for thread 5476 in process 8116, can not generate back trace
 Exception at PC 0x00007FFADE05BB93
 Printing stacktrace...
 
-Unable to capture context for thread 2116 in process 2160, can not generate back trace
-Unable to capture context for thread 8644 in process 2160, can not generate back trace
-Unable to capture context for thread 9064 in process 2160, can not generate back trace
+Unable to capture context for thread 5476 in process 8116, can not generate back trace
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08

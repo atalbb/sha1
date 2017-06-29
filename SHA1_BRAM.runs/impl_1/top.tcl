@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -49,25 +50,13 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  create_project -in_memory -part xc7a100tcsg324-1
-  set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/impl_1/top.dcp
   set_property webtalk.parent_dir C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.cache/wt [current_project]
   set_property parent.project_path C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.xpr [current_project]
   set_property ip_output_repo C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.dcp
-  add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp
-  set_property netlist_only true [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
-  add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp
-  set_property netlist_only true [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp]
-  read_xdc -mode out_of_context -ref blk_mem_gen_0 -cells U0 c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-  read_xdc -mode out_of_context -ref blk_mem_gen_1 -cells U0 c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc
-  set_property processing_order EARLY [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
-  link_design -top top -part xc7a100tcsg324-1
   write_hwdef -file top.hwdef
   close_msg_db -file init_design.pb
 } RESULT]

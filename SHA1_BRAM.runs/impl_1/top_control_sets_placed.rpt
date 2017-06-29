@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu Jun 29 08:41:13 2017
+| Date         : Thu Jun 29 12:28:06 2017
 | Host         : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -48,20 +48,19 @@ Table of Contents
 +---------------------------------+-----------------------+----------------------------+------------------+----------------+
 |           Clock Signal          |     Enable Signal     |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
 +---------------------------------+-----------------------+----------------------------+------------------+----------------+
-|  SH1/digest_done_reg_i_1_n_10   |                       | SH1/w                      |                1 |              1 |
 |  clk_IBUF_BUFG                  |                       | HO1/done_reg_0             |                1 |              1 |
-|  SH1/flag_reg[3]_i_2_n_10       |                       |                            |                1 |              4 |
+|  SH1/digest_done_reg_i_1_n_10   |                       | SH1/w                      |                1 |              1 |
 |  SH1/next_state_reg[3]_i_1_n_10 |                       |                            |                1 |              4 |
+|  SH1/flag_reg[3]_i_2_n_10       |                       |                            |                1 |              4 |
 |  clk_IBUF_BUFG                  | HO1/count             | HO1/done_reg_0             |                1 |              4 |
 |  clk_IBUF_BUFG                  | C0/do_reg[159][0]     | HO1/done_reg_0             |                1 |              4 |
 |  clk_IBUF_BUFG                  |                       | M1/done_reg_0              |                2 |              5 |
 |  clk_IBUF_BUFG                  | enHashIn_IBUF         | M1/done_reg_0              |                2 |              8 |
 |  clk_IBUF_BUFG                  | enMsgIn_IBUF          | M1/done_reg_0              |                4 |              9 |
-|  clk_IBUF_BUFG                  | C0/E[0]               |                            |               10 |             32 |
-|  clk_IBUF_BUFG                  | C0/RAM_reg[2][31][0]  |                            |                9 |             32 |
 |  clk_IBUF_BUFG                  | C0/RAM_reg[3][31][0]  |                            |               11 |             32 |
 |  clk_IBUF_BUFG                  | C0/RAM_reg[4][31][0]  |                            |               11 |             32 |
 |  clk_IBUF_BUFG                  | C0/RAM_reg[5][31][0]  |                            |                6 |             32 |
+|  n_9_25398_BUFG                 |                       |                            |               19 |             32 |
 |  clk_IBUF_BUFG                  | C1/E[0]               |                            |               18 |             32 |
 |  clk_IBUF_BUFG                  | C1/RAM_reg[10][31][0] |                            |               14 |             32 |
 |  clk_IBUF_BUFG                  | C1/RAM_reg[11][31][0] |                            |               16 |             32 |
@@ -78,33 +77,34 @@ Table of Contents
 |  clk_IBUF_BUFG                  | C1/RAM_reg[7][31][0]  |                            |               12 |             32 |
 |  clk_IBUF_BUFG                  | C1/RAM_reg[8][31][0]  |                            |               13 |             32 |
 |  clk_IBUF_BUFG                  | C1/RAM_reg[9][31][0]  |                            |                9 |             32 |
-|  n_9_25398_BUFG                 |                       |                            |               19 |             32 |
+|  clk_IBUF_BUFG                  | C0/E[0]               |                            |               10 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[2][31][0]  |                            |                9 |             32 |
 |  clk_IBUF_BUFG                  | C0/do_reg[159][0]     | M1/do_reg[438]_0           |               10 |             41 |
 |  clk_IBUF_BUFG                  | C1/do_reg[511][0]     | M1/do_reg[438]_0           |               20 |             74 |
 |  clk_IBUF_BUFG                  | C1/do_reg[511][0]     | M1/done_reg_0              |               29 |             93 |
-|  clk_IBUF_BUFG                  | C0/do_reg[159][0]     | HI1/do[155]_i_1_n_10       |               29 |            115 |
 |  clk_IBUF_BUFG                  | C1/do_reg[511][0]     | M1/do[437]_i_1_n_10        |               33 |            115 |
 |  clk_IBUF_BUFG                  | C1/do_reg[511][0]     | M1/do[322]_i_1_n_10        |               32 |            115 |
 |  clk_IBUF_BUFG                  | C1/do_reg[511][0]     | M1/do[207]_i_1_n_10        |               32 |            115 |
+|  clk_IBUF_BUFG                  | C0/do_reg[159][0]     | HI1/do[155]_i_1_n_10       |               29 |            115 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[18][31]_i_2_n_10 |               60 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[26][31]_i_2_n_10 |               67 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[38][31]_i_2_n_10 |               74 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[44][31]_i_2_n_10 |               63 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[50][31]_i_2_n_10 |               62 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[51][31]_i_2_n_10 |               57 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[28][31]_i_2_n_10 |               69 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[50][31]_i_2_n_10 |               62 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[44][31]_i_2_n_10 |               63 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[51][31]_i_2_n_10 |               57 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[33][31]_i_2_n_10 |               61 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[35][31]_i_2_n_10 |               72 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[38][31]_i_2_n_10 |               74 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[56][31]_i_2_n_10 |               70 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[60][31]_i_2_n_10 |               63 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[58][31]_i_2_n_10 |               66 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[61][31]_i_2_n_10 |               56 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[68][31]_i_2_n_10 |               70 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[69][31]_i_2_n_10 |               74 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[58][31]_i_2_n_10 |               66 |            128 |
 |  n_0_23059_BUFG                 |                       | SH1/w_reg[79][31]_i_2_n_10 |               63 |            128 |
 |  n_1_23057_BUFG                 |                       | SH1/w_reg[12][31]_i_2_n_10 |               46 |            128 |
 |  n_1_23057_BUFG                 |                       | SH1/w_reg[15][31]_i_2_n_10 |               50 |            128 |
 |  n_1_23057_BUFG                 |                       | SH1/w_reg[6][31]_i_2_n_10  |               51 |            128 |
-|  n_0_23059_BUFG                 |                       | SH1/w_reg[61][31]_i_2_n_10 |               56 |            128 |
+|  n_0_23059_BUFG                 |                       | SH1/w_reg[60][31]_i_2_n_10 |               63 |            128 |
 |  n_1_23057_BUFG                 |                       | SH1/w_reg[7][31]_i_2_n_10  |               52 |            128 |
 |  e                              |                       | SH1/w                      |               46 |            160 |
 |  n_2_23063_BUFG                 |                       |                            |               42 |            160 |

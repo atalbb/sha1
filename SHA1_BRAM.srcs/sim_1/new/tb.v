@@ -24,7 +24,10 @@ module tb(
 
     );
 parameter HALF_CLK = 5;
-parameter FULL_CLK = 10;
+parameter FULL_CLK = 2*HALF_CLK;
+parameter _5_FULL_CLK = 5 * FULL_CLK;
+parameter _16_FULL_CLK = 16 * FULL_CLK;
+//parameter
 reg clk,enbh,enbm;
 reg [7:0]read_addr;
 reg rst;
@@ -32,7 +35,7 @@ wire DONE;
 wire [31:0]OUT;
 
 
-top T(clk,rst,enbh,enbm,24,DONE,OUT);
+top T(clk,rst,enbh,enbm,440,DONE,OUT);
 initial begin
     clk = 0;
     rst = 1;
@@ -42,30 +45,9 @@ initial begin
     #100 rst = 0;
     #100 rst = 1;
     #110 enbh = 1;
-    #FULL_CLK read_addr = 0;
-    #FULL_CLK read_addr = 1;
-    #FULL_CLK read_addr = 2;
-    #FULL_CLK read_addr = 3;
-    #FULL_CLK read_addr = 4;
-    //#FULL_CLK enbh = 0;
-    #FULL_CLK enbm = 1;
-    #FULL_CLK read_addr = 0;
-    #FULL_CLK read_addr = 1;
-    #FULL_CLK read_addr = 2;
-    #FULL_CLK read_addr = 3;
-    #FULL_CLK read_addr = 4;
-    #FULL_CLK read_addr = 5;
-    #FULL_CLK read_addr = 6;
-    #FULL_CLK read_addr = 7;
-    #FULL_CLK read_addr = 8;
-    #FULL_CLK read_addr = 9;
-    #FULL_CLK read_addr = 10;
-    #FULL_CLK read_addr = 11;
-    #FULL_CLK read_addr = 12;
-    #FULL_CLK read_addr = 13;
-    #FULL_CLK read_addr = 14;
-    #FULL_CLK read_addr = 15;
-    #400 $finish;
+    #_5_FULL_CLK enbm = 1; // 5 clks to read Initial Hash
+    #_16_FULL_CLK // 16 clks to read Data
+    #_16_FULL_CLK  $finish; // 16 clocks for SHA1 conversiona & serializing to five 32-bit data
 end
 always
     #HALF_CLK clk = ~clk;
