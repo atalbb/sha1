@@ -28,22 +28,23 @@ parameter FULL_CLK = 10;
 reg clk,enbh,enbm;
 reg [7:0]read_addr;
 reg rst;
+//reg [31:0]msgLenBits;
 //wire [31:0]outH,outM;
-wire HashInDone,MsgInDone;
-wire [159:0]HashInDo;
-wire [511:0]MsgInDo;
-
+//wire HashInDone,MsgInDone;
+//wire [159:0]HashInDo;
+//wire [511:0]MsgInDo;
+wire DONE;
+wire [159:0]OUT;
 
 //module top(input clk,
 //           input rst,
 //           input enHashIn,
 //           input enMsgIn,
-//           output Hdone,
-//           output [159:0]Hdo,
-//           output Mdone,
-//           output [511:0]Mdo
+//           output digestDone,
+//           output [159:0]digest
+
 //           );
-top T(clk,rst,enbh,enbm,HashInDone,HashInDo,MsgInDone,MsgInDo);
+top T(clk,rst,enbh,enbm,24,DONE,OUT);
 initial begin
     clk = 0;
     rst = 1;
