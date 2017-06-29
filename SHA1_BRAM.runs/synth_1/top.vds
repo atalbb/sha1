@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Jun 29 16:43:51 2017
-# Process ID: 9752
+# Start of session at: Thu Jun 29 18:45:11 2017
+# Process ID: 4004
 # Current directory: C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.vds
@@ -15,26 +15,24 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4944 
+INFO: Helper process launched with PID 1052 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 333.395 ; gain = 124.016
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 332.715 ; gain = 122.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
 INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
 INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-4004-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-4004-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'HashIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
 WARNING: [Synth 8-5788] Register RAM_reg[5] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
 WARNING: [Synth 8-5788] Register RAM_reg[4] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
 WARNING: [Synth 8-5788] Register RAM_reg[3] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
 WARNING: [Synth 8-5788] Register RAM_reg[2] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
 WARNING: [Synth 8-5788] Register RAM_reg[1] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-INFO: [Synth 8-256] done synthesizing module 'HashIn' (4#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'HashIn' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
 INFO: [Synth 8-638] synthesizing module 'MsgIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:23]
-WARNING: [Synth 8-5788] Register RAM_reg[16] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
+	Parameter MSGIN_START_ADDR bound to: 6 - type: integer 
 WARNING: [Synth 8-5788] Register RAM_reg[15] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
 WARNING: [Synth 8-5788] Register RAM_reg[14] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
 WARNING: [Synth 8-5788] Register RAM_reg[13] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
@@ -50,7 +48,8 @@ WARNING: [Synth 8-5788] Register RAM_reg[4] in module MsgIn is has both Set and 
 WARNING: [Synth 8-5788] Register RAM_reg[3] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
 WARNING: [Synth 8-5788] Register RAM_reg[2] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
 WARNING: [Synth 8-5788] Register RAM_reg[1] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-INFO: [Synth 8-256] done synthesizing module 'MsgIn' (5#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:23]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
+INFO: [Synth 8-256] done synthesizing module 'MsgIn' (4#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:23]
 INFO: [Synth 8-638] synthesizing module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
 	Parameter SHA1_RESET bound to: 0 - type: integer 
 	Parameter SHA1_INIT bound to: 1 - type: integer 
@@ -63,7 +62,7 @@ INFO: [Synth 8-638] synthesizing module 'SHA1Core' [C:/College/Thesis/VivadoProj
 	Parameter SHA1_DIGEST bound to: 8 - type: integer 
 	Parameter SHA1_DIGEST_DONE bound to: 9 - type: integer 
 	Parameter SHA1_IDLE bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SHA1Core' (6#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SHA1Core' (5#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
 WARNING: [Synth 8-689] width (32) of port connection 'msg_len' does not match port width (10) of module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:49]
 INFO: [Synth 8-638] synthesizing module 'HashOut' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
 	Parameter RESET bound to: 0 - type: integer 
@@ -76,8 +75,8 @@ INFO: [Synth 8-638] synthesizing module 'HashOut' [C:/College/Thesis/VivadoProje
 	Parameter HASH_OUT_DONE bound to: 7 - type: integer 
 WARNING: [Synth 8-5788] Register temp_reg in module HashOut is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:49]
 WARNING: [Synth 8-5788] Register hash_out_reg in module HashOut is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:53]
-INFO: [Synth 8-256] done synthesizing module 'HashOut' (7#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
+INFO: [Synth 8-256] done synthesizing module 'HashOut' (6#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[31]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[30]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[29]
@@ -101,7 +100,7 @@ WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[12]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[11]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 394.488 ; gain = 185.109
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 394.781 ; gain = 185.063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -111,62 +110,59 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 394.488 ; gain = 185.109
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 394.781 ; gain = 185.063
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'B0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:44]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'B1' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:46]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-9752-LAPTOP-L1N8U9P6/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'B1'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-4004-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-4004-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 709.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 708.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 713.523 ; gain = 504.145
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 711.949 ; gain = 502.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 713.523 ; gain = 504.145
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 711.949 ; gain = 502.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 713.523 ; gain = 504.145
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 711.949 ; gain = 502.230
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[16]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[15]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[14]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[13]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[12]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[11]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[10]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[9]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[8]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[7]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[6]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "digest_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "digest_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'count_reg' in module 'HashOut'
@@ -286,7 +282,7 @@ INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instanc
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'count_reg' using encoding 'one-hot' in module 'HashOut'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 713.523 ; gain = 504.145
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 711.949 ; gain = 502.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -297,7 +293,7 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|     19429|
 |3     |SHA1Core__GB2 |           1|      9202|
 |4     |SHA1Core__GB3 |           1|     10099|
-|5     |top__GC0      |           1|      2933|
+|5     |top__GC0      |           1|      3311|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -305,8 +301,9 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   5 Input     32 Bit       Adders := 80    
-	   2 Input     32 Bit       Adders := 6     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
 	   4 Input     32 Bit         XORs := 64    
@@ -314,7 +311,7 @@ Detailed RTL Component Info :
 	              512 Bit    Registers := 1     
 	              160 Bit    Registers := 2     
 	               32 Bit    Registers := 22    
-	                8 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
@@ -356,12 +353,6 @@ Detailed RTL Component Info :
 	   3 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 2     
-Module counter__3 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
 Module counter 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -378,6 +369,9 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 5     
 Module MsgIn 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
 +---Registers : 
 	              512 Bit    Registers := 1     
 	               32 Bit    Registers := 16    
@@ -416,22 +410,22 @@ INFO: [Synth 8-5546] ROM "HI1/RAM_reg[4]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "HI1/RAM_reg[3]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "HI1/RAM_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "HI1/RAM_reg[1]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[16]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[15]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[14]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[13]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[12]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[11]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[10]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[9]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[8]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[7]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[6]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[5]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[4]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[3]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[2]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "M1/RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M1/RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[31]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[30]
 WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[29]
@@ -562,7 +556,7 @@ INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instan
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (SH1i_3/\k_reg[0][30] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (SH1i_3/\k_reg[0][31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:31 . Memory (MB): peak = 891.570 ; gain = 682.191
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 880.328 ; gain = 670.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -573,7 +567,7 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|     31058|
 |3     |SHA1Core__GB2 |           1|      8800|
 |4     |SHA1Core__GB3 |           1|      9146|
-|5     |top__GC0      |           1|      2029|
+|5     |top__GC0      |           1|      1958|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -582,10 +576,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 891.570 ; gain = 682.191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:49 . Memory (MB): peak = 880.328 ; gain = 670.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 891.570 ; gain = 682.191
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:49 . Memory (MB): peak = 880.328 ; gain = 670.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -596,13 +590,13 @@ Report RTL Partitions:
 |2     |SHA1Core__GB1 |           1|     31058|
 |3     |SHA1Core__GB2 |           1|      8800|
 |4     |SHA1Core__GB3 |           1|      9146|
-|5     |top__GC0      |           1|      2029|
+|5     |top__GC0      |           1|      1958|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Technology Mapping : Time (s): cpu = 00:01:44 ; elapsed = 00:01:58 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -626,7 +620,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:49 ; elapsed = 00:01:57 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:02:01 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -639,7 +633,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -651,25 +645,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:02:02 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:07 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:02 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:02:07 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:02 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:02:07 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -680,7 +674,6 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |blk_mem_gen_0 |         1|
-|2     |blk_mem_gen_1 |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -688,45 +681,43 @@ Report Cell Usage:
 |      |Cell          |Count |
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
-|2     |blk_mem_gen_1 |     1|
-|3     |BUFG          |    11|
-|4     |CARRY4        |  1320|
-|5     |LUT1          |     9|
-|6     |LUT2          |  3845|
-|7     |LUT3          |   393|
-|8     |LUT4          |  3107|
-|9     |LUT5          |  3025|
-|10    |LUT6          |  6685|
-|11    |FDCE          |   701|
-|12    |FDPE          |     1|
-|13    |FDRE          |   864|
-|14    |LD            |  1128|
-|15    |LDC           |  2721|
-|16    |IBUF          |    14|
-|17    |OBUF          |    33|
+|2     |BUFG          |    11|
+|3     |CARRY4        |  1320|
+|4     |LUT1          |     8|
+|5     |LUT2          |  3844|
+|6     |LUT3          |   398|
+|7     |LUT4          |  3103|
+|8     |LUT5          |  3005|
+|9     |LUT6          |  6702|
+|10    |FDCE          |   693|
+|11    |FDPE          |     1|
+|12    |FDRE          |   864|
+|13    |LD            |  1128|
+|14    |LDC           |  2721|
+|15    |IBUF          |    13|
+|16    |OBUF          |    33|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+---------+----------+------+
-|      |Instance |Module    |Cells |
-+------+---------+----------+------+
-|1     |top      |          | 23921|
-|2     |  C0     |counter   |    25|
-|3     |  C1     |counter_0 |    39|
-|4     |  HI1    |HashIn    |   322|
-|5     |  HO1    |HashOut   |   276|
-|6     |  M1     |MsgIn     |  1542|
-|7     |  SH1    |SHA1Core  | 19252|
-+------+---------+----------+------+
++------+---------+---------+------+
+|      |Instance |Module   |Cells |
++------+---------+---------+------+
+|1     |top      |         | 23876|
+|2     |  C0     |counter  |    52|
+|3     |  HI1    |HashIn   |   322|
+|4     |  HO1    |HashOut  |   276|
+|5     |  M1     |MsgIn    |  1542|
+|6     |  SH1    |SHA1Core | 19252|
++------+---------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:02 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:02:08 . Memory (MB): peak = 1020.746 ; gain = 811.027
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 145 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:01:47 . Memory (MB): peak = 1029.434 ; gain = 451.844
-Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:02:03 . Memory (MB): peak = 1029.434 ; gain = 820.055
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:01:52 . Memory (MB): peak = 1020.746 ; gain = 444.707
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:02:08 . Memory (MB): peak = 1020.746 ; gain = 811.027
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5183 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 5182 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'SHA1Core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -736,9 +727,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 2721 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-188 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
+186 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 1029.434 ; gain = 774.441
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:10 . Memory (MB): peak = 1020.746 ; gain = 765.656
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1029.434 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 29 16:46:07 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1020.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 29 18:47:33 2017...

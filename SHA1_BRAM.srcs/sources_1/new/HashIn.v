@@ -38,10 +38,10 @@ always @(posedge clk or negedge rst)begin
   else if(en)begin
        RAM[addr] <= di;
        read_addr <= addr;
-       if(addr >= 5) 
+       if(addr >= 5)begin 
          do <= {RAM[1],RAM[2],RAM[3],RAM[4],RAM[5]};
-       if(addr >= 6) 
          done <= 1;
+       end
    end
 end
 
