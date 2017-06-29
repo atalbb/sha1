@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MsgIn(input clk,
-              input rst, 
-               input en,
-               input [7:0]addr, 
-               input [31:0]di,
+module MsgIn(input wire clk,
+              input wire rst, 
+               input wire en,
+               input wire [7:0]addr, 
+               input wire [31:0]di,
                output reg done,
                output reg [511:0]do
                );

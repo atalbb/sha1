@@ -21,13 +21,13 @@
 
 
 module SHA1Core(
-      input clk,
-      input rst,
-      input initial_hash_start,
-      input [159:0]initial_hash,
-      input msg_in_start,
-      input [9:0]msg_len,
-      input [511:0]msg,
+      input wire clk,
+      input wire rst,
+      input wire initial_hash_start,
+      input wire[159:0]initial_hash,
+      input wire msg_in_start,
+      input wire [9:0]msg_len,
+      input wire [511:0]msg,
       output reg digest_done,
       output reg [159:0]digest_out
     );
@@ -52,6 +52,7 @@ parameter SHA1_F3_ROUNDS = 6;
 parameter SHA1_FINAL = 7;
 parameter SHA1_DIGEST = 8;
 parameter SHA1_DIGEST_DONE = 9;
+parameter SHA1_IDLE = 10;
 
 initial //begin
     flag = 0;
@@ -84,7 +85,8 @@ always@(*) begin
         next_state = SHA1_DIGEST;
     else if(flag == 9)
         next_state = SHA1_DIGEST_DONE;
-    //else begin end 
+    else if(flag == 10) 
+        next_state = SHA1_IDLE; 
     end 
 always@(*) begin
     if(curr_state == SHA1_RESET) begin
@@ -271,13 +273,6 @@ always@(*) begin
         wt[63] = w[76]^w[71]^w[65]^w[63];
         w[79] = {wt[63][30:0],wt[63][31]};//wt << 1            
         flag = 3;
-    //end else if(curr_state == SHA1_ABCDE_INIT) begin
-//        a[0] = h[0];
-//        b[0] = h[1];
-//        c[0] = h[2];
-//        d[0] = h[3];
-//        e[0] = h[4];
-       // flag = 4;
     end else if(curr_state == SHA1_F0_ROUNDS) begin
         //F(0) starts
         temp[0] = {a[0][26:0],a[0][31:27]} + ((b[0] & c[0]) | ((~b[0]) & d[0])) + e[0] + w[0] + k[0] ;
@@ -529,7 +524,7 @@ always@(*) begin
         c[40] = {b[39][1:0],b[39][31:2]}; // b[t]<<30
         b[40] = a[39];
         a[40] = temp[39];
-        flag = 5; 
+        flag = 5;
     end else if(curr_state == SHA1_F2_ROUNDS) begin                            
         //F(2) starts
         temp[40] = {a[40][26:0],a[40][31:27]} + ((b[40]&c[40])|(b[40]&d[40])|(c[40]&d[40])) + e[40] + w[40] + k[2] ;
@@ -786,7 +781,13 @@ always@(*) begin
     end else if(curr_state == SHA1_DIGEST) begin
         digest_out = {hash[0],hash[1],hash[2],hash[3],hash[4]};
         flag = 9;
-    end else if(curr_state == SHA1_DIGEST_DONE) 
+    end else if(curr_state == SHA1_DIGEST_DONE) begin 
         digest_done = 1;
+        flag = 10;
+    end else if(curr_state == SHA1_IDLE) begin
+        //digest_done = 0;
+    end
+    
+    
 end
 endmodule

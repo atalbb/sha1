@@ -42,9 +42,9 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config  -ruleid {1}  -id {Project 1-19}  -string {{CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/College/Thesis/VivadoProjects/SHA1_BRAM/tb_behav.wcfg'.}}  -suppress 
 
 start_step init_design
 set ACTIVE_STEP init_design

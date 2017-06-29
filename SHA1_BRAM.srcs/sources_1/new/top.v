@@ -22,13 +22,13 @@
 
 
 
-module top(input clk,
-           input rst,
-           input enHashIn,
-           input enMsgIn,
-           input [31:0]msgLenBits,
-           output HashDone,
-           output [31:0]Out
+module top(input wire clk,
+           input wire rst,
+           input wire enHashIn,
+           input wire enMsgIn,
+           input wire [31:0]msgLenBits,
+           output wire HashDone,
+           output wire [31:0]Out
            );
            
 wire Hdone;

@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module counter(input clk,
-                input rst,
-                 input en,
+module counter(input wire clk,
+                input wire rst,
+                 input wire en,
                  output reg [7:0]out
     );
 always @(posedge clk or negedge rst)

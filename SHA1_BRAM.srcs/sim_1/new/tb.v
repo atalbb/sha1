@@ -27,6 +27,7 @@ parameter HALF_CLK = 5;
 parameter FULL_CLK = 2*HALF_CLK;
 parameter _5_FULL_CLK = 5 * FULL_CLK;
 parameter _16_FULL_CLK = 16 * FULL_CLK;
+parameter _17_FULL_CLK = 17 * FULL_CLK;
 //parameter
 reg clk,enbh,enbm;
 reg [7:0]read_addr;

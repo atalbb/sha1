@@ -43,11 +43,13 @@ Compiling module xil_defaultlib.counter_0
 Compiling module unisims_ver.sffsrce_fdre
 Compiling module unisims_ver.FDRE
 Compiling module xil_defaultlib.HashIn
-Compiling module unisims_ver.latchsre_ldce
-Compiling module unisims_ver.LDCE
+Compiling module unisims_ver.ffsrce_fdpe
+Compiling module unisims_ver.FDPE
 Compiling module xil_defaultlib.HashOut
 Compiling module unisims_ver.OBUF
 Compiling module xil_defaultlib.MsgIn
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
 Compiling module unisims_ver.CARRY4
 Compiling module xil_defaultlib.SHA1Core
 Compiling module unisims_ver.BUFG

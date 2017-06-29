@@ -1,14 +1,13 @@
 Exception at PC 0x00007FFB0FC49E08
-Unable to capture context for thread 7588 in process 1144, can not generate back trace
-Unable to capture context for thread 9412 in process 1144, can not generate back trace
-Unable to capture context for thread 5936 in process 1144, can not generate back trace
+Unable to capture context for thread 10840 in process 804, can not generate back trace
+Unable to capture context for thread 11096 in process 804, can not generate back trace
 Exception at PC 0x00007FFB0FC49E08
-Unable to capture context for thread 7588 in process 1144, can not generate back trace
-Unable to capture context for thread 9412 in process 1144, can not generate back trace
-Unable to capture context for thread 5936 in process 1144, can not generate back trace
-Exception at PC 0x00007FFADE05BB93
+Unable to capture context for thread 10840 in process 804, can not generate back trace
+Unable to capture context for thread 3520 in process 804, can not generate back trace
+Exception at PC 0x00007FFA9425BB93
 Printing stacktrace...
 
+Unable to capture context for thread 3520 in process 804, can not generate back trace
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
@@ -26,18 +25,18 @@ Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
 Exception at PC 0x00007FFB0FC49E08
-[0]  [0x00007FFADE05BB93]
-[1]  [0x00007FFADE05BB93]
-[2]  [0x00007FFADE05B4A1]
-[3]  [0x00007FFADE05B3EF]
-[4]  [0x00007FFADE0419FE]
-[5]  [0x00007FFADE040ED1]
-[6]  [0x00007FFADE040D76]
-[7]  [0x00007FFADDFE79F6]
-[8]  [0x00007FFADDFD7AFB]
-[9]  [0x00007FFADE0FE90A]
-[10]  [0x00007FFADE119F87]
-[11]  [0x00007FFADE11A05F]
+[0]  [0x00007FFA9425BB93]
+[1]  [0x00007FFA9425BB93]
+[2]  [0x00007FFA9425B4A1]
+[3]  [0x00007FFA9425B3EF]
+[4]  [0x00007FFA942419FE]
+[5]  [0x00007FFA94240ED1]
+[6]  [0x00007FFA94240D76]
+[7]  [0x00007FFA941E79F6]
+[8]  [0x00007FFA941D7AFB]
+[9]  [0x00007FFA942FE90A]
+[10]  [0x00007FFA94319F87]
+[11]  [0x00007FFA9431A05F]
 [12] (BaseThreadInitThunk+0x14) [0x00007FFB10AF2774]
 [13] (RtlUserThreadStart+0x21) [0x00007FFB12D90D61]
 Done
