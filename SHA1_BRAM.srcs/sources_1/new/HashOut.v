@@ -47,42 +47,29 @@ always@(posedge clk or negedge rst) begin
         if(start) begin
             if(count == 0) begin
                 temp <= digest_in;
-                done <= 1;
                 count <= count + 1;
             end else if(count == 1) begin
-                hash_out = temp[159:128];
+                hash_out <= temp[159:128];
+                done <= 1;
                 count <= count + 1;
             end else if(count == 2)begin
-                hash_out = temp[127:96];
+                hash_out <= temp[127:96];
                 count <= count + 1;
             end else if(count == 3)begin
-                hash_out = temp[95:64];
+                hash_out <= temp[95:64];
                 count <= count + 1;
             end else if(count == 4)begin
-                hash_out = temp[63:32];
+                hash_out <= temp[63:32];
                 count <= count + 1;
             end else if(count == 5)begin
-                hash_out = temp[31:0];
+                hash_out <= temp[31:0];
                 count <= count + 1;
-            end else if(count ==6) begin
-                done <= 0;
+            end else if(count == 6)begin
+                hash_out <= 0;
+                done <= 32'hx;
             end
         end
      end      
 end
-//always@(*)begin
-//    if(count == 1) 
-//        temp = digest_in;
-//    else if(count == 2)    
-//        hash_out = temp[159:128];
-////    else begin end
-//    else if(count == 3)
-//            hash_out = temp[127:96];
-//    else if(count == 4)
-//            hash_out = temp[95:64];
-//    else if(count == 5)
-//            hash_out = temp[63:32];
-//    else if(count == 6)
-//            hash_out = temp[31:0];
-//   end
+
 endmodule
