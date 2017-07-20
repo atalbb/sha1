@@ -20,28 +20,32 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module HashIn(input wire clk,
+module HashMsgIn(input wire clk,
               input wire rst, 
                input wire en,
-               input wire [7:0]addr, 
+               input wire [31:0]addr, 
                input wire [31:0]di,
                output reg done,
-               output reg [159:0]do);
-               
-reg [31:0] RAM [5:0]; // 32bit RAM x 16 slots= 512 bit(64 Byte) RAM
-reg [7:0] read_addr;
+               output reg [159:0]hashO,
+               output reg [511:0]msgO);
+parameter delay = 3'b0;
+parameter END_ADDR = 23;
+reg [31:0] RAM [21:0]; // 32bit RAM x 16 slots= 512 bit(64 Byte) RAM
 always @(posedge clk or negedge rst)begin
   if(!rst) begin
     done <= 0;
-    do <= 0;
+    hashO <= 0;
+    msgO <= 0;
   end 
   else if(en)begin
-       RAM[addr] <= di;
-       read_addr <= addr;
-       if(addr >= 5)begin 
-         do <= {RAM[1],RAM[2],RAM[3],RAM[4],RAM[5]};
-         done <= 1;
-       end
+       if(addr < END_ADDR)begin 
+           RAM[addr-1] <= di;
+           if(addr == END_ADDR-1)begin 
+             hashO <= {RAM[0],RAM[1],RAM[2],RAM[3],RAM[4]};
+             msgO <= {RAM[5],RAM[6],RAM[7],RAM[8],RAM[9],RAM[10],RAM[11],RAM[12],RAM[13],RAM[14],RAM[15],RAM[16],RAM[17],RAM[18],RAM[19],RAM[20]};
+           end
+       end else if(addr >= END_ADDR)
+                   done <= #delay 1;
    end
 end
 

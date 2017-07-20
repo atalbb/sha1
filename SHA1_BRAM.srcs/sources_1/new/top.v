@@ -25,24 +25,23 @@
 module top(input wire clk,
            input wire rst,
            input wire enHashIn,
-           input wire [31:0]msgLenBits,
-           output wire HashDone,
-           output wire [31:0]Out
+           //output digestDone,
+           //output [159:0]digest
+           output HashDone,
+           output [31:0]Out
            );
            
 wire Hdone;
 wire [159:0]Hdo;
-wire Mdone;
 wire [511:0]Mdo;
 wire [31:0]hashInBRAMOUT;
-wire [7:0]hashAddr;
+wire [31:0]hashAddr;
 wire digestDone;
 wire [159:0]digest;
 counter C0(clk,rst,enHashIn,hashAddr);
 blk_mem_gen_0 B0(clk,enHashIn,0,hashAddr,32'h0,hashInBRAMOUT);//BRAM for HashIn
-HashIn HI1(clk,rst,enHashIn,hashAddr,hashInBRAMOUT,Hdone,Hdo);
-MsgIn M1(clk,rst,Hdone,hashAddr,hashInBRAMOUT,Mdone,Mdo);
-SHA1Core SH1(clk,rst,Hdone,Hdo,Mdone,msgLenBits,Mdo,digestDone,digest);
+HashMsgIn HM1(clk,rst,enHashIn,hashAddr,hashInBRAMOUT,Hdone,Hdo,Mdo);
+core_logic SHA1(clk,rst,Hdone,Hdo,Mdo,digestDone,digest);
 HashOut HO1(clk,rst,digestDone,digest,HashDone,Out);
 endmodule
 

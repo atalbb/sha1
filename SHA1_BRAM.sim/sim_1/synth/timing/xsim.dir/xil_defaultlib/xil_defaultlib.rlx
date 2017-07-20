@@ -2,5 +2,5 @@
 2016.3
 Oct 10 2016
 19:46:48
-C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.sim/sim_1/synth/timing/tb_time_synth.v,1498694109,verilog,,,,HashIn;MsgIn;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_3_4;blk_mem_gen_0_blk_mem_gen_v8_3_4_synth;blk_mem_gen_1;blk_mem_gen_1blk_mem_gen_generic_cstr;blk_mem_gen_1blk_mem_gen_prim_width;blk_mem_gen_1blk_mem_gen_prim_wrapper_init;blk_mem_gen_1blk_mem_gen_top;blk_mem_gen_1blk_mem_gen_v8_3_4;blk_mem_gen_1blk_mem_gen_v8_3_4_synth;counter;counter_0;glbl;top,,,,,,,,
-C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sim_1/new/tb.v,1498693369,verilog,,,,tb,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_BRAM_10/SHA1_BRAM.sim/sim_1/synth/timing/tb_time_synth.v,1500553567,verilog,,,,HashMsgIn;HashOut;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_3_4;blk_mem_gen_0_blk_mem_gen_v8_3_4_synth;core_logic;counter;glbl;top,,,,,,,,
+C:/College/Thesis/VivadoProjects/SHA1_BRAM_10/SHA1_BRAM.srcs/sim_1/new/tb.v,1500518967,verilog,,,,tb,,,,,,,,

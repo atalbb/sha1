@@ -23,11 +23,11 @@
 module counter(input wire clk,
                 input wire rst,
                  input wire en,
-                 output reg [7:0]out
+                 output reg [31:0]out
     );
 always @(posedge clk or negedge rst)
  if (!rst) begin
-   out <= 10'b0 ;
+   out <= 31'b0 ;
  end else if (en) begin
    out <= out + 1;
  end

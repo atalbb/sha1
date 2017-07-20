@@ -45,28 +45,31 @@ always@(posedge clk or negedge rst) begin
         done <= 0;
      end else begin
         if(start) begin
-            if(count == 0) begin
+            if(count == 0)begin
+                count <= count + 1;            
+            end else if(count == 1) begin
                 temp <= digest_in;
                 count <= count + 1;
-            end else if(count == 1) begin
+            end else if(count == 2) begin
                 hash_out <= temp[159:128];
                 done <= 1;
                 count <= count + 1;
-            end else if(count == 2)begin
+            end else if(count == 3)begin
                 hash_out <= temp[127:96];
                 count <= count + 1;
-            end else if(count == 3)begin
+            end else if(count == 4)begin
                 hash_out <= temp[95:64];
                 count <= count + 1;
-            end else if(count == 4)begin
+            end else if(count == 5)begin
                 hash_out <= temp[63:32];
                 count <= count + 1;
-            end else if(count == 5)begin
+            end else if(count == 6)begin
                 hash_out <= temp[31:0];
                 count <= count + 1;
-            end else if(count == 6)begin
+            end else if(count == 7)begin
                 hash_out <= 0;
-                done <= 32'hx;
+                //count <= count + 1;
+                done <= 0;
             end
         end
      end      
