@@ -29,25 +29,21 @@ parameter _5_FULL_CLK = 5 * FULL_CLK;
 parameter _16_FULL_CLK = 16 * FULL_CLK;
 parameter _17_FULL_CLK = 17 * FULL_CLK;
 //parameter
-reg clk,enb,enbh;
-reg [7:0]read_addr;
-reg rst;
-wire DONE;
-wire [31:0]OUT;
-
-
-top T(clk,rst,enbh,440,DONE,OUT);
+reg clk,rst,enb;
+wire [159:0]finalOut;
+wire finalDone;
+top T(clk,rst,enb,finalDone,finalOut);
 initial begin
     clk = 0;
     rst = 1;
-    enbh = 0;
+    enb = 0;
     #100 rst = 0;
     #100 rst = 1;
-    #100 enbh = 1;
+    #100 enb = 1;
     #_5_FULL_CLK //enbm = 1; // 5 clks to read Initial Hash
     #_16_FULL_CLK // 16 clks to read Data
     #_17_FULL_CLK// 16 clocks for SHA1 conversiona & serializing to five 32-bit data
-    #FULL_CLK  $finish; // 1 clk for done signal to go down
+    #500  $finish; // 1 clk for done signal to go down
 end
 
 always

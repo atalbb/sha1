@@ -28,22 +28,24 @@ module MsgIn(input wire clk,
                output reg done,
                output reg [511:0]do
                );
-parameter MSGIN_START_ADDR =  6;             
+parameter MSGIN_START_ADDR =  7;  
+parameter MSGIN_STOP_ADDR = 17;   
+parameter delay = 3'b0;        
 reg [31:0] RAM [16:0]; // 32bit RAM x 16 slots= 512 bit(64 Byte) RAM
-reg [7:0] read_addr;
 always @(posedge clk or negedge rst)begin
    if(!rst) begin
         done <= 0;
         do <= 0;
    end
    else if (en)begin
-       RAM[addr-MSGIN_START_ADDR] <= di;
-       read_addr <= addr;
-       done <=  0;
-       if((addr-MSGIN_START_ADDR) >= 16) 
+        RAM[addr-MSGIN_START_ADDR] <= di;
+        done <=  0;
+       if((addr-MSGIN_START_ADDR) >= MSGIN_STOP_ADDR) begin 
          do <= {RAM[0],RAM[1],RAM[2],RAM[3],RAM[4],RAM[5],RAM[6],RAM[7],RAM[8],RAM[9],RAM[10],RAM[11],RAM[12],RAM[13],RAM[14],RAM[15]};
-       if((addr-MSGIN_START_ADDR) >= 17) 
-         done <= 1;
+         done <= #delay 1;
+       end
+       //if((addr-MSGIN_START_ADDR) >= 17) 
+       //  done <= 1;
    end
 end
 endmodule

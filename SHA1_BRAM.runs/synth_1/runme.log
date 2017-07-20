@@ -14,92 +14,85 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4464 
+INFO: Helper process launched with PID 10024 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 333.309 ; gain = 123.234
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 333.070 ; gain = 123.656
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-3264-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-3264-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'HashIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
-WARNING: [Synth 8-5788] Register RAM_reg[5] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-WARNING: [Synth 8-5788] Register RAM_reg[4] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-WARNING: [Synth 8-5788] Register RAM_reg[3] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-WARNING: [Synth 8-5788] Register RAM_reg[2] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-WARNING: [Synth 8-5788] Register RAM_reg[1] in module HashIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:39]
-INFO: [Synth 8-256] done synthesizing module 'HashIn' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
-INFO: [Synth 8-638] synthesizing module 'MsgIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:23]
-	Parameter MSGIN_START_ADDR bound to: 6 - type: integer 
-WARNING: [Synth 8-5788] Register RAM_reg[15] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[14] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[13] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[12] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[11] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[10] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[9] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[8] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[7] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[6] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[5] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[4] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[3] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[2] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[1] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-WARNING: [Synth 8-5788] Register RAM_reg[0] in module MsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:40]
-INFO: [Synth 8-256] done synthesizing module 'MsgIn' (4#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/MsgIn.v:23]
-INFO: [Synth 8-638] synthesizing module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/top.v:25]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11056-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11056-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'HashMsgIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
+	Parameter delay bound to: 3'b000 
+	Parameter END_ADDR bound to: 23 - type: integer 
+WARNING: [Synth 8-5788] Register RAM_reg[20] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[19] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[18] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[17] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[16] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:42]
+INFO: [Synth 8-256] done synthesizing module 'HashMsgIn' (3#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/HashIn.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'addr' does not match port width (32) of module 'HashMsgIn' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/top.v:43]
+INFO: [Synth 8-638] synthesizing module 'core_logic' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:23]
+	Parameter delay bound to: 0 - type: integer 
+	Parameter InitWaitDelay bound to: 2 - type: integer 
 	Parameter SHA1_RESET bound to: 0 - type: integer 
-	Parameter SHA1_INIT bound to: 1 - type: integer 
-	Parameter SHA1_W_ROUNDS bound to: 2 - type: integer 
-	Parameter SHA1_F0_ROUNDS bound to: 3 - type: integer 
-	Parameter SHA1_F1_ROUNDS bound to: 4 - type: integer 
-	Parameter SHA1_F2_ROUNDS bound to: 5 - type: integer 
-	Parameter SHA1_F3_ROUNDS bound to: 6 - type: integer 
-	Parameter SHA1_FINAL bound to: 7 - type: integer 
-	Parameter SHA1_DIGEST bound to: 8 - type: integer 
-	Parameter SHA1_DIGEST_DONE bound to: 9 - type: integer 
-	Parameter SHA1_IDLE bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SHA1Core' (5#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'msg_len' does not match port width (10) of module 'SHA1Core' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:45]
-INFO: [Synth 8-638] synthesizing module 'HashOut' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
-	Parameter RESET bound to: 0 - type: integer 
-	Parameter HASH_READ bound to: 1 - type: integer 
-	Parameter HASH_OUT0 bound to: 2 - type: integer 
-	Parameter HASH_OUT1 bound to: 3 - type: integer 
-	Parameter HASH_OUT2 bound to: 4 - type: integer 
-	Parameter HASH_OUT3 bound to: 5 - type: integer 
-	Parameter HASH_OUT4 bound to: 6 - type: integer 
-	Parameter HASH_OUT_DONE bound to: 7 - type: integer 
-WARNING: [Synth 8-5788] Register temp_reg in module HashOut is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:49]
-WARNING: [Synth 8-5788] Register hash_out_reg in module HashOut is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:52]
-INFO: [Synth 8-256] done synthesizing module 'HashOut' (6#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/HashOut.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:25]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[31]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[30]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[29]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[28]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[27]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[26]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[25]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[24]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[23]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[22]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[21]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[20]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[19]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[18]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[17]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[16]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[15]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[14]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[13]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[12]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[11]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[10]
+	Parameter SHA1_WAIT bound to: 1 - type: integer 
+	Parameter SHA1_INIT bound to: 2 - type: integer 
+	Parameter SHA1_W_ROUNDS bound to: 3 - type: integer 
+	Parameter SHA1_F0_ROUND1 bound to: 4 - type: integer 
+	Parameter SHA1_F0_ROUND2 bound to: 5 - type: integer 
+	Parameter SHA1_F0_ROUND3 bound to: 6 - type: integer 
+	Parameter SHA1_F0_ROUND4 bound to: 7 - type: integer 
+	Parameter SHA1_F1_ROUND1 bound to: 8 - type: integer 
+	Parameter SHA1_F1_ROUND2 bound to: 9 - type: integer 
+	Parameter SHA1_F1_ROUND3 bound to: 10 - type: integer 
+	Parameter SHA1_F1_ROUND4 bound to: 11 - type: integer 
+	Parameter SHA1_F2_ROUND1 bound to: 12 - type: integer 
+	Parameter SHA1_F2_ROUND2 bound to: 13 - type: integer 
+	Parameter SHA1_F2_ROUND3 bound to: 14 - type: integer 
+	Parameter SHA1_F2_ROUND4 bound to: 15 - type: integer 
+	Parameter SHA1_F3_ROUND1 bound to: 16 - type: integer 
+	Parameter SHA1_F3_ROUND2 bound to: 17 - type: integer 
+	Parameter SHA1_F3_ROUND3 bound to: 18 - type: integer 
+	Parameter SHA1_F3_ROUND4 bound to: 19 - type: integer 
+	Parameter SHA1_DIGEST bound to: 20 - type: integer 
+	Parameter SHA1_DIGEST_DONE bound to: 21 - type: integer 
+	Parameter SHA1_IDLE bound to: 22 - type: integer 
+	Parameter SHA1_WAIT2 bound to: 23 - type: integer 
+	Parameter SHA1_WAIT3 bound to: 24 - type: integer 
+	Parameter SHA1_WAIT4 bound to: 25 - type: integer 
+	Parameter SHA1_WAIT5 bound to: 26 - type: integer 
+	Parameter SHA1_WAIT6 bound to: 27 - type: integer 
+	Parameter SHA1_WAIT7 bound to: 28 - type: integer 
+	Parameter SHA1_WAIT8 bound to: 29 - type: integer 
+	Parameter SHA1_WAIT9 bound to: 30 - type: integer 
+	Parameter SHA1_WAIT10 bound to: 31 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'initialHashIn' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:92]
+WARNING: [Synth 8-567] referenced signal 'msgIn' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:92]
+INFO: [Synth 8-256] done synthesizing module 'core_logic' (4#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/uart_tx.v:21]
+	Parameter bit_time bound to: 868 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/top.v:25]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 394.363 ; gain = 184.289
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 407.102 ; gain = 197.688
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,43 +102,47 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 394.363 ; gain = 184.289
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 407.102 ; gain = 197.688
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'B0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/top.v:42]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'B0' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/top.v:42]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-3264-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/.Xil/Vivado-3264-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11056-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/.Xil/Vivado-11056-LAPTOP-L1N8U9P6/dcp/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 708.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 722.043 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 712.289 ; gain = 502.215
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 722.742 ; gain = 513.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 712.289 ; gain = 502.215
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 722.742 ; gain = 513.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 712.289 ; gain = 502.215
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 722.742 ; gain = 513.328
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -162,169 +159,256 @@ INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address siz
 INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "digest_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "digest_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-802] inferred FSM for state register 'count_reg' in module 'HashOut'
-INFO: [Synth 8-5544] ROM "temp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'digest_done_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:106]
-WARNING: [Synth 8-327] inferring latch for variable 'digest_out_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:782]
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:71]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:775]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:775]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:775]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:775]
-WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:775]
-WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:107]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:124]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:93]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:123]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:93]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:122]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:93]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:121]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:93]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:120]
-WARNING: [Synth 8-327] inferring latch for variable 'h_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:93]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:122]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:123]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:121]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:124]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:109]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:120]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[61]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[63]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[62]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[64]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[66]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[67]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[69]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[68]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[72]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[71]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[73]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[74]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[76]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[77]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[78]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[79]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:122]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:120]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:121]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:123]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[41]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:109]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:124]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[40]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[42]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[45]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[44]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[46]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[49]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[48]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[53]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[52]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[54]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[57]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[56]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[58]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[12]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[6]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[9]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[11]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[8]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[5]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[13]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[10]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[7]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'a_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:120]
-WARNING: [Synth 8-327] inferring latch for variable 'b_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:121]
-WARNING: [Synth 8-327] inferring latch for variable 'c_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:122]
-WARNING: [Synth 8-327] inferring latch for variable 'd_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:123]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:124]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[20]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'k_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:109]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[22]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[21]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[25]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/new/SHA1Core.v:98]
-INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "hashO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'core_logic'
+INFO: [Synth 8-5546] ROM "k" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hash" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ledDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "digestDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "digest" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'digestDone_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:104]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  iSTATE |                              000 |                             0000
-                 iSTATE0 |                              001 |                             0001
-                 iSTATE1 |                              010 |                             0010
-                 iSTATE2 |                              011 |                             0011
-                 iSTATE3 |                              100 |                             0100
-                 iSTATE5 |                              101 |                             0101
-*
-                 iSTATE4 |                              110 |                             0110
+              SHA1_RESET |  0000000000000000000000000000001 |                           000000
+               SHA1_WAIT |  0000000000000000000000000000010 |                           000001
+               SHA1_INIT |  0000000000000000000000000000100 |                           000010
+           SHA1_W_ROUNDS |  0000000000000000000000000001000 |                           000011
+          SHA1_F0_ROUND1 |  0000000000000000000000000010000 |                           000100
+          SHA1_F0_ROUND2 |  0000000000000000000000000100000 |                           000101
+              SHA1_WAIT2 |  0000000000000000000000001000000 |                           010111
+          SHA1_F0_ROUND3 |  0000000000000000000000010000000 |                           000110
+          SHA1_F0_ROUND4 |  0000000000000000000000100000000 |                           000111
+              SHA1_WAIT3 |  0000000000000000000001000000000 |                           011000
+              SHA1_WAIT4 |  0000000000000000000010000000000 |                           011001
+          SHA1_F1_ROUND1 |  0000000000000000000100000000000 |                           001000
+          SHA1_F1_ROUND2 |  0000000000000000001000000000000 |                           001001
+              SHA1_WAIT5 |  0000000000000000010000000000000 |                           011010
+          SHA1_F1_ROUND3 |  0000000000000000100000000000000 |                           001010
+          SHA1_F1_ROUND4 |  0000000000000001000000000000000 |                           001011
+              SHA1_WAIT6 |  0000000000000010000000000000000 |                           011011
+          SHA1_F2_ROUND1 |  0000000000000100000000000000000 |                           001100
+          SHA1_F2_ROUND2 |  0000000000001000000000000000000 |                           001101
+              SHA1_WAIT7 |  0000000000010000000000000000000 |                           011100
+          SHA1_F2_ROUND3 |  0000000000100000000000000000000 |                           001110
+          SHA1_F2_ROUND4 |  0000000001000000000000000000000 |                           001111
+              SHA1_WAIT8 |  0000000010000000000000000000000 |                           011101
+          SHA1_F3_ROUND1 |  0000000100000000000000000000000 |                           010000
+          SHA1_F3_ROUND2 |  0000001000000000000000000000000 |                           010001
+              SHA1_WAIT9 |  0000010000000000000000000000000 |                           011110
+          SHA1_F3_ROUND3 |  0000100000000000000000000000000 |                           010010
+          SHA1_F3_ROUND4 |  0001000000000000000000000000000 |                           010011
+             SHA1_WAIT10 |  0010000000000000000000000000000 |                           011111
+             SHA1_DIGEST |  0100000000000000000000000000000 |                           010100
+        SHA1_DIGEST_DONE |  1000000000000000000000000000000 |                           010101
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'count_reg' using encoding 'sequential' in module 'HashOut'
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'core_logic'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'digest_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:849]
+WARNING: [Synth 8-327] inferring latch for variable 'ledDone_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'led_out_reg' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:855]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'h_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[80]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[75]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[76]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[77]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[78]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[79]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[70]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[72]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[71]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[73]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[11]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[5]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[3]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[8]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[13]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[10]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[7]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[4]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[12]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[9]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[6]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[1]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[74]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[66]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[65]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[67]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[69]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[68]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[60]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[61]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[63]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[62]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[64]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[2]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[55]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[57]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[56]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[58]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'a_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'b_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[53]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[52]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[54]' [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 712.289 ; gain = 502.215
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 722.742 ; gain = 513.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |SHA1Core__GB0 |           1|     19373|
-|2     |SHA1Core__GB1 |           1|     19429|
-|3     |SHA1Core__GB2 |           1|      9202|
-|4     |SHA1Core__GB3 |           1|     10099|
-|5     |top__GC0      |           1|      3225|
-+------+--------------+------------+----------+
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |core_logic__GB0 |           1|     27992|
+|2     |core_logic__GB1 |           1|     10666|
+|3     |core_logic__GB2 |           1|      8228|
+|4     |core_logic__GB3 |           1|     11840|
+|5     |top__GC0        |           1|      6314|
++------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
 	   5 Input     32 Bit       Adders := 80    
-	   2 Input     32 Bit       Adders := 7     
-	   2 Input      9 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     13 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
 	   4 Input     32 Bit         XORs := 64    
 +---Registers : 
 	              512 Bit    Registers := 1     
-	              160 Bit    Registers := 2     
-	               32 Bit    Registers := 22    
-	                8 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 21    
+	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   6 Input     32 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 35    
-	   9 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 2     
-	   6 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 3     
+	  31 Input     31 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	  31 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 37    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -332,64 +416,56 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module SHA1Core 
+Module core_logic 
 Detailed RTL Component Info : 
 +---Adders : 
 	   5 Input     32 Bit       Adders := 80    
-	   2 Input     32 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 5     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 40    
 	   4 Input     32 Bit         XORs := 64    
-+---Registers : 
-	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 13    
-	   9 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 2     
+	  31 Input     31 Bit        Muxes := 1     
+	  31 Input      6 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
 Module counter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
 	                8 Bit    Registers := 1     
-Module HashIn 
-Detailed RTL Component Info : 
-+---Registers : 
-	              160 Bit    Registers := 1     
-	               32 Bit    Registers := 5     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 5     
-Module MsgIn 
+Module HashMsgIn 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 1     
 +---Registers : 
 	              512 Bit    Registers := 1     
-	               32 Bit    Registers := 16    
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 16    
-Module HashOut 
-Detailed RTL Component Info : 
-+---Registers : 
 	              160 Bit    Registers := 1     
-	               32 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   6 Input     32 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -405,170 +481,151 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "HI1/RAM_reg[5]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "HI1/RAM_reg[4]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "HI1/RAM_reg[3]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "HI1/RAM_reg[2]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "HI1/RAM_reg[1]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "M1/RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[31]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[30]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[29]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[28]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[27]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[26]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[25]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[24]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[23]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[22]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[21]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[20]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[19]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[18]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[17]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[16]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[15]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[14]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[13]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[12]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[11]
-WARNING: [Synth 8-3331] design top has unconnected port msgLenBits[10]
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][27]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][29]' (LD) to 'SH1i_0/k_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][22]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][24]' (LD) to 'SH1i_0/k_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][0]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][2]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][6]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][7]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][9]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][11]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][12]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][14]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][16]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][17]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][19]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][21]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][26]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][31]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][4]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][5]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][10]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][15]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][20]' (LD) to 'SH1i_0/k_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][25]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][30]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][3]' (LD) to 'SH1i_0/k_reg[3][13]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][8]' (LD) to 'SH1i_0/k_reg[3][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][13]' (LD) to 'SH1i_0/k_reg[3][18]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][18]' (LD) to 'SH1i_0/k_reg[3][23]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][23]' (LD) to 'SH1i_0/k_reg[3][28]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][28]' (LD) to 'SH1i_0/k_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[3][1]' (LD) to 'SH1i_0/k_reg[2][2]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][0]' (LD) to 'SH1i_0/k_reg[2][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][1]' (LD) to 'SH1i_0/k_reg[2][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][2]' (LD) to 'SH1i_0/k_reg[2][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][3]' (LD) to 'SH1i_0/k_reg[2][4]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][4]' (LD) to 'SH1i_0/k_reg[2][6]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][5]' (LD) to 'SH1i_0/k_reg[2][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][6]' (LD) to 'SH1i_0/k_reg[2][7]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][7]' (LD) to 'SH1i_0/k_reg[2][10]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][8]' (LD) to 'SH1i_0/k_reg[2][9]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][9]' (LD) to 'SH1i_0/k_reg[2][14]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][10]' (LD) to 'SH1i_0/k_reg[2][11]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][11]' (LD) to 'SH1i_0/k_reg[2][12]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][12]' (LD) to 'SH1i_0/k_reg[2][13]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][13]' (LD) to 'SH1i_0/k_reg[2][15]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][14]' (LD) to 'SH1i_0/k_reg[2][18]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][15]' (LD) to 'SH1i_0/k_reg[2][16]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][16]' (LD) to 'SH1i_0/k_reg[2][17]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][17]' (LD) to 'SH1i_0/k_reg[2][19]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][18]' (LD) to 'SH1i_0/k_reg[2][21]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][19]' (LD) to 'SH1i_0/k_reg[2][20]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][20]' (LD) to 'SH1i_0/k_reg[2][24]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][21]' (LD) to 'SH1i_0/k_reg[2][22]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][22]' (LD) to 'SH1i_0/k_reg[2][23]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][23]' (LD) to 'SH1i_0/k_reg[2][28]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][24]' (LD) to 'SH1i_0/k_reg[2][25]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][25]' (LD) to 'SH1i_0/k_reg[2][26]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][26]' (LD) to 'SH1i_0/k_reg[2][27]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][27]' (LD) to 'SH1i_0/k_reg[2][31]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][28]' (LD) to 'SH1i_0/k_reg[2][29]'
-INFO: [Synth 8-3886] merging instance 'SH1i_0/k_reg[2][29]' (LD) to 'SH1i_0/k_reg[2][30]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (SH1i_0/\k_reg[2][30] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (SH1i_0/\k_reg[2][31] )
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][27]' (LD) to 'SH1i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][29]' (LD) to 'SH1i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][22]' (LD) to 'SH1i_1/k_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][24]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][0]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][2]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][6]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][7]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][9]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][11]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][12]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][14]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][16]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][17]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][19]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][21]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][26]' (LD) to 'SH1i_1/k_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][31]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][4]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][5]' (LD) to 'SH1i_1/k_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][10]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][15]' (LD) to 'SH1i_1/k_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][20]' (LD) to 'SH1i_1/k_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][25]' (LD) to 'SH1i_1/k_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][30]' (LD) to 'SH1i_1/k_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][3]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][8]' (LD) to 'SH1i_1/k_reg[1][13]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][13]' (LD) to 'SH1i_1/k_reg[1][23]'
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][18]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (SH1i_1/\k_reg[1][23] )
-INFO: [Synth 8-3886] merging instance 'SH1i_1/k_reg[1][28]' (LD) to 'SH1i_1/k_reg[1][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (SH1i_1/\k_reg[1][1] )
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][0]' (LD) to 'SH1i_3/k_reg[0][3]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][1]' (LD) to 'SH1i_3/k_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][2]' (LD) to 'SH1i_3/k_reg[0][5]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][3]' (LD) to 'SH1i_3/k_reg[0][4]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][4]' (LD) to 'SH1i_3/k_reg[0][7]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][5]' (LD) to 'SH1i_3/k_reg[0][6]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][6]' (LD) to 'SH1i_3/k_reg[0][9]'
-INFO: [Synth 8-3886] merging instance 'SH1i_3/k_reg[0][7]' (LD) to 'SH1i_3/k_reg[0][8]'
+INFO: [Synth 8-5545] ROM "HM1/hashO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HM1/RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][0]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][1]' (LD) to 'SHA1i_0/k_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][2]' (LD) to 'SHA1i_0/k_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][3]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][6]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][7]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][8]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][9]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][11]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][12]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][13]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][14]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][16]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][17]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][18]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][19]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][21]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][22]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][23]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][24]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][25]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][26]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][27]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][28]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][29]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][30]' (LD) to 'SHA1i_0/k_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][31]' (LD) to 'SHA1i_0/k_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][4]' (LD) to 'SHA1i_0/k_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][5]' (LD) to 'SHA1i_0/k_reg[1][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SHA1i_0/\k_reg[1][10] )
+INFO: [Synth 8-3886] merging instance 'SHA1i_0/k_reg[1][15]' (LD) to 'SHA1i_0/k_reg[1][20]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (SHA1i_0/\k_reg[1][20] )
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][0]' (LD) to 'SHA1i_1/k_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][1]' (LD) to 'SHA1i_1/k_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][2]' (LD) to 'SHA1i_1/k_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][3]' (LD) to 'SHA1i_1/k_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][4]' (LD) to 'SHA1i_1/k_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][5]' (LD) to 'SHA1i_1/k_reg[2][8]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][6]' (LD) to 'SHA1i_1/k_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][7]' (LD) to 'SHA1i_1/k_reg[2][10]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][8]' (LD) to 'SHA1i_1/k_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][9]' (LD) to 'SHA1i_1/k_reg[2][14]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][10]' (LD) to 'SHA1i_1/k_reg[2][11]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][11]' (LD) to 'SHA1i_1/k_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][12]' (LD) to 'SHA1i_1/k_reg[2][13]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][13]' (LD) to 'SHA1i_1/k_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][14]' (LD) to 'SHA1i_1/k_reg[2][18]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][15]' (LD) to 'SHA1i_1/k_reg[2][16]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][16]' (LD) to 'SHA1i_1/k_reg[2][17]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][17]' (LD) to 'SHA1i_1/k_reg[2][19]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][18]' (LD) to 'SHA1i_1/k_reg[2][21]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][19]' (LD) to 'SHA1i_1/k_reg[2][20]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][20]' (LD) to 'SHA1i_1/k_reg[2][24]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][21]' (LD) to 'SHA1i_1/k_reg[2][22]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][22]' (LD) to 'SHA1i_1/k_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][23]' (LD) to 'SHA1i_1/k_reg[2][28]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][24]' (LD) to 'SHA1i_1/k_reg[2][25]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][25]' (LD) to 'SHA1i_1/k_reg[2][26]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][26]' (LD) to 'SHA1i_1/k_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][27]' (LD) to 'SHA1i_1/k_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][28]' (LD) to 'SHA1i_1/k_reg[2][29]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_1/k_reg[2][29]' (LD) to 'SHA1i_1/k_reg[2][30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SHA1i_1/\k_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (SHA1i_1/\k_reg[2][31] )
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][0]' (LD) to 'SHA1i_2/k_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][1]' (LD) to 'SHA1i_2/k_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][2]' (LD) to 'SHA1i_2/k_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][3]' (LD) to 'SHA1i_2/k_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][4]' (LD) to 'SHA1i_2/k_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][5]' (LD) to 'SHA1i_2/k_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][6]' (LD) to 'SHA1i_2/k_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][7]' (LD) to 'SHA1i_2/k_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][8]' (LD) to 'SHA1i_2/k_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][9]' (LD) to 'SHA1i_2/k_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][10]' (LD) to 'SHA1i_2/k_reg[3][11]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][11]' (LD) to 'SHA1i_2/k_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][12]' (LD) to 'SHA1i_2/k_reg[3][13]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][13]' (LD) to 'SHA1i_2/k_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][14]' (LD) to 'SHA1i_2/k_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][15]' (LD) to 'SHA1i_2/k_reg[3][17]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][16]' (LD) to 'SHA1i_2/k_reg[3][18]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][17]' (LD) to 'SHA1i_2/k_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][18]' (LD) to 'SHA1i_2/k_reg[3][19]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][19]' (LD) to 'SHA1i_2/k_reg[3][20]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][20]' (LD) to 'SHA1i_2/k_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][21]' (LD) to 'SHA1i_2/k_reg[3][22]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][22]' (LD) to 'SHA1i_2/k_reg[3][25]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][23]' (LD) to 'SHA1i_2/k_reg[3][24]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][24]' (LD) to 'SHA1i_2/k_reg[3][26]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][25]' (LD) to 'SHA1i_2/k_reg[3][27]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][26]' (LD) to 'SHA1i_2/k_reg[3][28]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][27]' (LD) to 'SHA1i_2/k_reg[3][30]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][28]' (LD) to 'SHA1i_2/k_reg[3][29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SHA1i_2/\k_reg[3][29] )
+INFO: [Synth 8-3886] merging instance 'SHA1i_2/k_reg[3][30]' (LD) to 'SHA1i_2/k_reg[3][31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (SHA1i_2/\k_reg[3][31] )
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][0]' (LD) to 'SHA1i_3/k_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][1]' (LD) to 'SHA1i_3/k_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][2]' (LD) to 'SHA1i_3/k_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][3]' (LD) to 'SHA1i_3/k_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][4]' (LD) to 'SHA1i_3/k_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][5]' (LD) to 'SHA1i_3/k_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][6]' (LD) to 'SHA1i_3/k_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][7]' (LD) to 'SHA1i_3/k_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][8]' (LD) to 'SHA1i_3/k_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'SHA1i_3/k_reg[0][9]' (LD) to 'SHA1i_3/k_reg[0][10]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (SH1i_3/\k_reg[0][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (SH1i_3/\k_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (SHA1i_3/\k_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SHA1i_3/\k_reg[0][31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 884.668 ; gain = 674.594
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 807.039 ; gain = 597.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |SHA1Core__GB0 |           1|     23588|
-|2     |SHA1Core__GB1 |           1|     31058|
-|3     |SHA1Core__GB2 |           1|      8800|
-|4     |SHA1Core__GB3 |           1|      9146|
-|5     |top__GC0      |           1|      1879|
-+------+--------------+------------+----------+
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |core_logic__GB0 |           1|     37235|
+|2     |core_logic__GB1 |           1|     14122|
+|3     |core_logic__GB2 |           1|      7480|
+|4     |core_logic__GB3 |           1|     11048|
+|5     |top__GC0        |           1|      2485|
++------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -576,27 +633,27 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 884.668 ; gain = 674.594
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 861.844 ; gain = 652.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 884.668 ; gain = 674.594
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 861.844 ; gain = 652.430
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |SHA1Core__GB0 |           1|     23588|
-|2     |SHA1Core__GB1 |           1|     31058|
-|3     |SHA1Core__GB2 |           1|      8800|
-|4     |SHA1Core__GB3 |           1|      9146|
-|5     |top__GC0      |           1|      1879|
-+------+--------------+------------+----------+
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |core_logic__GB0 |           1|     37235|
+|2     |core_logic__GB1 |           1|     14122|
+|3     |core_logic__GB2 |           1|      7480|
+|4     |core_logic__GB3 |           1|     11048|
+|5     |top__GC0        |           1|      2485|
++------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -619,8 +676,28 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:128]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:125]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:855]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:849]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:841]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:123]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:121]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/new/core_logic.v:122]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished IO Insertion : Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -633,7 +710,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -645,25 +722,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -681,54 +758,54 @@ Report Cell Usage:
 |      |Cell          |Count |
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
-|2     |BUFG          |    11|
-|3     |CARRY4        |  1320|
-|4     |LUT1          |     8|
-|5     |LUT2          |  3842|
-|6     |LUT3          |   396|
-|7     |LUT4          |  3100|
-|8     |LUT5          |  2944|
-|9     |LUT6          |  6764|
-|10    |FDCE          |   690|
-|11    |FDRE          |   864|
-|12    |LD            |  1128|
-|13    |LDC           |  2721|
-|14    |IBUF          |    13|
-|15    |OBUF          |    33|
+|2     |BUFG          |     2|
+|3     |CARRY4        |  1323|
+|4     |LUT1          |    23|
+|5     |LUT2          |  3695|
+|6     |LUT3          |   412|
+|7     |LUT4          |  3311|
+|8     |LUT5          |  3159|
+|9     |LUT6          |  5397|
+|10    |MUXF7         |    16|
+|11    |MUXF8         |     8|
+|12    |FDCE          |   894|
+|13    |FDPE          |     4|
+|14    |FDRE          |   672|
+|15    |LD            |  5640|
+|16    |IBUF          |     4|
+|17    |OBUF          |    10|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+---------+---------+------+
-|      |Instance |Module   |Cells |
-+------+---------+---------+------+
-|1     |top      |         | 23866|
-|2     |  C0     |counter  |    52|
-|3     |  HI1    |HashIn   |   322|
-|4     |  HO1    |HashOut  |   267|
-|5     |  M1     |MsgIn    |  1542|
-|6     |  SH1    |SHA1Core | 19251|
-+------+---------+---------+------+
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           | 24602|
+|2     |  C0     |counter    |    59|
+|3     |  HM1    |HashMsgIn  |  1352|
+|4     |  SHA1   |core_logic | 22606|
+|5     |  U1     |uart_tx    |   537|
++------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 1036.785 ; gain = 827.371
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 145 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 1019.863 ; gain = 443.680
-Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1019.863 ; gain = 809.789
+Synthesis finished with 0 errors, 0 critical warnings and 201 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 1036.785 ; gain = 461.734
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 1036.785 ; gain = 827.371
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5182 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 6967 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'SHA1Core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'core_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3849 instances were transformed.
-  LD => LDCE: 1128 instances
-  LDC => LDCE: 2721 instances
+  A total of 5640 instances were transformed.
+  LD => LDCE: 5640 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-186 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
+248 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1019.863 ; gain = 764.980
-INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1019.863 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 30 11:44:05 2017...
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:03 . Memory (MB): peak = 1036.785 ; gain = 781.688
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1036.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 20 17:15:15 2017...

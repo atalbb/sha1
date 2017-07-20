@@ -27,7 +27,7 @@ module counter(input wire clk,
     );
 always @(posedge clk or negedge rst)
  if (!rst) begin
-   out <= 10'b0 ;
+   out <= 7'b0 ;
  end else if (en) begin
    out <= out + 1;
  end

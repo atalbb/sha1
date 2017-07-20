@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/blk_mem_gen_0_synth_1'
+HD_PWD='C:/College/Thesis/VivadoProjects/SHA1_BRAM_10/SHA1_BRAM.runs/blk_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

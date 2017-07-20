@@ -1,17 +1,15 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.sim/sim_1/synth/func/tb_func_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HashIn
-INFO: [VRFC 10-311] analyzing module HashOut
-INFO: [VRFC 10-311] analyzing module MsgIn
-INFO: [VRFC 10-311] analyzing module SHA1Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_BRAM_10/SHA1_BRAM.sim/sim_1/synth/func/tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HashMsgIn
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module core_logic
 INFO: [VRFC 10-311] analyzing module counter
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_generic_cstr
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_prim_width
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_prim_wrapper_init
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_top
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_v8_3_4
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0blk_mem_gen_v8_3_4_synth
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_4_synth
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/SHA1_BRAM_10/SHA1_BRAM.srcs/sim_1/new/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb

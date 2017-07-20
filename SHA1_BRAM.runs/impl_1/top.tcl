@@ -50,20 +50,22 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.cache/wt [current_project]
-  set_property parent.project_path C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.xpr [current_project]
-  set_property ip_output_repo C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.cache/wt [current_project]
+  set_property parent.project_path C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.xpr [current_project]
+  set_property ip_output_repo C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.runs/synth_1/top.dcp
-  add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp
-  set_property netlist_only true [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
-  read_xdc -mode out_of_context -ref blk_mem_gen_0 -cells U0 c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+  add_files -quiet C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.runs/synth_1/top.dcp
+  add_files -quiet c:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp
+  set_property netlist_only true [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp]
+  read_xdc -mode out_of_context -ref blk_mem_gen_0 -cells U0 c:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
+  set_property processing_order EARLY [get_files c:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+  read_xdc C:/College/Thesis/VivadoProjects/SHA1_BRAM_12/SHA1_BRAM.srcs/constrs_1/new/constr.xdc
   link_design -top top -part xc7a100tcsg324-1
   write_hwdef -file top.hwdef
   close_msg_db -file init_design.pb
@@ -133,6 +135,25 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  catch { write_mem_info -force top.mmi }
+  write_bitstream -force -no_partial_bitfile top.bit 
+  catch { write_sysdef -hwdef top.hwdef -bitfile top.bit -meminfo top.mmi -file top.sysdef }
+  catch {write_debug_probes -quiet -force debug_nets}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
